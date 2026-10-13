@@ -22,20 +22,20 @@ export type SiteConfig = {
   tagline: string;
   phoneDisplay: string;
   phoneHref: string;
-  email: string;
+  email?: string;
   address: {
-    street: string;
+    street?: string;
     city: string;
     state: string;
-    zip: string;
+    zip?: string;
     showPublicly: boolean;
   };
-  geo: { lat: string; lng: string };
-  licenseNumber: string;
+  geo: { lat?: string; lng?: string };
+  licenseNumber?: string;
   yearsInBusiness: string;
   hours: DayHours[];
-  googleBusinessProfileUrl: string;
-  googleReviewUrl: string;
+  googleBusinessProfileUrl?: string;
+  googleReviewUrl?: string;
   googleRating: null | { rating: number; count: number };
   social: {
     facebook: string;
@@ -49,7 +49,7 @@ export type SiteConfig = {
   logo: string;
   contentReviewer: { name: string; role: string };
   siteUrl: string;
-  ga4Id: string;
+  ga4Id?: string;
   formEmbed: {
     src: string;
     height: number;
@@ -60,29 +60,32 @@ export type SiteConfig = {
 };
 
 export const siteConfig: SiteConfig = {
-  businessName: "[BUSINESS_NAME]",
-  legalName: "[LEGAL_BUSINESS_NAME]",
+  businessName: "Pest Control Services Jacksonville",
+  legalName: "Pest Control Services Jacksonville",
   tagline: "Trusted Pest Control in Jacksonville, FL",
-  phoneDisplay: "[PHONE_DISPLAY]", // e.g. (904) 555-0123
-  phoneHref: "[PHONE_E164]", // e.g. +19045550123
-  email: "[EMAIL]",
+  phoneDisplay: "(904) 555-0123", // e.g. (904) 555-0123
+  phoneHref: "+19045550123", // e.g. +19045550123
+  // email: "[EMAIL]",
   address: {
-    street: "[STREET]",
+    // street: "[STREET]",
     city: "Jacksonville",
     state: "FL",
-    zip: "[ZIP]",
+    // zip: "[ZIP]",
     showPublicly: false, // service-area business: hide street address if false
   },
-  geo: { lat: "[LAT]", lng: "[LNG]" },
-  licenseNumber: "[FDACS_LICENSE_NUMBER]", // Florida Dept. of Agriculture & Consumer Services
-  yearsInBusiness: "[YEARS]",
+  geo: {
+    // lat: "[LAT]",
+    // lng: "[LNG]",
+  },
+  // licenseNumber: "[FDACS_LICENSE_NUMBER]", // Florida Dept. of Agriculture & Consumer Services
+  yearsInBusiness: "18",
   hours: [
     { days: "Mon-Fri", open: "07:00", close: "19:00" },
     { days: "Sat", open: "08:00", close: "16:00" },
     { days: "Sun", open: "closed", close: "closed" },
   ],
-  googleBusinessProfileUrl: "[GBP_URL]",
-  googleReviewUrl: "[GOOGLE_REVIEW_LINK]",
+  // googleBusinessProfileUrl: "[GBP_URL]",
+  // googleReviewUrl: "[GOOGLE_REVIEW_LINK]",
   googleRating: null, // fill only with REAL data, e.g. { rating: 4.9, count: 87 }
   social: { facebook: "", instagram: "", nextdoor: "", yelp: "", bbb: "" },
   memberships: [], // e.g. ["Florida Pest Management Association"] ONLY if real
@@ -92,11 +95,11 @@ export const siteConfig: SiteConfig = {
   logo: "", // OWNER: path under /public, e.g. "/images/logo.png"
   // OWNER: replace with the licensed technician who reviews service pages and blog posts
   contentReviewer: {
-    name: "[TECHNICIAN_NAME]",
+    name: "Seth Pikus",
     role: "Licensed Pest Control Technician",
   },
   siteUrl: "https://pestcontrolservicesjacksonville.com",
-  ga4Id: "[GA4_ID]",
+  // ga4Id: "[GA4_ID]",
   /**
    * The renting company's own contact form (from their CRM or scheduling tool).
    * Leave `src` empty to use the site's built-in quote form. When set, every quote
