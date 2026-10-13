@@ -60,8 +60,8 @@ export type SiteConfig = {
 };
 
 export const siteConfig: SiteConfig = {
-  businessName: "Pest Control Services Jacksonville",
-  legalName: "Pest Control Services Jacksonville",
+  businessName: "Pest Control Jacksonville",
+  legalName: "Pest Control Jacksonville",
   tagline: "Trusted Pest Control in Jacksonville, FL",
   phoneDisplay: "(904) 555-0123", // e.g. (904) 555-0123
   phoneHref: "+19045550123", // e.g. +19045550123
