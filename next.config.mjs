@@ -1,6 +1,9 @@
-import type { NextConfig } from "next";
+// Hostinger's build servers can't load Next's native SWC binary (glibc too old), so the build
+// falls back to WASM SWC. That fallback can't compile a TypeScript config (hence .mjs) and
+// can't run Turbopack (hence `next build --webpack` in package.json).
 
-const nextConfig: NextConfig = {
+/** @type {import("next").NextConfig} */
+const nextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   trailingSlash: false,
@@ -12,14 +15,6 @@ const nextConfig: NextConfig = {
   },
   images: {
     formats: ["image/avif", "image/webp"],
-  },
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
   },
 };
 
