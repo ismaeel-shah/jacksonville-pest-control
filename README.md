@@ -6,7 +6,7 @@ The site is built so it can be rented to any pest control company: every busines
 
 - 50 pages + 6 blog posts, all prerendered at build time
 - Quote form with spam protection that emails each lead
-- Structured data (JSON-LD), sitemap, robots.txt, and social share image generated automatically
+- Structured data (JSON-LD), sitemap, robots.txt, and social share image generated from the config (`npm run og-image`)
 - No prices anywhere on the site, by design
 
 Open items for the business owner (claims to confirm, missing details, photos) are listed in [`CONTENT-TODO.md`](CONTENT-TODO.md).
@@ -56,6 +56,7 @@ Open `src/config/site.ts`. Everything on the site reads from here: header, foote
 - `memberships`: only real memberships.
 - `contentReviewer`: the licensed technician shown as the reviewer on service pages and blog posts.
 - `logo`: put the file in `public/images/` and set e.g. `"/images/logo.png"`.
+- After changing `businessName` or `tagline`, run `npm run og-image` and commit the result. The social share image (`src/app/opengraph-image.png`) is a static file, so it doesn't update on its own.
 
 ## Use the renting company's own contact form
 

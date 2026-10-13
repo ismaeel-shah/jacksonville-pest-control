@@ -20,8 +20,8 @@ export function buildMetadata({ title, description, path, image, noindex }: Page
   const branded = brand ? `${title} | ${brand}` : title;
   const fullTitle = branded.length <= MAX_TITLE_LENGTH ? branded : title;
   // A page's own openGraph replaces the inherited one, so point at the root
-  // app/opengraph-image explicitly when the page has no image of its own.
-  const images = [image ? { url: image } : { url: "/opengraph-image", width: 1200, height: 630, alt: title }];
+  // app/opengraph-image.png explicitly when the page has no image of its own.
+  const images = [image ? { url: image } : { url: "/opengraph-image.png", width: 1200, height: 630, alt: title }];
 
   return {
     title: { absolute: fullTitle },
