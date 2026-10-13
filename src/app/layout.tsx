@@ -38,6 +38,7 @@ export const metadata: Metadata = {
   },
   description:
     "Licensed, local pest control in Jacksonville, FL. Termites, rodents, mosquitoes, roaches and more. Call today for a free inspection and an upfront quote.",
+  verification: { google: filled(siteConfig.googleSiteVerification) ?? undefined },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

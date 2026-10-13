@@ -50,6 +50,7 @@ export type SiteConfig = {
   contentReviewer: { name: string; role: string };
   siteUrl: string;
   ga4Id?: string;
+  googleSiteVerification: string;
   formEmbed: {
     src: string;
     height: number;
@@ -100,6 +101,8 @@ export const siteConfig: SiteConfig = {
   },
   siteUrl: "https://pestcontrolservicesjacksonville.com",
   // ga4Id: "[GA4_ID]",
+  // Search Console HTML-tag verification: only the content="..." value of the meta tag
+  googleSiteVerification: "ydEQyriR766mLwXPFUVyoGHGJpoC6m61gtF0uaof_Is",
   /**
    * The renting company's own contact form (from their CRM or scheduling tool).
    * Leave `src` empty to use the site's built-in quote form. When set, every quote

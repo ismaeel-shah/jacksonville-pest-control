@@ -1,4 +1,4 @@
-import { BadgeCheck, Building2 } from "lucide-react";
+import { BadgeCheck, Building2, CalendarCheck } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
@@ -73,18 +73,28 @@ export default async function ServicePage({ params }: PageProps<"/[service]">) {
       <section aria-label="Overview" className="py-12 md:py-16">
         <Container className="max-w-3xl">
           <Prose paragraphs={service.intro} className="text-xl" />
-          <p className="mt-8 flex flex-wrap items-center gap-x-2 gap-y-1 border-t border-line pt-4 text-base text-ink-muted">
-            <BadgeCheck aria-hidden className="size-5 text-primary" />
-            {reviewer && (
-              <span>
-                Reviewed by {reviewer}, {siteConfig.contentReviewer.role}
-                <span aria-hidden> · </span>
-              </span>
-            )}
-            <span>
-              Updated <time dateTime={service.lastUpdated}>{formatDate(service.lastUpdated)}</time>
+          <div className="mt-8 flex items-start gap-3 rounded-lg border border-line bg-surface p-4">
+            <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary-soft text-primary">
+              {reviewer ? <BadgeCheck aria-hidden className="size-5" /> : <CalendarCheck aria-hidden className="size-5" />}
             </span>
-          </p>
+            <div className="flex min-w-0 flex-1 flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+              {reviewer && (
+                <p className="leading-snug">
+                  <span className="block text-sm text-ink-muted">Reviewed by</span>
+                  <span className="block font-semibold text-ink">{reviewer}</span>
+                  <span className="block text-sm text-ink-muted">{siteConfig.contentReviewer.role}</span>
+                </p>
+              )}
+              <p
+                className={`flex items-center gap-1.5 text-sm text-ink-muted ${reviewer ? "border-t border-line pt-2 sm:border-0 sm:pt-0" : ""}`}
+              >
+                {reviewer && <CalendarCheck aria-hidden className="size-4 shrink-0" />}
+                <span>
+                  Updated <time dateTime={service.lastUpdated}>{formatDate(service.lastUpdated)}</time>
+                </span>
+              </p>
+            </div>
+          </div>
         </Container>
       </section>
 
