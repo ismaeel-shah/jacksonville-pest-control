@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/* Brand tokens (brief section 4). Use these instead of raw hex values. */
+@theme {
+  --color-primary: #1f6f43; /* deep green: headings, links, icons */
+  --color-primary-dark: #17573a;
+  --color-primary-soft: #e8f3ed;
+  --color-secondary: #1e3a5f; /* navy: footer, dark sections */
+  --color-secondary-dark: #152a45;
+  --color-accent: #f28c28; /* orange: call/quote buttons ONLY */
+  --color-accent-hover: #e07b17;
+  /* White text on #f28c28 fails WCAG AA (2.5:1); dark text passes (6:1). */
+  --color-accent-foreground: #1f2933;
+  --color-surface: #f5f7f6; /* light gray sections */
+  --color-ink: #1f2933; /* body text */
+  --color-ink-muted: #4a5561;
+  --color-line: #d9e0dc;
+}
+
+@theme inline {
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-heading-face), var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem; /* keeps anchor targets clear of the sticky header */
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem; /* 17px on mobile: many visitors are older homeowners */
+    line-height: 1.6;
+  }
+
+  @media (min-width: 48rem) {
+    body {
+      font-size: 1.125rem; /* 18px */
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-heading);
+    line-height: 1.2;
+    text-wrap: balance;
+  }
+
+  /* currentColor always contrasts with its own background, light or dark. */
+  :focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
