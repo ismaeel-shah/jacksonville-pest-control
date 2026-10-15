@@ -11,6 +11,7 @@ export function Header() {
   const services = getPublishedServices().map((service) => ({
     label: service.navLabel,
     href: serviceHref(service.slug),
+    icon: service.icon,
   }));
 
   const areaGroups: NavGroup[] = AREA_REGIONS.map((region) => ({
@@ -27,7 +28,9 @@ export function Header() {
       <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:h-20">
         <Link href="/" className="flex shrink-0 items-center gap-2 whitespace-nowrap font-heading text-xl font-extrabold text-primary">
           {logo ? (
-            <Image src={logo} alt={name} width={180} height={48} className="h-10 w-auto lg:h-12" preload />
+            // The roof makes the logo top-heavy, so its wordmark sits below the image center. Nudging it up by
+            // that offset (6.4% of the logo height) lines the wordmark up with the nav text.
+            <Image src={logo} alt={name} width={1865} height={467} className="h-11 w-auto -translate-y-[6.4%] lg:h-14 xl:h-12" preload />
           ) : (
             name
           )}

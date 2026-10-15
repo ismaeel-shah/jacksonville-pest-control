@@ -5,7 +5,7 @@ A fast, statically generated lead-generation site for pest control in Jacksonvil
 The site is built so it can be rented to any pest control company: every business detail lives in one file, `src/config/site.ts`.
 
 - 50 pages + 6 blog posts, all prerendered at build time
-- Quote form with spam protection that emails each lead
+- A quote form slot that shows the company's own embedded form (from their CRM or scheduling tool), or a call-us card until one is set
 - Structured data (JSON-LD), sitemap, robots.txt, and social share image generated from the config (`npm run og-image`)
 - No prices anywhere on the site, by design
 
@@ -41,7 +41,7 @@ Set these in `.env.local` locally and in Vercel → Project → Settings → Env
 | `LEAD_NOTIFY_EMAIL` | Where lead emails go. Separate several addresses with commas. |
 | `LEAD_FROM_EMAIL` | Sender address on a domain verified in Resend, e.g. `Website Leads <leads@yourdomain.com>`. |
 
-In development, if these are missing, submitted leads are printed in the terminal instead of emailed so the form can be tested. **In production they are required:** without them, visitors see an error asking them to call, and the lead is not delivered.
+**Not needed right now:** these only power the built-in quote form, which is turned off (see the next section). The site works without them.
 
 ---
 
@@ -72,7 +72,7 @@ formEmbed: {
 },
 ```
 
-- **Leave `src` empty** to keep the site's built-in form (which emails leads via Resend).
+- **Leave `src` empty** and those spots show a call-us card (phone button and hours) instead. The site's built-in form is turned off and never shown.
 - **When `src` is set**, the contact page form and the form at the end of every page all become their iframe. The "Free Quote" and "Get a Free Inspection" buttons still scroll to it, and the Privacy Policy automatically mentions the third-party form provider.
 - Only `https://` URLs are accepted. Protocol-relative URLs starting with `//` (common in embed codes) are converted to `https://` automatically.
 - **Check the heights on a phone and a desktop.** The height in their iframe code is often too short, which cuts off the bottom of the form (usually the consent text). Increase `height` / `mobileHeight` until the whole form shows without an inner scrollbar.
@@ -80,11 +80,10 @@ formEmbed: {
 - If their embed code includes a script (often used to auto-resize the form), put that script's URL in `scriptSrc`.
 - **Set their form to redirect to your `/thank-you` page** after submission, in their tool's settings. Choose the option that redirects the whole page (often called "parent page" or "top window"); otherwise the thank-you page opens inside the small form box.
 - With an embedded form, submissions happen inside their tool, so GA4 can't see them. `click_to_call` and `cta_click` still work. To track conversions, use the renter's own form analytics or their thank-you redirect.
-- The Resend environment variables aren't needed while an embedded form is in use.
 
 ## Add photos
 
-Every image on the site is a named "photo slot". Save a photo in `public/images/` with the exact file name listed in `CONTENT-TODO.md` (section 4) and it appears automatically; no code changes needed. Use real photos of your team, trucks, and work (WebP or JPG, at least 1600px wide). Avoid stock photos and cartoon bugs.
+Every image on the site is a named "photo slot". Save a photo in `public/images/` with the exact file name listed in `CONTENT-TODO.md` (section 4) and it appears on the next deploy (restart `npm run dev` to see it locally); no code changes needed. Photos are always shown whole, at their own shape, so any aspect ratio works. Use real photos of your team, trucks, and work (WebP or JPG, at least 1600px wide). Avoid stock photos and cartoon bugs.
 
 ## Publish or unpublish a page
 
@@ -141,11 +140,11 @@ These come from the original brief and are why the site looks and reads the way 
 
 1. Push this project to a GitHub, GitLab, or Bitbucket repository.
 2. In [Vercel](https://vercel.com/new), import the repository. The defaults (framework: Next.js, build command `next build`) are correct.
-3. Add the three environment variables above.
+3. Set `formEmbed.src` in `src/config/site.ts` to the company's form.
 4. Deploy, then add your domain under Project → Settings → Domains.
 5. Set `siteUrl` in `src/config/site.ts` to the final domain (e.g. `https://www.example.com`) and redeploy. Canonical URLs, the sitemap, and schema all use it.
 6. Submit `https://your-domain/sitemap.xml` in Google Search Console.
-7. Send a test request through the quote form and confirm the email arrives.
+7. Send a test request through the embedded form and confirm it reaches the company's CRM.
 
 ## How it's built
 
@@ -168,7 +167,7 @@ scripts/content-todo.mjs  Builds CONTENT-TODO.md
 Notes for developers:
 
 - **Cache Components is on** (the Next.js 16 default). Because it doesn't allow `dynamicParams = false`, dynamic routes call `notFound()` for unknown slugs instead, and the root layout sets `ensureStatic = 'navigation'` so the build fails if any page stops being fully static.
-- The quote form uses a Server Action (`src/app/actions/quote.ts`) with the same zod schema on the client and server, plus a hidden honeypot field.
+- `QuoteForm` renders the `formEmbed` iframe, or a call-us card while it's empty. The older built-in form (`QuoteFormClient` plus the Server Action in `src/app/actions/quote.ts`) is still in the code but no longer rendered anywhere.
 - GA4 loads after the first interaction (or a few idle seconds) and tracks `click_to_call`, `cta_click`, and `form_submit`. Set `ga4Id` in the config to turn it on.
 - CSS is inlined (`experimental.inlineCss`) because most visitors are first-time mobile searchers.
 - This Next.js version differs from older docs; see `AGENTS.md` and the bundled docs in `node_modules/next/dist/docs/`.

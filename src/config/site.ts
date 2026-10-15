@@ -64,8 +64,8 @@ export const siteConfig: SiteConfig = {
   businessName: "Pest Control Jacksonville",
   legalName: "Pest Control Jacksonville",
   tagline: "Trusted Pest Control in Jacksonville, FL",
-  phoneDisplay: "(904) 555-0123", // e.g. (904) 555-0123
-  phoneHref: "+19045550123", // e.g. +19045550123
+  phoneDisplay: "(000) 000-0000", // e.g. (904) 555-0123
+  phoneHref: "+10000000000", // e.g. +19045550123
   // email: "[EMAIL]",
   address: {
     // street: "[STREET]",
@@ -93,7 +93,7 @@ export const siteConfig: SiteConfig = {
   // OWNER: confirm guarantee wording
   guarantee:
     "If pests come back between scheduled services, we re-treat at no extra cost.",
-  logo: "", // OWNER: path under /public, e.g. "/images/logo.png"
+  logo: "/images/pest-control-services-jacksonville-logo.svg", // path under /public
   // OWNER: replace with the licensed technician who reviews service pages and blog posts
   contentReviewer: {
     name: "Seth Pikus",
@@ -105,8 +105,9 @@ export const siteConfig: SiteConfig = {
   googleSiteVerification: "ydEQyriR766mLwXPFUVyoGHGJpoC6m61gtF0uaof_Is",
   /**
    * The renting company's own contact form (from their CRM or scheduling tool).
-   * Leave `src` empty to use the site's built-in quote form. When set, every quote
-   * form on the site (contact page and the end of every page) becomes this iframe.
+   * Every quote form spot on the site (contact page and the end of every page) shows
+   * this iframe. While `src` is empty, those spots show a call-us card instead; the
+   * site's built-in form is not used.
    * Copy only the URL from inside src="..." of the iframe code they give you.
    */
   formEmbed: {

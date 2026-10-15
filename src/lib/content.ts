@@ -1,5 +1,6 @@
 import { areas, blogPosts, industries, services } from "@/content";
 import type { AreaContent, AreaRegion, BlogPost, IndustryContent, ServiceContent } from "@/content/types";
+import { proseToPlainText } from "./prose";
 import { RESERVED_TOP_LEVEL_SLUGS } from "./routes";
 
 type Publishable = { slug: string; published: boolean };
@@ -55,3 +56,19 @@ export const getPublishedPosts = (): BlogPost[] =>
   published(blogPosts).sort((a, b) => b.datePublished.localeCompare(a.datePublished));
 export const getPost = (slug: string) => findPublished(blogPosts, slug);
 export const getPostsBySlugs = (slugs: string[]) => pickPublished(blogPosts, slugs);
+
+/** Average adult reading speed, used for the "5 min read" label. */
+const WORDS_PER_MINUTE = 225;
+
+/** Estimated reading time in whole minutes (at least 1). */
+export function getReadingMinutes(post: BlogPost): number {
+  const sections = post.sections.flatMap((section) => [section, ...(section.subsections ?? [])]);
+  const text = [
+    ...post.intro,
+    ...sections.flatMap((section) => [section.heading, ...(section.body ?? []), ...(section.bullets ?? [])]),
+  ]
+    .map(proseToPlainText)
+    .join(" ");
+  const words = text.split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.round(words / WORDS_PER_MINUTE));
+}

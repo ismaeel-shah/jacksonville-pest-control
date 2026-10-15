@@ -55,9 +55,13 @@ export async function Footer() {
       {/* Brand + contact */}
       <div className="mx-auto grid w-full max-w-7xl gap-10 px-4 pb-10 pt-14 sm:px-6 lg:grid-cols-12 lg:gap-12">
         <div className="lg:col-span-7">
-          <Link href="/" className="inline-block font-heading text-2xl font-extrabold text-white md:text-3xl">
+          <Link
+            href="/"
+            className={`inline-block font-heading text-2xl font-extrabold text-white md:text-3xl ${logo ? "rounded-xl bg-white px-4 py-3" : ""}`}
+          >
             {logo ? (
-              <Image src={logo} alt={name ?? "Home"} width={200} height={56} className="h-12 w-auto" />
+              // White card: the logo is drawn for light backgrounds and would disappear on the navy footer.
+              <Image src={logo} alt={name ?? "Home"} width={1865} height={467} className="h-14 w-auto" />
             ) : (
               (name ?? siteConfig.tagline)
             )}

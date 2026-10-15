@@ -11,6 +11,7 @@
     "og-image": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/og-image.mjs"
   },
   "dependencies": {
+    "image-size": "^2.0.4",
     "lucide-react": "^1.55.0",
     "next": "16.4.0",
     "react": "19.3.0",

@@ -1,6 +1,7 @@
-import { CalendarDays, UserRound } from "lucide-react";
+import { CalendarDays, ChevronDown, Clock, ListOrdered, UserRound } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { BlogCard } from "@/components/blog/BlogCard";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { CTASection } from "@/components/sections/CTASection";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -9,10 +10,12 @@ import { Container } from "@/components/ui/Container";
 import { ImageSlot, willRenderImage } from "@/components/ui/ImageSlot";
 import { InlineProse, Prose } from "@/components/ui/Prose";
 import { QuoteButton } from "@/components/ui/QuoteButton";
+import { SidebarCta } from "@/components/ui/SidebarCta";
+import { TableOfContents } from "@/components/ui/TableOfContents";
 import { siteConfig } from "@/config/site";
 import type { ContentSection } from "@/content/types";
 import { getBusinessName, previewable } from "@/lib/config";
-import { getPost, getPostsBySlugs, getPublishedPosts, getServicesBySlugs } from "@/lib/content";
+import { getPost, getPostsBySlugs, getPublishedPosts, getReadingMinutes, getServicesBySlugs } from "@/lib/content";
 import { formatDate } from "@/lib/format";
 import { buildMetadata } from "@/lib/metadata";
 import { STATIC_ROUTES, blogPostHref, serviceHref } from "@/lib/routes";
@@ -47,6 +50,7 @@ export default async function BlogPostPage({ params }: PageProps<"/blog/[slug]">
   const services = getServicesBySlugs(post.relatedServices);
   const related = getPostsBySlugs(post.relatedPosts);
   const showToc = post.sections.length >= TOC_MIN_SECTIONS;
+  const tocItems = post.sections.map(({ id, heading }) => ({ id, heading }));
   const updated = post.dateModified !== post.datePublished;
 
   return (
@@ -59,99 +63,145 @@ export default async function BlogPostPage({ params }: PageProps<"/blog/[slug]">
       />
       <JsonLd data={buildBlogPostingSchema(post, path, willRenderImage(post.image) ? `/images/${post.image.file}` : undefined)} />
 
-      <article className="py-12 md:py-16">
-        <Container className="max-w-3xl">
-          <header>
-            <p className="text-sm font-bold uppercase tracking-wider text-primary">{post.category}</p>
-            <h1 className="mt-3 text-4xl font-extrabold text-secondary md:text-5xl">{post.title}</h1>
-            <p className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-1 text-base text-ink-muted">
-              <span className="flex items-center gap-2">
-                <CalendarDays aria-hidden className="size-4" />
-                Published <time dateTime={post.datePublished}>{formatDate(post.datePublished)}</time>
-              </span>
-              {updated && (
-                <span>
-                  Updated <time dateTime={post.dateModified}>{formatDate(post.dateModified)}</time>
-                </span>
-              )}
+      <article>
+        <header className="bg-linear-to-b from-primary-soft to-white pt-10 md:pt-14">
+          <Container className="max-w-4xl">
+            <p>
+              <Link
+                href={STATIC_ROUTES.blog}
+                className="inline-block rounded-full bg-primary px-3 py-1 text-xs font-bold uppercase tracking-wider text-white hover:bg-primary-dark"
+              >
+                {post.category}
+              </Link>
             </p>
-            {(reviewer || businessName) && (
-              // OWNER: replace contentReviewer in src/config/site.ts with the real licensed technician
-              <div className="mt-6 flex items-center gap-4 rounded-xl bg-surface p-4">
-                <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-primary-soft text-primary">
-                  <UserRound aria-hidden className="size-6" />
+            <h1 className="mt-4 text-4xl font-extrabold text-secondary md:text-5xl">{post.title}</h1>
+            <p className="mt-5 text-xl text-ink-muted">{post.excerpt}</p>
+
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
+              {(reviewer || businessName) && (
+                // OWNER: replace contentReviewer in src/config/site.ts with the real licensed technician
+                <div className="flex items-center gap-3">
+                  <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-primary text-white">
+                    <UserRound aria-hidden className="size-5" />
+                  </span>
+                  <p className="leading-snug">
+                    <span className="block font-bold text-secondary">
+                      {reviewer ? `Reviewed by ${reviewer}` : `The ${businessName} team`}
+                    </span>
+                    <span className="block text-sm text-ink-muted">
+                      {reviewer ? siteConfig.contentReviewer.role : "Licensed pest control professionals"}
+                    </span>
+                  </p>
+                </div>
+              )}
+              <p className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-ink-muted sm:border-l sm:border-line sm:pl-6">
+                <span className="flex items-center gap-1.5">
+                  <CalendarDays aria-hidden className="size-4" />
+                  <time dateTime={post.datePublished}>{formatDate(post.datePublished)}</time>
                 </span>
-                <p className="text-base">
-                  <span className="block font-bold text-secondary">{reviewer ?? `The ${businessName} team`}</span>
-                  <span className="text-ink-muted">{reviewer ? siteConfig.contentReviewer.role : "Licensed pest control professionals"}</span>
-                </p>
-              </div>
-            )}
-          </header>
+                <span className="flex items-center gap-1.5">
+                  <Clock aria-hidden className="size-4" />
+                  {getReadingMinutes(post)} min read
+                </span>
+                {updated && (
+                  <span>
+                    Updated <time dateTime={post.dateModified}>{formatDate(post.dateModified)}</time>
+                  </span>
+                )}
+              </p>
+            </div>
+          </Container>
 
           {willRenderImage(post.image) && (
-            <div className="mt-8">
-              <ImageSlot image={post.image} aspect="aspect-[16/9]" preload sizes="(min-width: 768px) 768px, 100vw" />
-            </div>
+            <Container className="mt-10 max-w-5xl">
+              <ImageSlot
+                image={post.image}
+                aspect="aspect-[16/9]"
+                preload
+                sizes="(min-width: 1024px) 1024px, 100vw"
+                className="shadow-xl ring-1 ring-black/5"
+              />
+            </Container>
           )}
+        </header>
 
-          <Prose paragraphs={post.intro} className="mt-8 text-xl" />
+        <Container className="py-12 md:py-16">
+          <div className={showToc ? "lg:grid lg:grid-cols-[minmax(0,1fr)_17.5rem] lg:gap-14" : "mx-auto max-w-3xl"}>
+            <div className="min-w-0 max-w-3xl">
+              {showToc && (
+                <details className="group/toc mb-10 rounded-xl border border-line bg-surface lg:hidden">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 p-4 font-bold text-secondary [&::-webkit-details-marker]:hidden">
+                    <span className="flex items-center gap-2">
+                      <ListOrdered aria-hidden className="size-5 text-primary" />
+                      In this article
+                    </span>
+                    <ChevronDown aria-hidden className="size-5 transition-transform group-open/toc:rotate-180" />
+                  </summary>
+                  <ol className="list-decimal space-y-2 border-t border-line py-4 pl-10 pr-4 marker:font-semibold marker:text-primary">
+                    {tocItems.map((item) => (
+                      <li key={item.id}>
+                        <a href={`#${item.id}`} className="text-ink hover:text-primary hover:underline">
+                          {item.heading}
+                        </a>
+                      </li>
+                    ))}
+                  </ol>
+                </details>
+              )}
 
-          {showToc && (
-            <nav aria-labelledby="toc-heading" className="mt-10 rounded-xl border border-line p-6">
-              <h2 id="toc-heading" className="text-lg font-bold text-secondary">
-                In this article
-              </h2>
-              <ol className="mt-3 list-decimal space-y-2 pl-6">
-                {post.sections.map((section) => (
-                  <li key={section.id}>
-                    <a href={`#${section.id}`} className="text-primary underline-offset-2 hover:underline">
-                      {section.heading}
-                    </a>
-                  </li>
-                ))}
-              </ol>
-            </nav>
-          )}
+              <Prose paragraphs={post.intro} className="text-xl" />
 
-          {post.sections.map((section) => (
-            <section key={section.id} id={section.id} aria-labelledby={`${section.id}-heading`} className="mt-12 scroll-mt-28">
-              <h2 id={`${section.id}-heading`} className="text-3xl font-extrabold text-secondary">
-                {section.heading}
-              </h2>
-              <SectionBody section={section} />
-              {section.subsections?.map((sub) => (
-                <div key={sub.heading} className="mt-8">
-                  <h3 className="text-2xl font-bold text-secondary">{sub.heading}</h3>
-                  <SectionBody section={sub} />
-                </div>
+              {post.sections.map((section) => (
+                <section key={section.id} id={section.id} aria-labelledby={`${section.id}-heading`} className="mt-12 scroll-mt-28">
+                  <h2 id={`${section.id}-heading`} className="text-3xl font-extrabold text-secondary">
+                    {section.heading}
+                  </h2>
+                  <SectionBody section={section} />
+                  {section.subsections?.map((sub) => (
+                    <div key={sub.heading} className="mt-8">
+                      <h3 className="text-2xl font-bold text-secondary">{sub.heading}</h3>
+                      <SectionBody section={sub} />
+                    </div>
+                  ))}
+                </section>
               ))}
-            </section>
-          ))}
 
-          {services.length > 0 && (
-            <aside aria-labelledby="related-service-heading" className="mt-14 rounded-xl border-l-4 border-accent bg-surface p-6 md:p-8">
-              <h2 id="related-service-heading" className="text-2xl font-bold text-secondary">
-                Need Help With This?
-              </h2>
-              <p className="mt-2 text-ink-muted">
-                Our technicians handle this every day in Jacksonville homes. Start with a free inspection and an upfront quote.
-              </p>
-              <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
-                {services.map((service) => (
-                  <li key={service.slug}>
-                    <Link href={serviceHref(service.slug)} className="font-bold text-primary hover:underline">
-                      {service.name} →
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                <CallButton />
-                <QuoteButton cta="blog_free_inspection" />
-              </div>
-            </aside>
-          )}
+              {services.length > 0 && (
+                <aside aria-labelledby="related-service-heading" className="mt-14 rounded-xl border-l-4 border-accent bg-surface p-6 md:p-8">
+                  <h2 id="related-service-heading" className="text-2xl font-bold text-secondary">
+                    Need Help With This?
+                  </h2>
+                  <p className="mt-2 text-ink-muted">
+                    Our technicians handle this every day in Jacksonville homes. Start with a free inspection and an upfront quote.
+                  </p>
+                  <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
+                    {services.map((service) => (
+                      <li key={service.slug}>
+                        <Link href={serviceHref(service.slug)} className="font-bold text-primary hover:underline">
+                          {service.name} →
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                    <CallButton />
+                    <QuoteButton cta="blog_free_inspection" />
+                  </div>
+                </aside>
+              )}
+            </div>
+
+            {showToc && (
+              <aside aria-label="Article sidebar" className="hidden lg:block">
+                <div className="sticky top-28 space-y-6">
+                  <div className="rounded-2xl border border-line bg-white p-6 shadow-sm">
+                    <TableOfContents items={tocItems} />
+                  </div>
+                  <SidebarCta title={`Dealing with ${post.category.toLowerCase()}?`} cta="blog_sidebar_free_inspection" />
+                </div>
+              </aside>
+            )}
+          </div>
         </Container>
       </article>
 
@@ -163,14 +213,8 @@ export default async function BlogPostPage({ params }: PageProps<"/blog/[slug]">
             </h2>
             <ul className="mt-8 grid gap-6 md:grid-cols-3">
               {related.map((item) => (
-                <li key={item.slug} className="rounded-xl bg-white p-6 shadow-sm">
-                  <p className="text-sm font-bold uppercase tracking-wider text-primary">{item.category}</p>
-                  <h3 className="mt-2 text-lg font-bold text-secondary">
-                    <Link href={blogPostHref(item.slug)} className="hover:text-primary hover:underline">
-                      {item.title}
-                    </Link>
-                  </h3>
-                  <p className="mt-2 text-base text-ink-muted">{item.excerpt}</p>
+                <li key={item.slug}>
+                  <BlogCard post={item} headingLevel="h3" sizes="(min-width: 768px) 33vw, 100vw" />
                 </li>
               ))}
             </ul>

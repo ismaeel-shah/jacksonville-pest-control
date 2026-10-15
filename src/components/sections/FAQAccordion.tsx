@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronDown } from "lucide-react";
+import { Plus } from "lucide-react";
 import { type ReactNode, useId, useState } from "react";
 
 export type AccordionItem = { question: string; answer: ReactNode };
@@ -22,13 +22,16 @@ export function FAQAccordion({ items }: { items: AccordionItem[] }) {
     });
 
   return (
-    <div className="divide-y divide-line rounded-xl border border-line bg-white">
+    <div className="space-y-3">
       {items.map((item, index) => {
         const isOpen = open.has(index);
         const buttonId = `${baseId}-q${index}`;
         const panelId = `${baseId}-a${index}`;
         return (
-          <div key={item.question}>
+          <div
+            key={item.question}
+            className={`rounded-xl border bg-white transition-shadow ${isOpen ? "border-primary/40 shadow-md" : "border-line hover:border-primary/40 hover:shadow-sm"}`}
+          >
             <h3>
               <button
                 id={buttonId}
@@ -36,10 +39,15 @@ export function FAQAccordion({ items }: { items: AccordionItem[] }) {
                 aria-expanded={isOpen}
                 aria-controls={panelId}
                 onClick={() => toggle(index)}
-                className="flex w-full items-center justify-between gap-4 px-5 py-5 text-left text-lg font-bold text-secondary hover:text-primary"
+                className={`flex w-full items-center justify-between gap-4 rounded-xl px-5 py-4 text-left text-lg font-bold md:px-6 md:py-5 ${isOpen ? "text-primary" : "text-secondary hover:text-primary"}`}
               >
                 {item.question}
-                <ChevronDown aria-hidden className={`size-5 shrink-0 transition-transform ${isOpen ? "rotate-180" : ""}`} />
+                <span
+                  aria-hidden
+                  className={`flex size-8 shrink-0 items-center justify-center rounded-full transition-colors ${isOpen ? "bg-primary text-white" : "bg-primary-soft text-primary"}`}
+                >
+                  <Plus className={`size-4 transition-transform duration-200 ${isOpen ? "rotate-45" : ""}`} />
+                </span>
               </button>
             </h3>
             <div
@@ -47,9 +55,9 @@ export function FAQAccordion({ items }: { items: AccordionItem[] }) {
               role="region"
               aria-labelledby={buttonId}
               hidden={!isOpen}
-              className="px-5 pb-5 text-ink-muted"
+              className="px-5 pb-5 leading-relaxed text-ink md:px-6 md:pb-6"
             >
-              {item.answer}
+              <div className="border-t border-line pt-4">{item.answer}</div>
             </div>
           </div>
         );

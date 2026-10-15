@@ -9,7 +9,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { MapEmbed } from "@/components/ui/MapEmbed";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { siteConfig } from "@/config/site";
-import { filled, getBusinessName, getPhone } from "@/lib/config";
+import { filled, getBusinessName, getFormEmbed, getPhone } from "@/lib/config";
 import { formatHoursRange } from "@/lib/format";
 import { buildMetadata } from "@/lib/metadata";
 import { STATIC_ROUTES } from "@/lib/routes";
@@ -42,7 +42,11 @@ export default function ContactPage() {
 
       <Hero
         h1="Schedule Your Free Pest Inspection in Jacksonville"
-        subheadline="Call us for the fastest help, or send the form and we'll call you back to set up a time that works for you."
+        subheadline={
+          getFormEmbed()
+            ? "Call us for the fastest help, or send the form and we'll call you back to set up a time that works for you."
+            : "Call us and we'll set up a time that works for you. The inspection is free, with an upfront quote before any work."
+        }
         aside={
           <div className="rounded-xl border border-line bg-white p-6 shadow-lg md:p-8">
             <QuoteForm title="Request Your Free Inspection" />
