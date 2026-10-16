@@ -43,9 +43,9 @@ export default function PrivacyPolicyPage() {
         </ul>
         {formEmbed && (
           <p>
-            Our request form is provided by a third-party lead service. Information you enter in that form is sent to that
-            provider, who may share it with one or more local pest control companies so they can contact you about your
-            request. It is also handled under the provider&apos;s own privacy policy.
+            Our request form is provided by a third-party scheduling and customer management service. Information you enter
+            in that form is sent to that provider to deliver your request to us, and is also handled under the provider&apos;s
+            own privacy policy.
           </p>
         )}
         <p>
