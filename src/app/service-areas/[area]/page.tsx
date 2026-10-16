@@ -54,7 +54,7 @@ export default async function AreaPage({ params }: PageProps<"/service-areas/[ar
 
       <Hero h1={area.hero.h1} subheadline={area.hero.subheadline} image={area.hero.image} />
 
-      <section aria-label={`About pest control in ${area.name}`} className="py-12 md:py-16">
+      <section aria-label={`About pest control in ${area.name}`} className="pb-12 md:pb-16">
         <Container className="max-w-3xl">
           <Prose paragraphs={area.intro} className="text-xl" />
         </Container>

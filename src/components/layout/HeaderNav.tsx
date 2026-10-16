@@ -16,6 +16,7 @@ type PhoneProp = { display: string; href: string | null } | null;
 type MenuId = "services" | "areas";
 
 const TOP_LINKS: NavLink[] = [
+  { label: "Home", href: "/" },
   { label: "Residential", href: "/residential" },
   { label: "Commercial", href: "/commercial" },
 ];

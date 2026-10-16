@@ -55,7 +55,7 @@ export default async function IndustryPage({ params }: PageProps<"/commercial/[i
 
       <Hero h1={industry.hero.h1} subheadline={industry.hero.subheadline} image={industry.hero.image} />
 
-      <section aria-label="Overview" className="py-12 md:py-16">
+      <section aria-label="Overview" className="pb-12 md:pb-16">
         <Container className="max-w-3xl">
           <Prose paragraphs={industry.intro} className="text-xl" />
         </Container>

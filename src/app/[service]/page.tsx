@@ -63,7 +63,7 @@ export default async function ServicePage({ params }: PageProps<"/[service]">) {
 
       <Hero h1={service.hero.h1} subheadline={service.hero.subheadline} image={service.hero.image} />
 
-      <section aria-label="Overview" className="py-12 md:py-16">
+      <section aria-label="Overview" className="pb-12 md:pb-16">
         <Container className="max-w-3xl">
           <Prose paragraphs={service.intro} className="text-xl" />
           <div className="mt-8 flex items-center gap-3 rounded-lg border border-line bg-surface p-4">
