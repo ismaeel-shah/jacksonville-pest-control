@@ -111,9 +111,11 @@ export const siteConfig: SiteConfig = {
    * Copy only the URL from inside src="..." of the iframe code they give you.
    */
   formEmbed: {
-    src: "", // e.g. "https://forms.example-crm.com/widget/form/abc123" (a "//host/..." URL also works)
-    height: 680, // pixels on tablets and desktops; tall enough to show the whole form, including any consent text
-    mobileHeight: 770, // pixels on phones, where forms get taller; 0 = same as height
+    // LeadSmart lead form (affiliate muhammadhnli1, pest control category 37). Their embed.js
+    // is only for their jQuery popup buttons, so it is not loaded.
+    src: "https://leads.leadsmartinc.com/?api_key=e9a92f9dfdbcdccb0902318ff6f5af5ad3e9d784&affiliate_source=muhammadhnli1&funnel=4&category=37&step=1&buttons=btn-warning",
+    height: 600, // pixels on tablets and desktops; tall enough to show the whole form, including any consent text
+    mobileHeight: 680, // pixels on phones, where forms get taller; 0 = same as height
     title: "Request a free pest inspection", // read by screen readers
     scriptSrc: "", // only if their embed code includes a <script src="..."> (e.g. for auto-resizing)
   },
