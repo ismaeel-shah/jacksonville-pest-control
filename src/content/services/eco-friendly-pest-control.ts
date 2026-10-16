@@ -11,7 +11,7 @@ export const ecoFriendlyPestControl: ServiceContent = {
   seo: {
     title: "Eco-Friendly Pest Control in Jacksonville, FL | IPM",
     description:
-      "Eco-friendly pest control in Jacksonville, FL using Integrated Pest Management: inspection, prevention, and targeted lower-impact treatments. Call for a quote.",
+      "Eco-friendly pest control in Jacksonville, FL using IPM: inspection, prevention, and targeted lower-impact treatments. Call to speak with a local pest pro.",
     primaryKeyword: "eco-friendly pest control Jacksonville FL",
     secondaryKeywords: ["pet-friendly pest control", "integrated pest management", "low-impact pest control", "green pest control"],
   },
@@ -24,14 +24,14 @@ export const ecoFriendlyPestControl: ServiceContent = {
     },
   },
   intro: [
-    "Many Jacksonville families want pests gone without heavy spraying around their kids, pets, and gardens. Our eco-friendly pest control is built on **Integrated Pest Management (IPM)**, a careful, step-by-step approach used by pest professionals.",
-    "Instead of treating every room on a schedule, we start by finding out which pests you have, why they're there, and how they get in. Then we fix those conditions, seal entry points, and use targeted, lower-impact treatments only where they'll work. You end up with fewer pests and less product in and around your home, and we're always upfront and honest about what each treatment involves.",
+    "Many Jacksonville families want pests gone without heavy spraying around their kids, pets, and gardens. Eco-friendly pest control is built on **Integrated Pest Management (IPM)**, a careful, step-by-step approach used by pest professionals.",
+    "Instead of treating every room on a schedule, an IPM approach starts by finding out which pests you have, why they're there, and how they get in. Then the technician addresses those conditions, seals entry points, and uses targeted, lower-impact treatments only where they'll work. You end up with fewer pests and less product in and around your home. Ask the technician to explain what each treatment involves before it's applied.",
   ],
   localProblem: {
     heading: "Why IPM Makes Sense in Northeast Florida",
     body: [
       "In Jacksonville, pests stay active all year. If every problem is handled with routine spraying, the amount of product used around your home adds up over time. IPM cuts that down by focusing on the causes, like moisture, food, and entry points, that keep pests coming back.",
-      "Our weather plays a part too. Heavy summer rain can wash surface treatments off patios and walls, so placing baits and treatments in protected cracks and voids often works better. And with so much water nearby, from the St. Johns River to backyard ponds, keeping products where they belong matters.",
+      "Northeast Florida's weather plays a part too. Heavy summer rain can wash surface treatments off patios and walls, so placing baits and treatments in protected cracks and voids often works better. And with so much water nearby, from the St. Johns River to backyard ponds, keeping products where they belong matters.",
     ],
   },
   signs: {
@@ -42,25 +42,25 @@ export const ecoFriendlyPestControl: ServiceContent = {
       { title: "You have young children", description: "Fewer broad sprays and more targeted placements limit what little hands can touch." },
       { title: "Pests keep coming back", description: "If spraying hasn't solved the problem, fixing the cause usually does more." },
       { title: "You grow food or flowers", description: "Vegetable beds, fruit trees, and pollinator plants call for careful, limited outdoor treatment." },
-      { title: "You keep fish, birds, or reptiles", description: "These pets can be more sensitive to some products, so we plan around them." },
+      { title: "You keep fish, birds, or reptiles", description: "These pets can be more sensitive to some products, so treatment should be planned around them." },
       { title: "Someone at home has sensitivities", description: "Lower-impact options and clear re-entry guidance can help households with health concerns." },
     ],
   },
   process: {
-    heading: "How Our IPM Process Works",
+    heading: "How the IPM Process Works",
     steps: [
-      { title: "Inspect first", description: "We look inside and out for pests, droppings, entry points, moisture, and food sources." },
-      { title: "Identify the pest", description: "Knowing exactly what you have lets us choose the most precise treatment." },
-      { title: "Fix the conditions", description: "We point out leaks, clutter, and food access, and recommend simple changes." },
+      { title: "Inspect first", description: "The technician looks inside and out for pests, droppings, entry points, moisture, and food sources." },
+      { title: "Identify the pest", description: "Knowing exactly what you have makes it possible to choose the most precise treatment." },
+      { title: "Fix the conditions", description: "The technician points out leaks, clutter, and food access, and recommends simple changes." },
       { title: "Seal entry points", description: "Exclusion work, like sealing gaps around pipes and doors, keeps pests from getting in." },
-      { title: "Treat only where needed", description: "We use baits, gels, and other targeted products in cracks, voids, and other protected spots." },
-      { title: "Monitor and adjust", description: "Follow-up visits and monitoring traps show whether the plan is working, so we can change course." },
+      { title: "Treat only where needed", description: "Baits, gels, and other targeted products go in cracks, voids, and other protected spots." },
+      { title: "Monitor and adjust", description: "Follow-up visits and monitoring traps show whether the plan is working, so the technician can change course." },
     ],
   },
   treatmentOptions: {
     heading: "Lower-Impact Treatment Options",
     intro: [
-      "No pest control product is completely free of risk, and we won't pretend otherwise. What IPM does is use less product and put it in smarter places.",
+      "No pest control product is completely without risk, and nobody should pretend otherwise. What IPM does is use less product and put it in smarter places. Ask your technician which of these options fit your home.",
     ],
     options: [
       {
@@ -77,25 +77,17 @@ export const ecoFriendlyPestControl: ServiceContent = {
       },
       {
         title: "Targeted exterior treatments",
-        description: "Applications limited to entry points and pest hot spots instead of spraying the whole yard.", // OWNER: confirm which lower-impact product types are used
+        description: "Applications limited to entry points and pest hot spots instead of spraying the whole yard.",
       },
     ],
   },
   safety: {
     heading: "Is Eco-Friendly Pest Control Safe for Kids and Pets?",
     body: [
-      "It's designed to lower your family's exposure, but no treatment is risk-free. We still follow every label, place baits where kids and pets can't reach, and tell you how long to stay out of treated areas.",
-      "Before we start, tell us about every pet in the home, including fish tanks and birds, plus any health concerns. That helps us choose products and placements that fit your household.",
+      "It's designed to lower your family's exposure, but no treatment is risk-proof. Every label should still be followed, baits placed where kids and pets can't reach, and you should be told how long to stay out of treated areas.",
+      "Before treatment starts, tell your technician about every pet in the home, including fish tanks and birds, plus any health concerns. That helps the technician choose products and placements that fit your household.",
     ],
   },
-  costFactors: [
-    { title: "Size of the property", description: "Larger homes and buildings take more inspection time and treatment." },
-    { title: "Type of pest", description: "Some pests respond well to baits alone, while others need more steps." },
-    { title: "Amount of exclusion work", description: "Sealing many gaps and entry points takes more time and materials." },
-    { title: "Monitoring and follow-up", description: "IPM relies on return visits to check progress and adjust the plan." },
-    { title: "One-time or ongoing plan", description: "A single visit differs from regular service through the year." },
-    { title: "Product choices", description: "Some lower-impact products need to be applied more often to keep working." },
-  ],
   prevention: {
     heading: "Simple Ways to Help Prevent Pests at Home",
     tips: [
@@ -108,30 +100,30 @@ export const ecoFriendlyPestControl: ServiceContent = {
     ],
   },
   forBusinesses: [
-    "IPM fits schools, offices, and restaurants, where people expect careful pest control with clear records. We document inspections, findings, and treatments for every visit. Our page on [pest control for businesses](/commercial) explains how scheduled programs work.",
+    "IPM fits schools, offices, and restaurants, where people expect careful pest control with clear records. Ask the provider to document inspections, findings, and treatments for every visit. The page on [pest control for businesses](/commercial) explains how scheduled programs work.",
   ],
   faqs: [
     {
       question: "Is eco-friendly pest control as effective as traditional treatment?",
       answer:
-        "For most common household pests, yes. Because IPM goes after the reasons pests show up, it often keeps them away longer than spraying alone. Results can take a little more time, since baits need to work through a colony. For some problems, like termites or a heavy infestation, we may recommend a stronger approach and explain why.",
+        "For most common household pests, yes. Because IPM goes after the reasons pests show up, it often keeps them away longer than spraying alone. Results can take a little more time, since baits need to work through a colony. For some problems, like termites or a heavy infestation, a technician may recommend a stronger approach and should explain why.",
     },
     {
-      question: "Do you still use pesticides in an IPM program?",
+      question: "Are pesticides still used in an IPM program?",
       answer:
-        "Sometimes, yes. IPM doesn't mean never using pesticides. It means using them only when needed, choosing targeted options like baits and gels, and placing them carefully. Many visits focus on inspection, sealing, and advice. When a treatment is needed, we'll tell you what we're using and where.",
+        "Sometimes, yes. IPM doesn't mean never using pesticides. It means using them only when needed, choosing targeted options like baits and gels, and placing them carefully. Many visits focus on inspection, sealing, and advice. When a treatment is needed, ask your technician what product is being used and where.",
     },
     {
       question: "What does pet-safe mean on this page?",
       answer:
-        "Pet-safe means we plan every treatment with your pets in mind. We choose lower-impact products where they work, place baits out of reach, and give you clear guidance on when pets can return to treated areas. It doesn't mean any product is harmless if a pet eats it, so following our instructions still matters.",
+        "Pet-safe means every treatment is planned with your pets in mind. That includes choosing lower-impact products where they work, placing baits out of reach, and giving clear guidance on when pets can return to treated areas. It doesn't mean any product is harmless if a pet eats it, so following your technician's instructions still matters.",
     },
     {
       question: "How long until I see results?",
       answer:
-        "Most people notice fewer pests within one to two weeks. Baits take a few days to spread through a colony, and you may see more activity at first as pests feed. Exclusion work helps right away by blocking entry points. If you're still seeing pests after a couple of weeks, call us and we'll adjust the plan.",
+        "Most people notice fewer pests within one to two weeks. Baits take a few days to spread through a colony, and you may see more activity at first as pests feed. Exclusion work helps right away by blocking entry points. If you're still seeing pests after a couple of weeks, call your technician so the plan can be adjusted.",
     },
   ],
   relatedServices: ["general-pest-control", "ant-control", "flea-tick-control"],
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-10-16",
 };

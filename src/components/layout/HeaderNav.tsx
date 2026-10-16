@@ -21,7 +21,6 @@ const TOP_LINKS: NavLink[] = [
 ];
 const TRAILING_LINKS: NavLink[] = [
   { label: "About", href: "/about" },
-  { label: "Reviews", href: "/reviews" },
   { label: "Contact", href: "/contact" },
 ];
 const SERVICE_FOOTER_LINKS: NavLink[] = [
@@ -34,7 +33,6 @@ const AUDIENCE_LINKS: NavLink[] = [
   { label: "Commercial", href: "/commercial" },
 ];
 const ALL_AREAS_LINK: NavLink = { label: "View all service areas", href: "/service-areas" };
-const QUOTE_HREF = "/contact#quote-form";
 
 function useIsCurrent() {
   const pathname = usePathname();
@@ -131,14 +129,13 @@ function DesktopNav({ services, areaGroups, phone }: { services: ServiceNavLink[
           ))}
         </ul>
       </nav>
-      {phone && <PhoneLink phone={phone} className="whitespace-nowrap px-2 font-bold text-secondary" showNumber />}
-      <Link
-        href={QUOTE_HREF}
-        data-cta="header_free_inspection"
-        className="inline-flex min-h-12 shrink-0 items-center whitespace-nowrap rounded-lg bg-accent px-5 font-bold text-accent-foreground hover:bg-accent-hover"
-      >
-        Free Inspection
-      </Link>
+      {phone && (
+        <PhoneLink
+          phone={phone}
+          className="inline-flex min-h-12 shrink-0 items-center gap-2 whitespace-nowrap rounded-lg bg-accent px-5 font-bold text-accent-foreground hover:bg-accent-hover"
+          showNumber
+        />
+      )}
     </div>
   );
 }
@@ -249,7 +246,7 @@ function ServicesPanel({ services, isCurrent }: { services: ServiceNavLink[]; is
       <PanelIntro
         icon={SprayCan}
         title="Pest Control Services"
-        text={services.length > 0 ? `${services.length} treatments for Jacksonville homes and businesses, starting with a free inspection.` : null}
+        text={services.length > 0 ? `${services.length} treatments for Jacksonville homes and businesses. Call to reach a local pro.` : null}
       >
         {AUDIENCE_LINKS.map((link, i) => (
           <PanelIntroLink key={link.href} link={link} secondary={i > 0} />
@@ -340,13 +337,6 @@ function MobileNav({ services, areaGroups, phone }: { services: ServiceNavLink[]
           ariaLabel={`Call ${phone.display}`}
         />
       )}
-      <Link
-        href={QUOTE_HREF}
-        data-cta="header_free_inspection"
-        className="ml-1 hidden min-h-12 items-center whitespace-nowrap rounded-lg bg-accent px-5 font-bold text-accent-foreground hover:bg-accent-hover md:inline-flex"
-      >
-        Free Inspection
-      </Link>
       <button
         type="button"
         aria-expanded={open}
@@ -410,13 +400,6 @@ function MobileNav({ services, areaGroups, phone }: { services: ServiceNavLink[]
               className="flex min-h-12 items-center justify-center gap-2 rounded-lg bg-accent px-6 text-lg font-bold text-accent-foreground"
             />
           )}
-          <Link
-            href={QUOTE_HREF}
-            data-cta="mobile_menu_free_inspection"
-            className="flex min-h-12 items-center justify-center rounded-lg border-2 border-primary px-6 text-lg font-bold text-primary"
-          >
-            Get a Free Inspection
-          </Link>
         </div>
       </div>
     </div>

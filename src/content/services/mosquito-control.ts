@@ -9,9 +9,9 @@ export const mosquitoControl: ServiceContent = {
   audience: ["residential", "commercial"],
   cardDescription: "Seasonal yard treatments that cut down mosquitoes where they rest and breed, so you can enjoy your backyard again.",
   seo: {
-    title: "Mosquito Control in Jacksonville, FL | Yard Treatments",
+    title: "Mosquito Control in Jacksonville, FL | Call a Local Pro",
     description:
-      "Mosquito control in Jacksonville, FL with yard barrier treatments, larvicide, and seasonal programs. Take back your backyard. Call today for a free quote.",
+      "Mosquito control in Jacksonville, FL with yard barrier treatments, larvicide, and seasonal programs. Call to speak with a local mosquito control pro today.",
     primaryKeyword: "mosquito control Jacksonville FL",
     secondaryKeywords: ["mosquito yard treatment", "mosquito barrier spray", "seasonal mosquito program", "standing water mosquitoes", "no-see-ums"],
   },
@@ -25,12 +25,12 @@ export const mosquitoControl: ServiceContent = {
   },
   intro: [
     "In Jacksonville, a few minutes outside on a summer evening can leave you covered in bites. Mosquitoes make it hard to grill, garden, or let the kids play in the yard.",
-    "Our mosquito control targets them in two places: where adults rest during the day and where they breed. We treat the shady shrubs, fence lines, and under-deck areas around your yard, and we treat standing water that can't be dumped out. Regular visits through the warm season keep numbers down as new mosquitoes hatch. No service can remove every mosquito in the neighborhood, but most families notice a real difference in how much time they can comfortably spend outside.",
+    "Mosquito control targets them in two places: where adults rest during the day and where they breed. A technician treats the shady shrubs, fence lines, and under-deck areas around your yard, and treats standing water that can't be dumped out. Regular visits through the warm season keep numbers down as new mosquitoes hatch. No service can remove every mosquito in the neighborhood, but regular treatment can make a real difference in how much time you can comfortably spend outside.",
   ],
   localProblem: {
     heading: "Why Mosquitoes Are So Bad in Jacksonville",
     body: [
-      "Mosquitoes need warmth and standing water, and Northeast Florida has plenty of both. Our season starts early in spring and often runs well into fall, and on warm winter days you may still see a few.",
+      "Mosquitoes need warmth and standing water, and Northeast Florida has plenty of both. Mosquito season here starts early in spring and often runs well into fall, and on warm winter days you may still see a few.",
       "Summer afternoon storms fill gutters, plant saucers, tarps, and low spots in the lawn. Mosquito eggs can hatch and develop into biting adults in about a week in hot weather. Homes near marshes, creeks, retention ponds, and the St. Johns River often see heavier pressure, but even a small backyard can produce plenty of mosquitoes on its own.",
       "Mosquitoes can also spread certain illnesses to people and pets, including heartworm in dogs. Reducing them around your home is a sensible step, along with repellent and advice from your doctor or vet.",
     ],
@@ -48,19 +48,19 @@ export const mosquitoControl: ServiceContent = {
     ],
   },
   process: {
-    heading: "How Our Mosquito Control Works",
+    heading: "How Mosquito Control Works",
     steps: [
-      { title: "Yard inspection", description: "We walk your property to find resting areas and breeding spots, including hidden ones like gutters and drains." },
-      { title: "Remove what we can", description: "We dump out or point out containers holding water, since removing breeding sites is the most effective step." },
-      { title: "Barrier treatment", description: "We treat the undersides of leaves, shrubs, fence lines, and shaded areas where adult mosquitoes rest." },
+      { title: "Yard inspection", description: "The technician walks your property to find resting areas and breeding spots, including hidden ones like gutters and drains." },
+      { title: "Remove breeding sites", description: "Containers holding water are dumped out or pointed out to you, since removing breeding sites is the most effective step." },
+      { title: "Barrier treatment", description: "The undersides of leaves, shrubs, fence lines, and shaded areas where adult mosquitoes rest are treated." },
       { title: "Larvicide in breeding spots", description: "Water that can't be drained, like drains or ornamental features, gets a larvicide that stops larvae from becoming adults." },
-      { title: "Regular return visits", description: "We come back on a set schedule through the season, since treatments wear off and new mosquitoes keep hatching." }, // OWNER: confirm visit interval for mosquito program
+      { title: "Regular return visits", description: "Treatments are repeated on a set schedule through the season, since they wear off and new mosquitoes keep hatching." },
     ],
   },
   treatmentOptions: {
     heading: "Mosquito Treatment Options",
     intro: [
-      "Most yards do best with a regular program, but we also offer options for one-time needs.", // OWNER: confirm one-time event treatments are offered
+      "Most yards need a regular program, but one-time treatments can help with special occasions.",
     ],
     options: [
       {
@@ -73,24 +73,17 @@ export const mosquitoControl: ServiceContent = {
       },
       {
         title: "Larvicide and breeding site control",
-        description: "Targeted treatment of standing water that can't be removed. It's included in our programs and can help with problem drainage areas.",
+        description: "Targeted treatment of standing water that can't be removed. It's often part of a seasonal program and can help with problem drainage areas.",
       },
     ],
   },
   safety: {
     heading: "Is Mosquito Control Safe for Kids and Pets?",
     body: [
-      "We handle it with care. Products are applied to plants and resting areas, not sprayed across your patio furniture or play equipment, and we use only products registered for mosquito control, applied according to label directions.",
-      "Plan on keeping kids and pets out of the treated yard until the leaves have dried; your technician will confirm the timing on the day. We avoid spraying flowering plants where bees are feeding, and we keep treatments away from fish ponds and vegetable gardens. Let us know about these before we start.",
+      "Yes, when it's done with care. Products are applied to plants and resting areas, not sprayed across your patio furniture or play equipment, and only products registered for mosquito control should be used, applied according to label directions.",
+      "Plan on keeping kids and pets out of the treated yard until the leaves have dried; your technician can confirm the timing on the day. Technicians should avoid spraying flowering plants where bees are feeding and keep treatments away from fish ponds and vegetable gardens, so point these out before work starts.",
     ],
   },
-  costFactors: [
-    { title: "Yard size", description: "Bigger properties have more shrubs, fence lines, and resting areas to treat." },
-    { title: "Amount of vegetation", description: "Thick landscaping and wooded edges take more time and product than an open lawn." },
-    { title: "Water nearby", description: "Ponds, ditches, and marsh edges can increase pressure and the need for larvicide." },
-    { title: "Program length", description: "A full-season program involves more visits than a single treatment." },
-    { title: "One-time vs. recurring", description: "An event treatment is scheduled differently from regular seasonal service." },
-  ],
   prevention: {
     heading: "How to Cut Down on Mosquitoes at Home",
     tips: [
@@ -99,18 +92,18 @@ export const mosquitoControl: ServiceContent = {
       "Clean gutters so they drain completely, and check downspout extensions.",
       "Drill drainage holes in tire swings, recycling bins, and toys left outside.",
       "Pull tarps tight on boats, grills, and woodpiles so water can't pool in folds.",
-      "Keep pool water circulating and covers free of standing water.",
+      "Keep pool water circulating and covers clear of standing water.",
       "Trim back shrubs and ground cover to cut down on shady resting spots.",
     ],
   },
   forBusinesses: [
-    "Restaurants with outdoor seating, apartment communities, and event venues can benefit from regular mosquito service. Ask us about [mosquito programs for businesses](/commercial).",
+    "Restaurants with outdoor seating, apartment communities, and event venues can benefit from regular mosquito service. Learn more about [mosquito programs for businesses](/commercial).",
   ],
   faqs: [
     {
       question: "How long do mosquito treatments last?",
       answer:
-        "A barrier treatment typically keeps mosquito numbers down for a few weeks, depending on rain, heat, and how thick your landscaping is. That's why we recommend regular visits through the season. Heavy storms can shorten the effect, and removing standing water between visits helps the treatment work longer.",
+        "A barrier treatment typically keeps mosquito numbers down for a few weeks, depending on rain, heat, and how thick your landscaping is. That's why regular visits through the season are recommended. Heavy storms can shorten the effect, and removing standing water between visits helps the treatment work longer.",
     },
     {
       question: "Do mosquito treatments help with no-see-ums?",
@@ -120,14 +113,14 @@ export const mosquitoControl: ServiceContent = {
     {
       question: "When should I start mosquito service in Jacksonville?",
       answer:
-        "Spring is the best time to start, before populations build up with the summer rains. Starting early keeps mosquito numbers from getting out of hand. Many Jacksonville homeowners keep service going into fall, since warm weather here lasts long after summer ends. Your technician can suggest a schedule based on your yard.",
+        "Spring is the ideal time to start, before populations build up with the summer rains. Starting early keeps mosquito numbers from getting out of hand. Many Jacksonville homeowners keep service going into fall, since warm weather here lasts long after summer ends. Your technician can suggest a schedule based on your yard.",
     },
     {
       question: "Will mosquito treatment harm bees and butterflies?",
       answer:
-        "We take steps to limit the impact on pollinators. Our technicians avoid treating blooming flowers where bees and butterflies feed and focus on the shady leaves and resting areas mosquitoes prefer. If pollinators are important to you, let us know, and we can discuss options and our [eco-friendly pest control](/eco-friendly-pest-control) approach.",
+        "Steps can be taken to limit the impact on pollinators. A careful technician avoids treating blooming flowers where bees and butterflies feed and focuses on the shady leaves and resting areas mosquitoes prefer. If pollinators are important to you, mention it when you call, and ask about [eco-friendly pest control](/eco-friendly-pest-control) options.",
     },
   ],
   relatedServices: ["lawn-pest-control", "flea-tick-control", "eco-friendly-pest-control"],
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-10-16",
 };

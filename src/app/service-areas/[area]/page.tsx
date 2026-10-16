@@ -7,13 +7,11 @@ import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { Hero } from "@/components/sections/Hero";
 import { RelatedAreas } from "@/components/sections/RelatedAreas";
-import { ReviewsSection } from "@/components/sections/ReviewsSection";
 import { TextSection } from "@/components/sections/TextSection";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Container } from "@/components/ui/Container";
 import { Prose } from "@/components/ui/Prose";
 import { Section, SectionHeading } from "@/components/ui/Section";
-import { reviews } from "@/content/reviews";
 import { getArea, getAreasBySlugs, getPublishedAreas } from "@/lib/content";
 import { buildMetadata } from "@/lib/metadata";
 import { STATIC_ROUTES, areaHref } from "@/lib/routes";
@@ -36,7 +34,6 @@ export default async function AreaPage({ params }: PageProps<"/service-areas/[ar
 
   const path = areaHref(area.slug);
   const nearby = getAreasBySlugs(area.nearbyAreas);
-  const areaReviews = reviews.filter((review) => review.area === area.slug || review.area === area.name);
 
   return (
     <>
@@ -71,7 +68,7 @@ export default async function AreaPage({ params }: PageProps<"/service-areas/[ar
 
       {/* OWNER: verify every neighborhood name and ZIP code before launch */}
       <Section id="neighborhoods" labelledBy="neighborhoods-heading">
-        <SectionHeading id="neighborhoods-heading" title={`Neighborhoods & ZIP Codes We Serve in ${area.name}`} />
+        <SectionHeading id="neighborhoods-heading" title={`Neighborhoods & ZIP Codes Covered in ${area.name}`} />
         <div className="grid gap-8 md:grid-cols-3">
           <div className="md:col-span-2">
             <h3 className="text-lg font-bold text-secondary">Neighborhoods</h3>
@@ -96,21 +93,19 @@ export default async function AreaPage({ params }: PageProps<"/service-areas/[ar
           </div>
         </div>
         <p className="mt-8 text-ink-muted">
-          Live nearby but don&apos;t see your neighborhood? Call us with your ZIP code and we&apos;ll confirm we cover it.
+          Live nearby but don&apos;t see your neighborhood? Call and share your ZIP code to find out whether a local provider serves your address.
         </p>
       </Section>
-
-      <ReviewsSection title={`Reviews From ${area.name} Customers`} reviews={areaReviews} hideWhenEmpty />
 
       <FAQSection title={`Pest Control in ${area.name}: Common Questions`} faqs={area.faqs} tone="surface" />
 
       <RelatedAreas
-        title="Nearby Areas We Serve"
+        title="Nearby Areas"
         areas={nearby}
         tone="white"
       />
 
-      <CTASection title={`Schedule Your Free Inspection in ${area.name}`} />
+      <CTASection title={`Get Pest Control Help in ${area.name}`} />
     </>
   );
 }

@@ -90,8 +90,6 @@ export type ServiceContent = Publishable & {
   process: { heading: string; intro?: string; steps: TitledItem[] };
   treatmentOptions: { heading: string; intro?: Prose; options: TitledItem[] };
   safety: { heading: string; body: Prose };
-  /** Rendered under "What Affects the Cost of {name}?" — factors only, never prices. */
-  costFactors: TitledItem[];
   prevention: { heading: string; tips: string[] };
   forBusinesses?: Prose;
   faqs: FAQ[];
@@ -174,22 +172,11 @@ export type BlogPost = Publishable & {
 };
 
 // ---------------------------------------------------------------------------
-// FAQs and reviews
+// FAQs
 // ---------------------------------------------------------------------------
 
 export type FAQGroup = {
   id: string;
   title: string; // "General", "Termites", ...
   faqs: FAQ[];
-};
-
-/** Only real customer reviews. Never invent one. */
-export type Review = {
-  name: string; // first name + last initial, e.g. "Maria G."
-  area: string; // area slug or name
-  service: string; // service slug
-  date: string; // YYYY-MM-DD
-  text: string;
-  rating?: number; // 1-5, only if the customer gave one
-  source?: "google" | "facebook" | "yelp" | "direct";
 };

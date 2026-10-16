@@ -4,24 +4,22 @@ import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { Hero } from "@/components/sections/Hero";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
-import { ReviewsSection } from "@/components/sections/ReviewsSection";
 import { ServiceAreasList } from "@/components/sections/ServiceAreasList";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { TextSection } from "@/components/sections/TextSection";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { Section, SectionHeading } from "@/components/ui/Section";
-import { customerPromises, serviceProcess } from "@/content/promises";
-import { reviews } from "@/content/reviews";
+import { callBenefits, serviceProcess } from "@/content/promises";
 import type { FAQ } from "@/content/types";
 import { getPublishedAreas, getServicesBySlugs } from "@/lib/content";
 import { buildMetadata } from "@/lib/metadata";
 import { STATIC_ROUTES } from "@/lib/routes";
 
 export const metadata = buildMetadata({
-  title: "Pest Control Jacksonville FL | Free Inspection",
+  title: "Pest Control Jacksonville FL | Call a Local Pro",
   description:
-    "Licensed pest control in Jacksonville, FL for termites, roaches, rodents, mosquitoes and more. Free inspections and an upfront quote. Call today.",
+    "Pest control help in Jacksonville, FL for termites, roaches, rodents, mosquitoes and more. One call connects you with a local pest control pro. Call today.",
   path: STATIC_ROUTES.home,
 });
 
@@ -40,34 +38,34 @@ const FEATURED_SERVICES = [
 
 const HOME_FAQS: FAQ[] = [
   {
-    question: "Do you offer free pest inspections in Jacksonville?",
+    question: "What happens when I call?",
     answer:
-      "Yes. We inspect your home or business for free, show you what we find, and explain your options before you decide anything. You get an upfront quote with no obligation. Most inspections take less than an hour, and you're welcome to walk the property with your technician and ask questions along the way.",
+      "Your call connects you with an independent pest control provider who serves your part of Northeast Florida. Describe what you're seeing, where, and for how long, and ask any questions you have. If you'd like help, the provider can set up a time to inspect your home or business and explain the treatment options.",
   },
   {
     question: "Why do I keep seeing bugs even in winter?",
     answer:
-      "Jacksonville rarely gets cold enough for long enough to stop pests. Termites keep feeding all year, roaches and ants stay active indoors, and roof rats move into attics when nights cool off. That's why we recommend year-round protection instead of a single spray when you first notice a problem.",
+      "Jacksonville rarely gets cold enough for long enough to stop pests. Termites keep feeding all year, roaches and ants stay active indoors, and roof rats move into attics when nights cool off. That's why many homeowners choose year-round protection instead of a single spray when they first notice a problem.",
   },
   {
     question: "Is a palmetto bug the same as a cockroach?",
     answer:
-      "Yes. \"Palmetto bug\" is the local name for large outdoor roaches, mostly the American cockroach. They live in mulch, trees, and storm drains and often wander inside during heavy rain or extreme heat. They're different from the small German cockroach, which breeds indoors. Learn more on our [cockroach and palmetto bug control](/cockroach-control) page.",
+      "Yes. \"Palmetto bug\" is the local name for large outdoor roaches, mostly the American cockroach. They live in mulch, trees, and storm drains and often wander inside during heavy rain or extreme heat. They're different from the small German cockroach, which breeds indoors. Learn more on the [cockroach and palmetto bug control](/cockroach-control) page.",
   },
   {
-    question: "Are your treatments safe for my kids and pets?",
+    question: "Are pest control treatments safe for kids and pets?",
     answer:
-      "We use products registered for home use and apply them according to their labels, which is what keeps them safe. Your technician will tell you how long to keep kids and pets off treated areas, usually until a spray has dried. If you have a newborn, a pet with health problems, or a fish tank, let us know so we can adjust the plan.",
+      "Products registered for home use are applied according to their labels, which is what keeps them safe. The technician should tell you how long to keep kids and pets off treated areas, usually until a spray has dried. If you have a newborn, a pet with health problems, or a fish tank, mention it so the treatment plan can be adjusted.",
   },
   {
-    question: "Do I have to sign a long-term contract?",
+    question: "Is this site a pest control company?",
     answer:
-      "No long-term contract is required for our recurring plans. We'd rather earn your business with every visit. If you choose a protection plan, we'll explain how scheduling and cancellation work before your first service, so there are no surprises later.", // OWNER: confirm no-contract policy
+      "No. This site is a referral service that connects callers with independent local pest control providers. The provider you speak with is responsible for the inspection, treatment, scheduling, and any agreement you make. Ask them about anything that matters to you before you decide, such as products, re-entry times, and follow-up visits.",
   },
   {
-    question: "Which areas around Jacksonville do you serve?",
+    question: "Which areas around Jacksonville can I get help in?",
     answer:
-      "We serve Jacksonville neighborhoods, the Beaches, and nearby communities in St. Johns, Clay, and Nassau counties. See the full list on our [service areas page](/service-areas), or call us with your ZIP code and we'll confirm right away. If you're just outside our usual area, ask anyway.",
+      "Calls are connected with providers who serve Jacksonville neighborhoods, the Beaches, and nearby communities in St. Johns, Clay, and Nassau counties. See the full list on the [service areas page](/service-areas), or call and share your ZIP code to find out who serves your address.",
   },
 ];
 
@@ -78,8 +76,8 @@ export default function HomePage() {
   return (
     <>
       <Hero
-        h1="Trusted Pest Control in Jacksonville, FL"
-        subheadline="Licensed local technicians who find the source of the problem, treat it the right way, and stand behind the work."
+        h1="Pest Control in Jacksonville, FL"
+        subheadline="One call connects you with a local pest control pro who can find the source of the problem and explain how to treat it."
         image={{
           file: "pest-control-technician-truck-jacksonville.webp",
           alt: "Pest control technician in uniform next to a service truck outside a Jacksonville home",
@@ -90,7 +88,7 @@ export default function HomePage() {
 
       <ServicesGrid
         title="Pest Control Services for Northeast Florida Homes and Businesses"
-        intro="From termites in the walls to roof rats in the attic, we handle the pests Jacksonville homeowners call about most. Every job starts with a free inspection."
+        intro="From termites in the walls to roof rats in the attic, these are the pests Jacksonville homeowners call about most. Learn how each one is treated, then call to talk with a local pro."
         services={featured}
         footerLinks={[
           { label: "View all residential services", href: STATIC_ROUTES.residential },
@@ -99,30 +97,30 @@ export default function HomePage() {
       />
 
       <Section id="audience" tone="surface" labelledBy="audience-heading">
-        <SectionHeading id="audience-heading" title="Protection for Your Home or Your Business" tone="surface" />
+        <SectionHeading id="audience-heading" title="Help for Your Home or Your Business" tone="surface" />
         <div className="grid gap-6 md:grid-cols-2">
           <AudienceCard
             href={STATIC_ROUTES.residential}
             icon={House}
             title="Residential Pest Control"
-            text="Year-round protection plans, termite defense, and fast help with roaches, ants, rodents, and mosquitoes. Options for homes with kids and pets."
+            text="Year-round protection, termite defense, and help with roaches, ants, rodents, and mosquitoes. Ask about options for homes with kids and pets."
             cta="Explore home services"
           />
           <AudienceCard
             href={STATIC_ROUTES.commercial}
             icon={Building2}
             title="Commercial Pest Control"
-            text="Discreet, scheduled service for restaurants, apartment communities, warehouses, and offices, with service records ready for inspections and audits."
+            text="Scheduled service for restaurants, apartment communities, warehouses, and offices, including the service records many inspections and audits ask for."
             cta="Explore business services"
           />
         </div>
       </Section>
 
       <WhyChooseUs
-        title="Why Jacksonville Homeowners Choose Us"
-        intro="We keep things simple: show up when we say we will, explain what we find, and fix the problem."
+        title="Why Call Instead of Searching Around"
+        intro="Finding pest control help shouldn't take an afternoon of phone calls."
         tone="white"
-        points={customerPromises}
+        points={callBenefits}
       />
 
       <TextSection
@@ -134,28 +132,22 @@ export default function HomePage() {
           alt: "Shaded backyard of a Jacksonville home with oak trees and dense landscaping",
         }}
         paragraphs={[
-          "Northeast Florida's warm, humid climate is great for people and even better for insects. Our winters are short and mild, so pests never get a real break. Instead of dying off in the cold, many simply slow down for a few weeks and then pick up right where they left off.",
-          "Spring brings **termite swarm season**, when winged termites leave their colonies to start new ones. Swarmers inside your home are often the first sign of an infestation that has been quietly feeding for a while. Our long, rainy summers then fill every low spot with standing water, which keeps mosquitoes breeding from spring well into fall.",
-          "Heavy rain also pushes **palmetto bugs** and fire ants out of the ground and toward your house. Large live oaks and thick landscaping, common across Jacksonville neighborhoods, give roof rats and squirrels an easy path to the roofline. And the moisture that makes our yards so green can soften wood and attract termites to crawl spaces and slabs.",
+          "Northeast Florida's warm, humid climate is great for people and even better for insects. Winters here are short and mild, so pests never get a real break. Instead of dying off in the cold, many simply slow down for a few weeks and then pick up right where they left off.",
+          "Spring brings **termite swarm season**, when winged termites leave their colonies to start new ones. Swarmers inside your home are often the first sign of an infestation that has been quietly feeding for a while. Long, rainy summers then fill every low spot with standing water, which keeps mosquitoes breeding from spring well into fall.",
+          "Heavy rain also pushes **palmetto bugs** and fire ants out of the ground and toward your house. Large live oaks and thick landscaping, common across Jacksonville neighborhoods, give roof rats and squirrels an easy path to the roofline. And the moisture that keeps local yards so green can soften wood and attract termites to crawl spaces and slabs.",
           "The good news: most of these problems can be prevented with regular inspections, a protective barrier around the home, and a few simple habits like fixing leaks and trimming branches away from the roof.",
         ]}
       />
 
       <ProcessSteps
-        title="How Our Pest Control Works"
-        intro="Every visit follows the same simple process, whether it's a single wasp nest or a full termite treatment."
+        title="How It Works"
+        intro="Whether it's a single wasp nest or a full termite treatment, getting help follows the same simple steps."
         steps={serviceProcess}
       />
 
-      <ReviewsSection
-        title="What Our Customers Say"
-        intro="Real feedback from homeowners and businesses we've helped."
-        reviews={reviews.slice(0, 6)}
-      />
-
       <ServiceAreasList
-        title="Serving Jacksonville and the Surrounding Communities"
-        intro="We cover Jacksonville neighborhoods, the Beaches, and nearby towns in St. Johns, Clay, and Nassau counties."
+        title="Pest Control Help Across Jacksonville and Nearby Communities"
+        intro="Calls are connected with providers serving Jacksonville neighborhoods, the Beaches, and nearby towns in St. Johns, Clay, and Nassau counties."
         areas={areas}
       />
 

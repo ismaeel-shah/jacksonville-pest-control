@@ -31,7 +31,7 @@ export default function BlogIndexPage() {
             <p className="mb-3 text-sm font-bold uppercase tracking-wider text-primary">Pest Control Blog</p>
             <h1 className="text-4xl font-extrabold text-secondary md:text-5xl">Pest Tips for Northeast Florida Homes</h1>
             <p className="mt-5 text-xl text-ink-muted">
-              Straightforward advice from our technicians about the pests Jacksonville homeowners deal with most, and what you
+              Straightforward advice about the pests Jacksonville homeowners deal with most, and what you
               can do about them.
             </p>
           </div>

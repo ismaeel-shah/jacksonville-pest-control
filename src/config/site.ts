@@ -1,9 +1,13 @@
 /**
- * Central business config.
+ * Central site config.
  *
- * Every business detail on the site (name, phone, license, hours, schema, etc.)
- * comes from this file. To rent the site to a different company, change the
- * values here and nowhere else.
+ * Every site detail (name, tracking phone number, call hours, disclaimer, schema, etc.)
+ * comes from this file. Change the values here and nowhere else.
+ *
+ * This is a pay-per-call referral site (Ringba): calls go to independent local pest
+ * control providers. Network rules: no contact forms, no prices or cost content, no
+ * reviews or ratings, no "our team" or licensed/insured claims, and the disclaimer in
+ * the footer of every page. Keep new config and copy inside those rules.
  *
  * Values written like "[THIS]" are placeholders. While a value is still a
  * placeholder (or an empty string), any UI element that depends on it is hidden
@@ -23,98 +27,38 @@ export type SiteConfig = {
   phoneDisplay: string;
   phoneHref: string;
   email?: string;
-  address: {
-    street?: string;
-    city: string;
-    state: string;
-    zip?: string;
-    showPublicly: boolean;
-  };
-  geo: { lat?: string; lng?: string };
-  licenseNumber?: string;
-  yearsInBusiness: string;
+  address: { city: string; state: string };
   hours: DayHours[];
-  googleBusinessProfileUrl?: string;
-  googleReviewUrl?: string;
-  googleRating: null | { rating: number; count: number };
-  social: {
-    facebook: string;
-    instagram: string;
-    nextdoor: string;
-    yelp: string;
-    bbb: string;
-  };
-  memberships: string[];
-  guarantee: string;
+  social: { facebook: string; instagram: string; nextdoor: string };
+  /** Pay-per-call network disclaimer, shown in the footer of every page. Paste it exactly as given. */
+  disclaimer: string;
   logo: string;
-  contentReviewer: { name: string; role: string };
   siteUrl: string;
   ga4Id?: string;
   googleSiteVerification: string;
-  formEmbed: {
-    src: string;
-    height: number;
-    mobileHeight: number;
-    title: string;
-    scriptSrc: string;
-  };
 };
 
 export const siteConfig: SiteConfig = {
   businessName: "Pest Control Jacksonville",
   legalName: "Pest Control Jacksonville",
-  tagline: "Trusted Pest Control in Jacksonville, FL",
-  phoneDisplay: "(000) 000-0000", // e.g. (904) 555-0123
-  phoneHref: "+10000000000", // e.g. +19045550123
+  tagline: "Connect With Local Pest Control Pros in Jacksonville, FL",
+  phoneDisplay: "(000) 000-0000", // Ringba tracking number, e.g. (904) 555-0123
+  phoneHref: "+10000000000", // same number in E.164, e.g. +19045550123
   // email: "[EMAIL]",
-  address: {
-    // street: "[STREET]",
-    city: "Jacksonville",
-    state: "FL",
-    // zip: "[ZIP]",
-    showPublicly: false, // service-area business: hide street address if false
-  },
-  geo: {
-    // lat: "[LAT]",
-    // lng: "[LNG]",
-  },
-  // licenseNumber: "[FDACS_LICENSE_NUMBER]", // Florida Dept. of Agriculture & Consumer Services
-  yearsInBusiness: "18",
+  address: { city: "Jacksonville", state: "FL" },
+  // OWNER: set to the hours calls are answered (from the Ringba campaign)
   hours: [
     { days: "Mon-Fri", open: "07:00", close: "19:00" },
     { days: "Sat", open: "08:00", close: "16:00" },
     { days: "Sun", open: "closed", close: "closed" },
   ],
-  // googleBusinessProfileUrl: "[GBP_URL]",
-  // googleReviewUrl: "[GOOGLE_REVIEW_LINK]",
-  googleRating: null, // fill only with REAL data, e.g. { rating: 4.9, count: 87 }
-  social: { facebook: "", instagram: "", nextdoor: "", yelp: "", bbb: "" },
-  memberships: [], // e.g. ["Florida Pest Management Association"] ONLY if real
-  // OWNER: confirm guarantee wording
-  guarantee:
-    "If pests come back between scheduled services, we re-treat at no extra cost.",
+  social: { facebook: "", instagram: "", nextdoor: "" },
+  // Footer disclaimer on every page (Ringba rule). If Ringba supplies its own wording, replace this with it exactly.
+  disclaimer:
+    "This website is a referral service that connects callers with independent, third-party pest control providers. We are not a pest control company and do not perform any services. We do not endorse or guarantee any provider or their work, and we are not responsible for services provided by third parties. Availability and results may vary. Please verify a provider's credentials before hiring. Calls may be recorded for quality and training purposes.",
   logo: "/images/pest-control-services-jacksonville-logo.svg", // path under /public
-  // OWNER: replace with the licensed technician who reviews service pages and blog posts
-  contentReviewer: {
-    name: "Seth Pikus",
-    role: "Licensed Pest Control Technician",
-  },
   siteUrl: "https://pestcontrolservicesjacksonville.com",
   // ga4Id: "[GA4_ID]",
   // Search Console HTML-tag verification: only the content="..." value of the meta tag
   googleSiteVerification: "ydEQyriR766mLwXPFUVyoGHGJpoC6m61gtF0uaof_Is",
-  /**
-   * The renting company's own contact form (from their CRM or scheduling tool).
-   * Every quote form spot on the site (contact page and the end of every page) shows
-   * this iframe. While `src` is empty, those spots show a call-us card instead; the
-   * site's built-in form is not used.
-   * Copy only the URL from inside src="..." of the iframe code they give you.
-   */
-  formEmbed: {
-    src: "", // e.g. "https://forms.example-crm.com/widget/form/abc123" (a "//host/..." URL also works)
-    height: 680, // pixels on tablets and desktops; tall enough to show the whole form, including any consent text
-    mobileHeight: 770, // pixels on phones, where forms get taller; 0 = same as height
-    title: "Request a free pest inspection", // read by screen readers
-    scriptSrc: "", // only if their embed code includes a <script src="..."> (e.g. for auto-resizing)
-  },
 };

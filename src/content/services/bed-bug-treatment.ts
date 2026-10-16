@@ -9,15 +9,15 @@ export const bedBugTreatment: ServiceContent = {
   audience: ["residential", "commercial"],
   cardDescription: "Thorough bed bug inspections, treatment, and follow-up visits for homes, apartments, and hotels.",
   seo: {
-    title: "Bed Bug Treatment in Jacksonville, FL | Inspections",
+    title: "Bed Bug Treatment in Jacksonville, FL | Call a Local Pro",
     description:
-      "Bed bug treatment in Jacksonville, FL with a careful inspection, a clear prep checklist, and follow-up visits until they're gone. Call for a free inspection.",
+      "Bed bug treatment in Jacksonville, FL with a careful inspection, a clear prep checklist, and follow-up visits. Call to speak with a local pest control pro.",
     primaryKeyword: "bed bug treatment Jacksonville FL",
     secondaryKeywords: ["bed bug exterminator", "bed bug inspection", "bed bug heat treatment", "signs of bed bugs", "bed bugs in apartments"],
   },
   hero: {
     h1: "Bed Bug Treatment in Jacksonville, FL",
-    subheadline: "Get a good night's sleep again with a careful inspection, a plan that fits your home, and follow-up until the bugs are gone.",
+    subheadline: "Get a good night's sleep again with a careful inspection, a plan that fits your home, and follow-up visits to confirm the bugs are gone.",
     image: {
       file: "bed-bug-inspection-jacksonville-mattress-seam.webp",
       alt: "Technician using a flashlight to check mattress seams and a headboard for bed bugs in a Jacksonville bedroom",
@@ -25,13 +25,13 @@ export const bedBugTreatment: ServiceContent = {
   },
   intro: [
     "Finding bed bugs is stressful, and it has nothing to do with how clean your home is. These small, flat insects ride in on luggage, used furniture, and even clothing, then hide in mattress seams and bed frames and come out at night to feed.",
-    "Our bed bug treatment in Jacksonville begins with a close inspection to confirm what you have and how far it has spread. We walk you through a simple preparation checklist, treat every room where bugs are found, and come back for follow-up visits. Eggs can survive one treatment, so checking again is how we make sure the problem is truly over.",
+    "Bed bug treatment in Jacksonville begins with a close inspection to confirm what you have and how far it has spread. A local pest control pro walks you through a simple preparation checklist, treats every room where bugs are found, and comes back for follow-up visits. Eggs can survive one treatment, so checking again is how you know the problem is truly over.",
   ],
   localProblem: {
     heading: "Why Bed Bugs Show Up in Jacksonville Homes",
     body: [
       "Bed bugs don't care about the weather. They live indoors, close to people, so they're as active in January as in July. What spreads them is movement, and Jacksonville has plenty: an airport, cruise traffic, military moves, and beach visitors.",
-      "**Apartments and condos** are a common source, since bed bugs can travel between units along pipes, wiring, and shared walls. **Used furniture** is another. A free mattress or couch from the curb or an online listing can bring an infestation home in one trip. Bed bugs aren't known to spread disease, but their bites itch and the worry costs sleep.",
+      "**Apartments and condos** are a common source, since bed bugs can travel between units along pipes, wiring, and shared walls. **Used furniture** is another. A mattress or couch picked up from the curb or an online listing can bring an infestation home in one trip. Bed bugs aren't known to spread disease, but their bites itch and the worry steals sleep.",
     ],
   },
   signs: {
@@ -46,19 +46,19 @@ export const bedBugTreatment: ServiceContent = {
     ],
   },
   process: {
-    heading: "Our Bed Bug Treatment Process",
+    heading: "How Bed Bug Treatment Works",
     steps: [
-      { title: "Room-by-room inspection", description: "We check beds, furniture, baseboards, and nearby rooms to confirm bed bugs and map how far they've spread." },
-      { title: "Your preparation checklist", description: "We give you a written list of what to wash, bag, and move, so treatment reaches every hiding spot." },
-      { title: "Treatment of every affected area", description: "We treat beds, furniture, cracks, and voids using the method that best fits your home." },
-      { title: "Follow-up visits", description: "We return to inspect and treat again as needed, catching bugs that hatch after the first visit." }, // OWNER: confirm standard number of follow-up visits
-      { title: "Final check", description: "Once we find no more activity, we share tips to help you avoid bringing bed bugs home again." },
+      { title: "Room-by-room inspection", description: "The technician checks beds, furniture, baseboards, and nearby rooms to confirm bed bugs and map how far they've spread." },
+      { title: "Your preparation checklist", description: "You get a list of what to wash, bag, and move, so treatment reaches every hiding spot." },
+      { title: "Treatment of every affected area", description: "Beds, furniture, cracks, and voids are treated using the method that best fits your home." },
+      { title: "Follow-up visits", description: "The technician returns to inspect and treat again as needed, catching bugs that hatch after the first visit." },
+      { title: "Final check", description: "Once no more activity is found, you get tips to help you avoid bringing bed bugs home again." },
     ],
   },
   treatmentOptions: {
     heading: "Bed Bug Treatment Options",
     intro: [
-      "The best method depends on how widespread the bugs are and what's in the rooms. We'll explain the trade-offs before we start.", // OWNER: confirm which bed bug methods are offered
+      "The best method depends on how widespread the bugs are and what's in the rooms. Ask your technician to explain the trade-offs before treatment starts.",
     ],
     options: [
       {
@@ -74,30 +74,22 @@ export const bedBugTreatment: ServiceContent = {
       {
         title: "Combined approach",
         description:
-          "For heavier infestations, we may pair heat with targeted treatments and mattress encasements to catch bugs that escape to nearby areas.",
+          "For heavier infestations, a technician may pair heat with targeted treatments and mattress encasements to catch bugs that escape to nearby areas.",
       },
     ],
   },
   safety: {
     heading: "Is Bed Bug Treatment Safe for Kids and Pets?",
     body: [
-      "It can be, when it's planned carefully. We use products registered for bed bug control and apply them as the label directs, mostly into cracks, seams, and voids rather than across open surfaces. Heat treatment uses no pesticides, but rooms get very hot, so people and pets stay out until it's done.",
-      "Tell us about babies, pets, fish tanks, or health concerns before treatment day. Your technician will tell you when it's safe to use treated rooms and beds again.",
+      "It can be, when it's planned carefully. Products registered for bed bug control should be applied as the label directs, mostly into cracks, seams, and voids rather than across open surfaces. Heat treatment uses no pesticides, but rooms get very hot, so people and pets stay out until it's done.",
+      "Tell your technician about babies, pets, fish tanks, or health concerns before treatment day. Your technician will tell you when it's safe to use treated rooms and beds again.",
     ],
   },
-  costFactors: [
-    { title: "How many rooms are affected", description: "One bedroom takes far less work than bugs spread through several rooms and furniture." },
-    { title: "Treatment method", description: "Heat, targeted chemical, and combined plans use different equipment, labor, and visit schedules." },
-    { title: "Number of follow-up visits", description: "Heavier infestations usually need more return trips to confirm every bug and egg is gone." },
-    { title: "Amount of clutter", description: "Crowded rooms take longer to inspect and treat because bugs have more places to hide." },
-    { title: "Type of building", description: "Apartments and hotels may need adjoining units inspected so bugs don't move back and forth." },
-    { title: "Extras like encasements", description: "Mattress encasements or treating extra furniture can be added to the plan." },
-  ],
   prevention: {
     heading: "Bed Bug Prep and Prevention Tips",
     tips: [
       "Before treatment, wash bedding, curtains, and clothing from affected rooms in hot water, dry on high heat, and seal them in clean plastic bags.",
-      "Pull beds a few inches from walls and clear items from floors, under beds, and closets so we can reach every area.",
+      "Pull beds a few inches from walls and clear items from floors, under beds, and closets so the technician can reach every area.",
       "Don't move furniture or belongings into other rooms, which can spread bugs.",
       "When traveling, keep luggage on a rack and check the hotel headboard and mattress seams.",
       "Inspect used furniture closely before it comes inside, and skip curbside mattresses and couches.",
@@ -105,13 +97,13 @@ export const bedBugTreatment: ServiceContent = {
     ],
   },
   forBusinesses: [
-    "Hotels, apartment communities, and short-term rentals can't afford to wait on bed bugs. We offer quick unit inspections, treatment, and records of the work. Learn more about our [commercial pest control](/commercial) programs.",
+    "Hotels, apartment communities, and short-term rentals can't wait on bed bugs. A local pest control pro can handle unit inspections, treatment, and records of the work. Learn more about [commercial pest control](/commercial).",
   ],
   faqs: [
     {
       question: "How long does it take to get rid of bed bugs?",
       answer:
-        "Most bed bug jobs take a few weeks from the first treatment to the final check. Heat treatment can kill bugs and eggs in one day, but we still come back to confirm nothing survived. Targeted chemical treatment usually needs two or more visits spaced apart to catch bugs as eggs hatch.",
+        "Most bed bug jobs take a few weeks from the first treatment to the final check. Heat treatment can kill bugs and eggs in one day, but a return visit still confirms nothing survived. Targeted chemical treatment usually needs two or more visits spaced apart to catch bugs as eggs hatch.",
     },
     {
       question: "Can I get rid of bed bugs myself?",
@@ -130,5 +122,5 @@ export const bedBugTreatment: ServiceContent = {
     },
   ],
   relatedServices: ["general-pest-control", "flea-tick-control", "eco-friendly-pest-control"],
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-10-16",
 };

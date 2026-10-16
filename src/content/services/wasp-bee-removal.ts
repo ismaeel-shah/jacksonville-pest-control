@@ -11,7 +11,7 @@ export const waspBeeRemoval: ServiceContent = {
   seo: {
     title: "Wasp & Bee Removal in Jacksonville, FL | Nest Removal",
     description:
-      "Wasp and bee removal in Jacksonville, FL. We safely handle paper wasps, yellowjackets, and mud daubers, and relocate honeybees where possible. Call us today.",
+      "Wasp and bee removal in Jacksonville, FL for paper wasps, yellowjackets, and mud daubers, with honeybee relocation where possible. Call to reach a local pro.",
     primaryKeyword: "wasp removal Jacksonville FL",
     secondaryKeywords: ["bee removal", "yellowjacket nest removal", "paper wasps", "hornet removal", "honeybee relocation"],
   },
@@ -25,12 +25,12 @@ export const waspBeeRemoval: ServiceContent = {
   },
   intro: [
     "A wasp nest by the front door or a cloud of yellowjackets near the lawn mower can make your own yard feel off limits. Stinging insects are a normal part of Florida life, but nests close to where people walk, play, and swim need to go.",
-    "Our wasp and bee removal starts with identifying what's actually there, because paper wasps, yellowjackets, mud daubers, and honeybees each call for different handling. We wear protective gear, treat or remove the nest, and look for spots where new nests are likely to form. For honeybees, we prefer relocation through a local beekeeper whenever the situation allows, since they're important pollinators.",
+    "Wasp and bee removal starts with identifying what's actually there, because paper wasps, yellowjackets, mud daubers, and honeybees each call for different handling. The technician wears protective gear, treats or removes the nest, and looks for spots where new nests are likely to form. For honeybees, relocation through a local beekeeper is the preferred choice whenever the situation allows, since they're important pollinators.",
   ],
   localProblem: {
     heading: "Why Stinging Insects Are Common in Jacksonville",
     body: [
-      "Our long, warm season gives wasp colonies months to grow. Nests that start small in spring can be large and crowded by late summer and fall, which is when most people get stung. Covered porches, pool cages, soffits, shutters, and playsets all offer the sheltered spots wasps like.",
+      "Jacksonville's long, warm season gives wasp colonies months to grow. Nests that start small in spring can be large and crowded by late summer and fall, which is when most people get stung. Covered porches, pool cages, soffits, shutters, and playsets all offer the sheltered spots wasps like.",
       "**Paper wasps** build open, umbrella-shaped nests under eaves and railings. **Yellowjackets** often nest underground in lawns, old rodent holes, or landscape beds, and they get defensive when a mower shakes the ground. **Mud daubers** build tube-shaped mud nests on walls and rarely sting.",
       "**Honeybees** sometimes move into wall voids, attics, or hollow trees when spring swarms look for a new home. A colony inside a wall can build a lot of honeycomb, so it needs more than just stopping the bees.",
     ],
@@ -46,13 +46,13 @@ export const waspBeeRemoval: ServiceContent = {
     ],
   },
   process: {
-    heading: "How We Handle Wasp and Bee Removal",
+    heading: "How Wasp and Bee Removal Works",
     steps: [
-      { title: "Identify the insect and nest", description: "We confirm the species, find every entrance, and check the nest size before we touch it." },
-      { title: "Plan for safety", description: "We ask you to keep people and pets inside, and we suit up in protective gear." },
+      { title: "Identify the insect and nest", description: "The technician confirms the species, finds every entrance, and checks the nest size before touching it." },
+      { title: "Plan for safety", description: "People and pets stay inside, and the technician suits up in protective gear." },
       { title: "Treat and remove the nest", description: "Wasp and yellowjacket nests are treated, then removed when it's safe. Ground nests are treated at the entrance." },
-      { title: "Relocate honeybees when possible", description: "For honeybee colonies, we work with a local beekeeper to move the bees instead of killing them when the situation allows." }, // OWNER: confirm honeybee relocation partner
-      { title: "Prevent repeat nesting", description: "We point out gaps and favorite nesting spots where wasps tend to rebuild." },
+      { title: "Relocate honeybees when possible", description: "For honeybee colonies, a local beekeeper can often move the bees instead of killing them when the situation allows." },
+      { title: "Prevent repeat nesting", description: "The technician points out gaps and favorite nesting spots where wasps tend to rebuild." },
     ],
   },
   treatmentOptions: {
@@ -61,7 +61,7 @@ export const waspBeeRemoval: ServiceContent = {
       {
         title: "Single nest removal",
         description:
-          "Best for one paper wasp, yellowjacket, or mud dauber nest in an easy-to-reach spot. We treat the nest, remove it once activity stops, and check for others nearby.",
+          "Suits one paper wasp, yellowjacket, or mud dauber nest in an easy-to-reach spot. The nest is treated, removed once activity stops, and the area is checked for others nearby.",
       },
       {
         title: "Underground and wall-void nests",
@@ -71,25 +71,17 @@ export const waspBeeRemoval: ServiceContent = {
       {
         title: "Honeybee relocation",
         description:
-          "Where possible, a beekeeper removes the colony and comb and moves it to a new home. Bees deep in a wall may require opening part of the wall, which we'll discuss first.", // OWNER: confirm whether wall opening and repair are handled in-house or referred out
+          "Where possible, a beekeeper removes the colony and comb and moves it to a new home. Bees deep in a wall may require opening part of the wall, which the provider should discuss with you first.",
       },
     ],
   },
   safety: {
     heading: "Is Wasp and Bee Removal Safe for Kids and Pets?",
     body: [
-      "Yes, when trained technicians do the work and everyone stays back. Disturbed nests can send insects flying, so keep children and pets inside during the job. The products we use are registered for stinging insects and applied as the label directs, mainly into the nest itself.",
+      "Yes, when a pro with protective gear does the work and everyone stays back. Disturbed nests can send insects flying, so keep children and pets inside during the job. Products used should be registered for stinging insects and applied as the label directs, mainly into the nest itself.",
       "Please don't knock down a large nest or pour liquids into a ground nest yourself. Anyone with a known sting allergy should stay well away, and if someone has trouble breathing or swelling of the face or throat after a sting, call 911.",
     ],
   },
-  costFactors: [
-    { title: "Type of insect", description: "Paper wasps, yellowjackets, mud daubers, and honeybees each need different handling." },
-    { title: "Nest size", description: "A small, new nest is quicker to handle than a large colony late in the season." },
-    { title: "Nest location and height", description: "Nests on second-story eaves, inside walls, or underground take more time and equipment." },
-    { title: "Number of nests", description: "Several nests around the property add to the work involved." },
-    { title: "Honeybee relocation", description: "Moving a colony and removing its comb from a wall is a bigger job than treating a wasp nest." },
-    { title: "Return visits", description: "Ground and wall-void nests sometimes need a second visit to finish the job." },
-  ],
   prevention: {
     heading: "Tips to Discourage Wasps and Bees",
     tips: [
@@ -101,7 +93,7 @@ export const waspBeeRemoval: ServiceContent = {
     ],
   },
   forBusinesses: [
-    "A wasp nest over a store entrance or near a playground is a liability nobody wants. We handle stinging insect nests at storefronts, apartment communities, and other properties, often working around business hours. See how we [protect commercial properties](/commercial) year-round.",
+    "A wasp nest over a store entrance or near a playground is a liability nobody wants. Stinging insect nests at storefronts, apartment communities, and other properties can often be handled around business hours. See how [commercial pest control](/commercial) protects properties year-round.",
   ],
   faqs: [
     {
@@ -110,14 +102,14 @@ export const waspBeeRemoval: ServiceContent = {
         "For large nests, no. Disturbing a big paper wasp or yellowjacket nest can trigger many stings at once, and working from a ladder adds risk. If a nest is bigger than a golf ball, underground, or inside a wall, it's safer to call a professional with the right protective gear.",
     },
     {
-      question: "Do you kill honeybees?",
+      question: "Are honeybees killed during removal?",
       answer:
-        "We prefer not to. Honeybees are important pollinators, so whenever a colony can be safely moved, we work with a local beekeeper to relocate it. When a colony is deep inside a structure and relocation isn't practical, other steps may be needed. We'll explain your options and get your approval first.", // OWNER: confirm honeybee relocation partner
+        "Not when it can be avoided. Honeybees are important pollinators, so whenever a colony can be safely moved, a local beekeeper can relocate it. When a colony is deep inside a structure and relocation isn't practical, other steps may be needed. A good provider will explain your options and get your approval first.",
     },
     {
       question: "How can I tell a yellowjacket from a bee?",
       answer:
-        "Yellowjackets are shiny, smooth, and bright yellow and black, with a narrow waist. Honeybees are fuzzier, rounder, and more golden-brown. Yellowjackets often nest in the ground and hang around trash and sweet drinks, while honeybees focus on flowers. If you're not sure, keep your distance and let us identify it.",
+        "Yellowjackets are shiny, smooth, and bright yellow and black, with a narrow waist. Honeybees are fuzzier, rounder, and more golden-brown. Yellowjackets often nest in the ground and hang around trash and sweet drinks, while honeybees focus on flowers. If you're not sure, keep your distance and let a pro identify it.",
     },
     {
       question: "Will the wasps come back after the nest is removed?",
@@ -126,5 +118,5 @@ export const waspBeeRemoval: ServiceContent = {
     },
   ],
   relatedServices: ["general-pest-control", "lawn-pest-control", "wildlife-removal"],
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-10-16",
 };

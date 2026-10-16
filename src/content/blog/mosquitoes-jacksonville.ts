@@ -8,11 +8,11 @@ export const mosquitoesJacksonville: BlogPost = {
     "Jacksonville's heat, rain, and water make it a mosquito magnet. Learn where they breed around your home, why the season runs so long, and which steps make a real difference.",
   category: "Mosquitoes",
   datePublished: "2026-10-12",
-  dateModified: "2026-10-12",
+  dateModified: "2026-10-16",
   seo: {
     title: "Mosquitoes in Jacksonville: Why They're Bad & What Helps",
     description:
-      "Find out why mosquitoes are so bad in Jacksonville, where they breed in your yard, and which simple habits and yard treatments help. Call for a free quote.",
+      "Find out why mosquitoes are so bad in Jacksonville, where they breed in your yard, and which simple habits and yard treatments help. Call to reach a local pro.",
     primaryKeyword: "mosquitoes in Jacksonville",
     secondaryKeywords: ["mosquito season Florida", "mosquito breeding standing water", "tip and toss", "mosquito yard treatment"],
   },
@@ -22,7 +22,7 @@ export const mosquitoesJacksonville: BlogPost = {
   },
   intro: [
     "You step onto the back porch with a cup of coffee, and within a minute something is biting your ankle. By the time you sit down, there are three more. For a lot of families in Northeast Florida, that's just what summer feels like.",
-    "Mosquitoes in Jacksonville aren't your imagination, and they aren't bad luck. Our weather and landscape give them almost everything they need. The upside is that much of the problem starts close to home, which means there's plenty you can do about it.",
+    "Mosquitoes in Jacksonville aren't your imagination, and they aren't bad luck. The area's weather and landscape give them almost everything they need. The upside is that much of the problem starts close to home, which means there's plenty you can do about it.",
   ],
   sections: [
     {
@@ -35,7 +35,7 @@ export const mosquitoesJacksonville: BlogPost = {
         {
           heading: "A long warm season",
           body: [
-            "Mosquitoes slow down when it gets cold, but our cool spells tend to be short. Warm weather usually returns in early spring and hangs on well into fall, so the biting season here stretches far longer than it does up north. A mild week in winter can even bring a few back out.",
+            "Mosquitoes slow down when it gets cold, but Jacksonville's cool spells tend to be short. Warm weather usually returns in early spring and hangs on well into fall, so the biting season here stretches far longer than it does up north. A mild week in winter can even bring a few back out.",
           ],
         },
         {
@@ -122,7 +122,7 @@ export const mosquitoesJacksonville: BlogPost = {
       body: [
         // OWNER: verify current details of the Duval County public mosquito control program before launch.
         "Duval County runs a public mosquito control program that works on mosquitoes across the community. That effort covers a large area, though, and it can't reach the flowerpot behind your garage or the clogged gutter over your back door.",
-        "Think of it as teamwork. Public programs handle the big picture, and what happens on your own property is up to you. Families from Mandarin to [Fleming Island](/service-areas/fleming-island) get the best results when they combine tip-and-toss habits with treatment where it's needed. If you'd like a technician to walk your yard and point out breeding spots, [reach out to schedule a visit](/contact).",
+        "Think of it as teamwork. Public programs handle the big picture, and what happens on your own property is up to you. Families from Mandarin to [Fleming Island](/service-areas/fleming-island) see the biggest difference when they combine tip-and-toss habits with treatment where it's needed. If you'd like a technician to walk your yard and point out breeding spots, [call to be connected with a local pest control pro](/contact).",
       ],
     },
   ],

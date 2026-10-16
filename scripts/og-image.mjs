@@ -39,7 +39,7 @@ const image = new ImageResponse(
       h(
         "div",
         { style: { marginTop: 28, fontSize: 36, color: "#e8f3ed" } },
-        "Termites · Rodents · Mosquitoes · Roaches · Free Inspections",
+        "Termites · Rodents · Mosquitoes · Roaches · One Call",
       ),
     ),
     h("div", { style: { display: "flex", height: 16, width: 240, background: "#f28c28", borderRadius: 8 } }),

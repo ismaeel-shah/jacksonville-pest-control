@@ -8,11 +8,11 @@ export const signsOfRatsInAttic: BlogPost = {
     "Hearing scratching overhead at night? Here are the signs of rats in your attic, how to tell them from other animals, and the safest next steps for your home.",
   category: "Rodents & Wildlife",
   datePublished: "2026-10-12",
-  dateModified: "2026-10-12",
+  dateModified: "2026-10-16",
   seo: {
     title: "Signs of Rats in Your Attic & What to Do Next",
     description:
-      "Learn the signs of rats in your attic, from night noises to droppings and chewed wires, plus safe cleanup tips and how to keep roof rats out. Call us today.",
+      "Learn the signs of rats in your attic, from night noises to droppings and chewed wires, plus safe cleanup tips and how to keep roof rats out. Call a local pro.",
     primaryKeyword: "signs of rats in attic",
     secondaryKeywords: ["roof rats Florida", "rat droppings in attic", "noises in ceiling at night", "how to get rid of attic rats"],
   },
@@ -22,7 +22,7 @@ export const signsOfRatsInAttic: BlogPost = {
   },
   intro: [
     "It usually starts after the house goes quiet. You're lying in bed and hear a light patter across the ceiling, then a pause, then a quick scramble toward the wall. In the morning everything seems normal, so you wonder if you imagined it.",
-    "Most of the time, you didn't. When a Jacksonville homeowner calls us about thumping overhead, rats turn out to be the culprit more often than anything else. Here's how to confirm what's up there, what to watch out for, and what to do about it.",
+    "Most of the time, you didn't. When Jacksonville homeowners hear thumping overhead, rats turn out to be the culprit more often than anything else. Here's how to confirm what's up there, what to watch out for, and what to do about it.",
   ],
   sections: [
     {
@@ -76,7 +76,7 @@ export const signsOfRatsInAttic: BlogPost = {
         {
           heading: "Why the difference matters",
           body: [
-            "Rats and mice are handled with trapping and sealing, while larger animals need different tools and must be handled according to Florida wildlife rules. If the signs point to squirrels, raccoons, or opossums, our team can help with [humane wildlife removal](/wildlife-removal) instead.",
+            "Rats and mice are handled with trapping and sealing, while larger animals need different tools and must be handled according to Florida wildlife rules. If the signs point to squirrels, raccoons, or opossums, look into [humane wildlife removal](/wildlife-removal) instead.",
           ],
         },
       ],
@@ -98,7 +98,7 @@ export const signsOfRatsInAttic: BlogPost = {
         {
           heading: "Chewed wiring is worth taking seriously",
           body: [
-            "Rats gnaw constantly to keep their teeth worn down, and electrical wires are a common target. Chewed insulation can expose bare wire, which may raise the risk of a short or an electrical fire. If you find damaged wiring, have a licensed electrician look at it.",
+            "Rats gnaw constantly to keep their teeth worn down, and electrical wires are a common target. Chewed insulation can expose bare wire, which may raise the risk of a short or an electrical fire. If you find damaged wiring, have a qualified electrician look at it.",
           ],
         },
       ],
@@ -107,7 +107,7 @@ export const signsOfRatsInAttic: BlogPost = {
       id: "what-to-do",
       heading: "What to Do Next (and What to Skip)",
       body: [
-        "It's tempting to toss a box of poison into the attic and call it done. We don't recommend it. A poisoned rat often crawls into a wall void or ceiling space to die, and the smell can linger for weeks while it draws flies. Poison also does nothing about the gap that let the rats in.",
+        "It's tempting to toss a box of poison into the attic and call it done. That approach usually backfires. A poisoned rat often crawls into a wall void or ceiling space to die, and the smell can linger for weeks while it draws flies. Poison also does nothing about the gap that let the rats in.",
         "A plan that lasts has three parts working together:",
       ],
       bullets: [
@@ -134,7 +134,7 @@ export const signsOfRatsInAttic: BlogPost = {
       heading: "When to Call a Professional",
       body: [
         "If you've heard noises for more than a night or two, found fresh droppings, or spotted chewed wires, it's time to get help. Finding every entry point means checking the roofline, vents, eaves, and spots where pipes and wires enter the house, and much of that work happens on a ladder or in a hot, cramped attic.",
-        "Our [rodent control service](/rodent-control) handles the full job: inspection, trapping, sealing, and cleanup guidance. If you're not sure whether it's rats or another animal, [contact us](/contact) and a technician can come out, take a look, and explain what they find.",
+        "Professional [rodent control](/rodent-control) covers the full job: inspection, trapping, sealing, and cleanup guidance. If you're not sure whether it's rats or another animal, [call to be connected with a local pest control pro](/contact) who can send a technician to take a look and explain what they find.",
       ],
     },
   ],

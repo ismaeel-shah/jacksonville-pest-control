@@ -11,7 +11,7 @@ export const fleaTickControl: ServiceContent = {
   seo: {
     title: "Flea & Tick Control in Jacksonville, FL | Home & Yard",
     description:
-      "Flea and tick control in Jacksonville, FL that treats your home and yard while your vet cares for your pets. Clear prep steps and follow-up. Call us today.",
+      "Flea and tick control in Jacksonville, FL that treats your home and yard while your vet cares for your pets. Call to speak with a local pest control pro.",
     primaryKeyword: "flea and tick control Jacksonville FL",
     secondaryKeywords: ["flea exterminator", "flea treatment for house", "tick yard treatment", "fleas in carpet"],
   },
@@ -25,7 +25,7 @@ export const fleaTickControl: ServiceContent = {
   },
   intro: [
     "If your dog won't stop scratching or you're finding itchy bites around your ankles, fleas have probably moved in. Ticks are a quieter problem, but they turn up on pets and people after time in shady yards and wooded edges.",
-    "Our flea and tick control treats the places pests live when they're not on your pet: carpets, furniture, pet bedding, and the shaded parts of your yard. We don't treat animals. Instead, we time our work with the flea and tick product your veterinarian recommends, so the home, yard, and pet are all covered at once. Hitting all three is what finally ends the cycle.",
+    "Flea and tick control treats the places pests live when they're not on your pet: carpets, furniture, pet bedding, and the shaded parts of your yard. Pest control technicians don't treat animals. Instead, the visit is timed with the flea and tick product your veterinarian recommends, so the home, yard, and pet are all covered at once. Hitting all three is what finally ends the cycle.",
   ],
   localProblem: {
     heading: "Why Fleas and Ticks Thrive in Jacksonville",
@@ -47,13 +47,13 @@ export const fleaTickControl: ServiceContent = {
     ],
   },
   process: {
-    heading: "Our Flea and Tick Treatment Process",
+    heading: "How Flea and Tick Treatment Works",
     steps: [
-      { title: "Inspection inside and out", description: "We find where pets rest and where fleas and ticks are concentrated, from bedrooms to shady corners of the yard." },
-      { title: "Prep checklist and vet coordination", description: "We send you prep steps and ask you to schedule your pet's flea and tick treatment with your vet around the same time." },
-      { title: "Interior treatment", description: "We treat carpets, rugs, furniture, and pet areas, often including a growth regulator that stops young fleas from maturing." },
-      { title: "Yard treatment", description: "We treat shaded areas, fence lines, under decks, and other spots where pets and wildlife spend time." },
-      { title: "Follow-up visit", description: "We come back to treat fleas that hatch from protected pupae after the first visit." }, // OWNER: confirm standard follow-up timing for flea jobs
+      { title: "Inspection inside and out", description: "The technician finds where pets rest and where fleas and ticks are concentrated, from bedrooms to shady corners of the yard." },
+      { title: "Prep checklist and vet coordination", description: "You get prep steps and schedule your pet's flea and tick treatment with your vet around the same time." },
+      { title: "Interior treatment", description: "Carpets, rugs, furniture, and pet areas are treated, often with a growth regulator that stops young fleas from maturing." },
+      { title: "Yard treatment", description: "Shaded areas, fence lines, under decks, and other spots where pets and wildlife spend time are treated." },
+      { title: "Follow-up visit", description: "A return visit treats fleas that hatch from protected pupae after the first visit." },
     ],
   },
   treatmentOptions: {
@@ -75,25 +75,17 @@ export const fleaTickControl: ServiceContent = {
       {
         title: "Recurring yard program",
         description:
-          "For homes near woods or with heavy wildlife traffic, scheduled yard treatments during the warm months help keep ticks and fleas from building back up.", // OWNER: confirm recurring flea/tick yard program is offered
+          "For homes near woods or with heavy wildlife traffic, scheduled yard treatments during the warm months can help keep ticks and fleas from building back up. Ask the provider whether a recurring program is available.",
       },
     ],
   },
   safety: {
     heading: "Is Flea and Tick Treatment Safe for Kids and Pets?",
     body: [
-      "Yes, when everyone follows the timing your technician gives you. We use products registered for flea and tick control and apply them according to the label. People and pets stay out of treated rooms and off the treated yard until everything has dried.",
-      "We never apply products to your animals. That's your veterinarian's job. Cover or remove fish tanks and birdcages before we arrive, and tell us about any family members with health concerns.",
+      "Yes, when everyone follows the timing your technician gives you. Products should be registered for flea and tick control and applied according to the label. People and pets stay out of treated rooms and off the treated yard until everything has dried.",
+      "Pest control technicians don't apply products to your animals. That's your veterinarian's job. Cover or remove fish tanks and birdcages before the technician arrives, and mention any family members with health concerns.",
     ],
   },
-  costFactors: [
-    { title: "Size of the home", description: "More rooms and carpeted space mean more area to treat indoors." },
-    { title: "Yard size and shade", description: "Large, shady yards with lots of ground cover take more time to treat than small, sunny ones." },
-    { title: "How established the fleas are", description: "A problem that's been building for months usually needs more thorough work and follow-up." },
-    { title: "Inside only or inside and out", description: "Treating both the home and the yard is a bigger job than either one alone." },
-    { title: "Follow-up visits", description: "Heavier flea problems often need an extra return visit to catch late-hatching fleas." },
-    { title: "Number of pets and wildlife pressure", description: "Multiple pets or regular wildlife visits can widen the area that needs treatment." },
-  ],
   prevention: {
     heading: "Prep and Prevention Tips",
     tips: [
@@ -107,26 +99,26 @@ export const fleaTickControl: ServiceContent = {
   },
   faqs: [
     {
-      question: "Do you treat my pets for fleas?",
+      question: "Will the technician treat my pets for fleas?",
       answer:
-        "No. We treat your home and yard, but we never apply products to animals. Your veterinarian is the right person to choose a flea and tick product for your pet based on its age, size, and health. For best results, have your pet treated around the same time as our service, so fleas have nowhere left to hide.",
+        "No. A pest control technician treats your home and yard but doesn't apply products to animals. Your veterinarian is the right person to choose a flea and tick product for your pet based on its age, size, and health. For best results, have your pet treated around the same time as the home service, so fleas have nowhere left to hide.",
     },
     {
       question: "Why am I still seeing fleas after treatment?",
       answer:
-        "Some fleas after treatment are normal for a few weeks. Flea pupae sit inside tough cocoons and hatch over time when they sense movement or warmth, then contact the treated surfaces. Vacuuming often encourages hatching. If you're still seeing many fleas after a few weeks, call us.",
+        "Some fleas after treatment are normal for a few weeks. Flea pupae sit inside tough cocoons and hatch over time when they sense movement or warmth, then contact the treated surfaces. Vacuuming often encourages hatching. If you're still seeing many fleas after a few weeks, call your technician.",
     },
     {
-      question: "How long do we need to stay out of the house?",
+      question: "How long do I need to stay out of the house?",
       answer:
-        "Most families stay out until the treated areas are completely dry, which usually takes a few hours. Drying time depends on humidity, airflow, and carpet thickness, so open windows or run fans if you can. Your technician will tell you when it's safe for people and pets to come back in and walk on treated floors.", // OWNER: confirm typical re-entry time for flea treatment
+        "Most families stay out until the treated areas are completely dry, which usually takes a few hours. Drying time depends on humidity, airflow, and carpet thickness, so open windows or run fans if you can. Your technician will tell you when it's safe for people and pets to come back in and walk on treated floors.",
     },
     {
       question: "Can I get fleas without having pets?",
       answer:
-        "Yes. Fleas can come from wildlife living under a deck or in a crawl space, from a previous owner's pets, or from stray cats resting near doors. People don't keep fleas going the way pets do, but hungry fleas will bite humans. If you have no pets and see fleas, we'll look for the animal source too.",
+        "Yes. Fleas can come from wildlife living under a deck or in a crawl space, from a previous owner's pets, or from stray cats resting near doors. People don't keep fleas going the way pets do, but hungry fleas will bite humans. If you have no pets and see fleas, the technician should look for the animal source too.",
     },
   ],
   relatedServices: ["wildlife-removal", "lawn-pest-control", "mosquito-control"],
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-10-16",
 };

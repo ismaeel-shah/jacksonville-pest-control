@@ -9,28 +9,28 @@ export const termiteControl: ServiceContent = {
   audience: ["residential", "commercial"],
   cardDescription: "Treatment and ongoing protection from subterranean and Formosan termites, the species that cause the most damage here.",
   seo: {
-    title: "Termite Control in Jacksonville, FL | Free Inspection",
+    title: "Termite Control in Jacksonville, FL | Call a Local Pro",
     description:
-      "Termite control in Jacksonville, FL for subterranean and Formosan termites. Liquid and bait treatments with ongoing protection. Free termite inspection.",
+      "Termite control in Jacksonville, FL for subterranean and Formosan termites, with liquid and bait treatments. Call to speak with a local termite pro today.",
     primaryKeyword: "termite control Jacksonville FL",
     secondaryKeywords: ["termite treatment", "Formosan termites", "subterranean termites", "termite bait stations", "termite swarm season"],
   },
   hero: {
     h1: "Termite Control in Jacksonville, FL",
-    subheadline: "Stop termites before they cost you thousands, with proven treatments and protection you can renew year after year.",
+    subheadline: "Stop termites before they cause serious structural damage, with proven treatments and ongoing monitoring.",
     image: {
       file: "termite-control-jacksonville-foundation-treatment.webp",
       alt: "Technician treating soil along the foundation of a Jacksonville home for termites",
     },
   },
   intro: [
-    "Termites are the pest Jacksonville homeowners can't afford to ignore. They feed quietly inside walls, floors, and framing, often for years before anyone notices, and most homeowner's insurance policies won't pay for the damage.",
-    "Our termite control starts with a careful inspection to find out whether termites are active, which species you're dealing with, and how they're getting in. Then we recommend the treatment that fits your home, whether that's a liquid soil barrier, a bait and monitoring system, or a combination. After treatment, an ongoing protection plan keeps your home covered with regular checks, so a new colony never gets the chance to settle in unnoticed.",
+    "Termites are the one pest Jacksonville homeowners should never ignore. They feed quietly inside walls, floors, and framing, often for years before anyone notices, and most homeowner's insurance policies won't pay for the damage.",
+    "Termite control starts with a careful inspection to find out whether termites are active, which species you're dealing with, and how they're getting in. Then the technician recommends the treatment that fits your home, whether that's a liquid soil barrier, a bait and monitoring system, or a combination. After treatment, ongoing monitoring with regular checks helps make sure a new colony never gets the chance to settle in unnoticed.",
   ],
   localProblem: {
     heading: "Why Termites Are Such a Problem in Jacksonville",
     body: [
-      "Northeast Florida sits in one of the most active termite regions in the country. Our warm temperatures, sandy soil, frequent rain, and high humidity give termites everything they need to thrive all year.",
+      "Northeast Florida sits in one of the most active termite regions in the country. Warm temperatures, sandy soil, frequent rain, and high humidity give termites everything they need to thrive all year.",
       "Two species do most of the damage here. **Eastern subterranean termites** live in the soil and build mud tubes to reach the wood in your home. **Formosan termites**, an invasive subterranean species now established in parts of Northeast Florida, form much larger colonies and can do serious damage faster. Both can slip through cracks in a slab, expansion joints, and plumbing gaps.",
       "Every spring, during **termite swarm season**, mature colonies send out winged swarmers. Subterranean termites usually swarm on warm days after rain, while Formosan termites swarm on humid evenings around porch lights. Swarmers indoors usually mean a colony is already feeding nearby.",
     ],
@@ -48,20 +48,20 @@ export const termiteControl: ServiceContent = {
     ],
   },
   process: {
-    heading: "Our Termite Treatment Process",
-    intro: "Every termite job follows the same careful steps, so nothing is missed.",
+    heading: "How Termite Treatment Works",
+    intro: "A thorough termite job follows the same careful steps, so nothing is missed.",
     steps: [
-      { title: "Detailed termite inspection", description: "We check the foundation, garage, bathrooms, attic access, and exterior for activity and damage." },
-      { title: "Identify the species", description: "Subterranean, Formosan, and drywood termites need different approaches, so we confirm what we're dealing with first." },
-      { title: "Recommend a treatment plan", description: "We explain your options and our recommendation, with an upfront quote." },
-      { title: "Treat your home", description: "We apply the treatment carefully, following label directions and protecting your landscaping." },
-      { title: "Monitor and protect", description: "Regular follow-up inspections confirm the colony is gone and keep your home protected going forward." },
+      { title: "Detailed termite inspection", description: "The technician checks the foundation, garage, bathrooms, attic access, and exterior for activity and damage." },
+      { title: "Identify the species", description: "Subterranean, Formosan, and drywood termites need different approaches, so the species is confirmed first." },
+      { title: "Recommend a treatment plan", description: "Your technician explains the options and recommends the one that fits your home." },
+      { title: "Treat your home", description: "The treatment is applied carefully, following label directions and protecting your landscaping." },
+      { title: "Monitor and protect", description: "Follow-up inspections confirm the colony is gone. Ask the provider about ongoing monitoring or a renewable protection plan." },
     ],
   },
   treatmentOptions: {
     heading: "Termite Treatment Options",
     intro: [
-      "There's no single best termite treatment for every home. The right choice depends on the species, your home's construction, and your preferences. Here's an honest look at the main options.",
+      "No one termite treatment is right for every home. The right choice depends on the species, your home's construction, and your preferences. Here's an honest look at the main options.",
     ],
     options: [
       {
@@ -82,7 +82,7 @@ export const termiteControl: ServiceContent = {
       {
         title: "Tent fumigation for drywood termites",
         description:
-          "Drywood termites live inside the wood, not the soil. They're less common here, but a widespread drywood infestation may need whole-structure fumigation.", // OWNER: confirm whether fumigation is offered directly or referred out
+          "Drywood termites live inside the wood, not the soil. They're less common here, but a widespread drywood infestation may need whole-structure fumigation.",
       },
     ],
   },
@@ -90,17 +90,9 @@ export const termiteControl: ServiceContent = {
     heading: "Is Termite Treatment Safe for Kids and Pets?",
     body: [
       "Yes, when it's done correctly. Termite treatments go where termites travel: into the soil around the foundation, inside bait stations, or directly into wood. They're not sprayed across your living space, so your family has very little contact with them.",
-      "We use products registered for termite control and apply them exactly as their labels require. Keep kids and pets away from the work area until we're finished, and tell us about wells, ponds, or vegetable gardens near the foundation so we can plan around them.",
+      "Products should be registered for termite control and applied exactly as their labels require. Keep kids and pets away from the work area until the technician is finished, and mention any wells, ponds, or vegetable gardens near the foundation so the work can be planned around them.",
     ],
   },
-  costFactors: [
-    { title: "Size of your home", description: "Liquid treatments are measured along the foundation, so a larger footprint takes more product and labor." },
-    { title: "Type of termite", description: "Subterranean, Formosan, and drywood termites each need different treatment methods and equipment." },
-    { title: "Extent of the infestation", description: "A small, localized problem takes less work than activity in several areas of the home." },
-    { title: "Treatment method", description: "Liquid barriers, bait systems, and fumigation each involve different materials and follow-up schedules." },
-    { title: "Construction and access", description: "Slab type, crawl spaces, additions, patios, and landscaping against the house all affect the work involved." },
-    { title: "Ongoing protection plan", description: "Annual renewal of your protection, with yearly inspections, is a separate choice after the first treatment." },
-  ],
   prevention: {
     heading: "How to Help Prevent Termites",
     tips: [
@@ -113,30 +105,30 @@ export const termiteControl: ServiceContent = {
     ],
   },
   forBusinesses: [
-    "Termites don't only target homes. We protect apartment buildings, retail spaces, and other commercial properties with inspections, treatments, and documented monitoring programs. Building something new? Ask about [pre-construction termite treatment](/pre-construction-termite-treatment).",
+    "Termites don't only target homes. Apartment buildings, retail spaces, and other commercial properties benefit from inspections, treatments, and documented monitoring programs. Building something new? Read about [pre-construction termite treatment](/pre-construction-termite-treatment).",
   ],
   faqs: [
     {
       question: "How long does termite treatment take?",
       answer:
-        "Most liquid termite treatments for a typical Jacksonville home take several hours to a full day, depending on the size of the foundation and how much drilling through concrete is needed. Bait station installation is usually faster. Your technician will give you a time estimate during the inspection so you can plan your day.",
+        "Most liquid termite treatments for a typical Jacksonville home take several hours to a full day, depending on the size of the foundation and how much drilling through concrete is needed. Bait station installation is usually faster. Your technician can tell you how long the job should take after the inspection so you can plan your day.",
     },
     {
       question: "Do I need to leave my home during termite treatment?",
       answer:
-        "No. For liquid soil treatments and bait systems, you can stay home. We'll ask you to keep kids and pets away from the work area while we treat. The only termite treatment that requires leaving is tent fumigation for drywood termites, which involves vacating the home for a set period.",
+        "No. For liquid soil treatments and bait systems, you can stay home. You'll just need to keep kids and pets away from the work area during treatment. The only termite treatment that requires leaving is tent fumigation for drywood termites, which involves vacating the home for a set period.",
     },
     {
       question: "How long does termite protection last?",
       answer:
-        "That depends on the method and the product. Liquid treatments protect the soil for years, while bait systems keep working as long as they're monitored and maintained. Because no treatment lasts forever, we recommend an ongoing protection plan with a yearly inspection so any new activity is caught early.",
+        "That depends on the method and the product. Liquid treatments protect the soil for years, while bait systems keep working as long as they're monitored and maintained. Because no treatment lasts forever, it's wise to ask your provider about ongoing protection with a yearly inspection so any new activity is caught early.",
     },
     {
       question: "Does homeowner's insurance cover termite damage?",
       answer:
-        "Usually not. Most homeowner's insurance policies treat termite damage as a preventable maintenance issue and exclude it. That's why regular inspections and a protection plan matter so much in Florida. Check your own policy to be sure, and keep your termite inspection records in case questions come up later.",
+        "Usually not. Most homeowner's insurance policies treat termite damage as a preventable maintenance issue and exclude it. That's why regular inspections and ongoing protection matter so much in Florida. Check your own policy to be sure, and keep your termite inspection records in case questions come up later.",
     },
   ],
   relatedServices: ["termite-inspection", "pre-construction-termite-treatment", "moisture-control"],
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-10-16",
 };

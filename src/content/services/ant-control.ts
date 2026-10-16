@@ -9,9 +9,9 @@ export const antControl: ServiceContent = {
   audience: ["residential", "commercial"],
   cardDescription: "Colony-focused treatment for fire ants in the yard and ghost, sugar, and carpenter ants inside the home.",
   seo: {
-    title: "Ant Control in Jacksonville, FL | Fire Ant Treatment",
+    title: "Ant Control in Jacksonville, FL | Call a Local Ant Pro",
     description:
-      "Ant control in Jacksonville, FL for fire ants, ghost ants, and carpenter ants. Baits and targeted treatments that reach the colony. Schedule a free inspection.",
+      "Ant control in Jacksonville, FL for fire ants, ghost ants, and carpenter ants, with baits that reach the colony. Call to speak with a local pest control pro.",
     primaryKeyword: "ant control Jacksonville FL",
     secondaryKeywords: ["fire ant treatment", "ghost ants", "carpenter ants", "sugar ants", "ant exterminator"],
   },
@@ -25,12 +25,12 @@ export const antControl: ServiceContent = {
   },
   intro: [
     "A line of tiny ants on the kitchen counter, a fresh fire ant mound by the mailbox, or sawdust piling up under a window frame. Ants show up in a lot of ways in Jacksonville, and each kind needs its own approach.",
-    "Our ant control focuses on the colony, because that's where the problem lives. We identify the species, follow the trails back to the nest, and use baits and targeted treatments that worker ants carry home to the queen. Inside, that means quiet, precise placements instead of spraying your kitchen. Outside, it means treating mounds and nesting areas in the yard. The result is fewer ants for longer.",
+    "Good ant control focuses on the colony, because that's where the problem lives. A local pest control pro identifies the species, follows the trails back to the nest, and uses baits and targeted treatments that worker ants carry home to the queen. Inside, that means quiet, precise placements instead of spraying your kitchen. Outside, it means treating mounds and nesting areas in the yard. The result is fewer ants for longer.",
   ],
   localProblem: {
     heading: "Why Ants Are a Year-Round Problem in Jacksonville",
     body: [
-      "Our mild winters mean ant colonies never really shut down. **Fire ants** build loose dirt mounds in sunny lawns, along sidewalks, and around landscaping, and they sting in groups when disturbed. New mounds often pop up a day or two after heavy rain as colonies move to drier ground.",
+      "Northeast Florida's mild winters mean ant colonies never really shut down. **Fire ants** build loose dirt mounds in sunny lawns, along sidewalks, and around landscaping, and they sting in groups when disturbed. New mounds often pop up a day or two after heavy rain as colonies move to drier ground.",
       "Indoors, the usual suspects are **ghost ants**, tiny pale ants that trail along counters and bathroom sinks, and **Argentine ants**, often called sugar ants. Both can have many queens and several nests, so they bounce back quickly when only part of the colony is treated.",
       "**Carpenter ants** are larger and nest in damp or damaged wood around roof edges, windows, and porches. They don't eat wood like termites, but they hollow it out for their nests.",
     ],
@@ -46,19 +46,19 @@ export const antControl: ServiceContent = {
     ],
   },
   process: {
-    heading: "Our Ant Control Process",
+    heading: "How Ant Control Works",
     steps: [
       { title: "Identify the ant", description: "Different species eat different foods and nest in different places, so species comes first." },
-      { title: "Trace trails to the nest", description: "We follow foraging lines inside and out to find the colony and its satellite nests." },
-      { title: "Place baits and targeted treatments", description: "We use baits the ants will carry home, plus treatments aimed at nests and entry points." },
-      { title: "Treat the yard and perimeter", description: "We treat fire ant mounds, nesting areas in landscaping, and the foundation." },
-      { title: "Check back", description: "We review results and adjust baits if the ants change what they're feeding on." },
+      { title: "Trace trails to the nest", description: "The technician follows foraging lines inside and out to find the colony and its satellite nests." },
+      { title: "Place baits and targeted treatments", description: "Baits the ants will carry home are paired with treatments aimed at nests and entry points." },
+      { title: "Treat the yard and perimeter", description: "Fire ant mounds, nesting areas in landscaping, and the foundation are treated." },
+      { title: "Check back", description: "Results are checked and baits adjusted if the ants change what they're feeding on." },
     ],
   },
   treatmentOptions: {
     heading: "Ant Treatment Options",
     intro: [
-      "Spraying the ants you can see kills only a few workers. The queen keeps laying eggs, and some species split into new nests when threatened. That's why we focus on reaching the colony.",
+      "Spraying the ants you can see kills only a few workers. The queen keeps laying eggs, and some species split into new nests when threatened. That's why effective treatment focuses on reaching the colony.",
     ],
     options: [
       {
@@ -81,18 +81,10 @@ export const antControl: ServiceContent = {
   safety: {
     heading: "Is Ant Control Safe for Kids and Pets?",
     body: [
-      "Yes, with sensible precautions. Indoor baits go in small amounts into cracks, behind appliances, or in stations kids and pets can't easily reach. We only use products labeled for ant control around homes, at the rates those labels allow.",
-      "For lawn treatments, keep children and pets off the grass until your technician says it's okay. If you have a vegetable garden or fish pond, let us know so we can work around it.",
+      "Yes, with sensible precautions. Indoor baits go in small amounts into cracks, behind appliances, or in stations kids and pets can't easily reach. Products should be labeled for ant control around homes and used at the rates those labels allow.",
+      "For lawn treatments, keep children and pets off the grass until your technician says it's okay. If you have a vegetable garden or fish pond, mention it before treatment so the technician can work around it.",
     ],
   },
-  costFactors: [
-    { title: "Ant species", description: "Carpenter ants and multi-queen ghost ants often take more work than a single trail of sugar ants." },
-    { title: "Indoor, outdoor, or both", description: "Treating only the kitchen is a smaller job than the house plus a lawn full of mounds." },
-    { title: "Yard size", description: "Fire ant treatments cover the lawn, so larger yards need more material and time." },
-    { title: "Number of nests", description: "Colonies with several satellite nests need more bait placements and follow-up." },
-    { title: "Wood damage or moisture", description: "Carpenter ant nests in damp wood may need extra inspection and treatment." },
-    { title: "One-time or recurring service", description: "A single treatment and ongoing protection against new colonies are separate options." },
-  ],
   prevention: {
     heading: "How to Help Keep Ants Out",
     tips: [
@@ -105,7 +97,7 @@ export const antControl: ServiceContent = {
     ],
   },
   forBusinesses: [
-    "Ants in a dining room or break room are hard to ignore. We help restaurants, offices, and property managers keep ants out of kitchens and fire ants out of common areas. See our [commercial services](/commercial).",
+    "Ants in a dining room or break room are hard to ignore. Restaurants, offices, and property managers can work with a local pest control pro to keep ants out of kitchens and fire ants out of common areas. See [commercial services](/commercial).",
   ],
   faqs: [
     {
@@ -116,7 +108,7 @@ export const antControl: ServiceContent = {
     {
       question: "How long do ant baits take to work?",
       answer:
-        "Most ant baits take a few days to two weeks to show clear results. You may see more ants at first as workers gather the bait, which is a good sign. Try not to wipe up the trail or spray during this time. Larger colonies can take longer, so we check back.",
+        "Most ant baits take a few days to two weeks to show clear results. You may see more ants at first as workers gather the bait, which is a good sign. Try not to wipe up the trail or spray during this time. Larger colonies can take longer, so a follow-up check is common.",
     },
     {
       question: "What should I do if fire ants sting me?",
@@ -130,5 +122,5 @@ export const antControl: ServiceContent = {
     },
   ],
   relatedServices: ["lawn-pest-control", "general-pest-control", "termite-inspection"],
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-10-16",
 };

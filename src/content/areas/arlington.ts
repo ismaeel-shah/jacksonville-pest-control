@@ -9,7 +9,7 @@ export const arlington: AreaContent = {
   seo: {
     title: "Pest Control in Arlington, FL | Termites & Wildlife",
     description:
-      "Arlington pest control for mid-century homes near the river and preserves. Termites, rodents, wildlife, and mosquitoes handled locally. Book a free inspection.",
+      "Arlington pest control for mid-century homes near the river and preserves. Termites, rodents, wildlife, and mosquitoes. Call to speak with a local pest pro.",
     primaryKeyword: "pest control Arlington FL",
     secondaryKeywords: [
       "termite control Arlington Jacksonville",
@@ -20,15 +20,15 @@ export const arlington: AreaContent = {
   },
   hero: {
     h1: "Pest Control in Arlington, FL",
-    subheadline: "Termite, rodent, and wildlife work tailored to Arlington's postwar homes, river lots, and wooded streets near Fort Caroline and Tree Hill.",
+    subheadline: "Call to reach a local pro for termite, rodent, and wildlife problems in Arlington's postwar homes, river lots, and wooded streets near Fort Caroline and Tree Hill.",
     image: {
       file: "arlington-jacksonville-mid-century-ranch-home.webp",
       alt: "Mid-century ranch home with a low roofline and mature trees in Arlington, Jacksonville",
     },
   },
   intro: [
-    "When the Mathews Bridge opened in 1953, Arlington took off. For about two decades it grew faster than any other part of Jacksonville, and many of the homes built during that boom are still standing today. That history shapes almost every pest call we answer east of the river.",
-    "Homes that are now 60 or 70 years old have had a long time for wood to soften and small gaps to open up. Add the St. Johns River, the Arlington River, and green spaces like Tree Hill Nature Preserve and the Jacksonville Arboretum, and you get neighborhoods where termites, rats, raccoons, and squirrels all have easy access. Our goal in Arlington is simple: protect the structure first, then keep wildlife and everyday bugs on the outside where they belong.",
+    "When the Mathews Bridge opened in 1953, Arlington took off. For about two decades it grew faster than any other part of Jacksonville, and many of the homes built during that boom are still standing today. That history shapes almost every pest problem east of the river.",
+    "Homes that are now 60 or 70 years old have had a long time for wood to soften and small gaps to open up. Add the St. Johns River, the Arlington River, and green spaces like Tree Hill Nature Preserve and the Jacksonville Arboretum, and you get neighborhoods where termites, rats, raccoons, and squirrels all have easy access. A good pest plan in Arlington is simple: protect the structure first, then keep wildlife and everyday bugs on the outside where they belong. One call connects you with a local pest control pro who works in Arlington.",
   ],
   commonPests: {
     heading: "What Bugs Arlington Homeowners Most",
@@ -54,8 +54,8 @@ export const arlington: AreaContent = {
   homes: {
     heading: "Postwar Homes and Wooded Lots",
     body: [
-      "Arlington is known for its mid-century homes, including some notable modern designs by local architects. Many houses here are single-story ranches on concrete slabs with wood roof framing and trim. Over time, small slab cracks, gaps around plumbing, and soft fascia boards become entry points. A yearly [termite inspection](/termite-inspection) is one of the best habits an Arlington homeowner can have.",
-      "Neighborhoods such as Lake Lucina and Woodland Acres grew up in the 1940s through the 1960s, so their trees are now huge. That shade is wonderful in July, but it also keeps roofs damp and gives animals a bridge to the attic. When we inspect, we check rooflines, vents, and chimneys and suggest which limbs to trim.",
+      "Arlington is known for its mid-century homes, including some notable modern designs by local architects. Many houses here are single-story ranches on concrete slabs with wood roof framing and trim. Over time, small slab cracks, gaps around plumbing, and soft fascia boards become entry points. A yearly [termite inspection](/termite-inspection) is one of the smartest habits an Arlington homeowner can have.",
+      "Neighborhoods such as Lake Lucina and Woodland Acres grew up in the 1940s through the 1960s, so their trees are now huge. That shade is wonderful in July, but it also keeps roofs damp and gives animals a bridge to the attic. During an inspection, a technician checks rooflines, vents, and chimneys and can suggest which limbs to trim.",
       "Closer to the river and the Intracoastal, you'll find docks, seawalls, and wetter soil. Those spots need extra attention for moisture, mosquitoes, and termites working up from the ground.",
     ],
   },
@@ -72,19 +72,19 @@ export const arlington: AreaContent = {
     {
       question: "Is my 1960s Arlington home at higher risk for termites?",
       answer:
-        "It can be. Homes from that era have had decades of exposure to humidity and sandy, moist soil, and any original termite treatment has long since worn off. That doesn't mean your house has termites, but it does mean regular inspections matter. We check the foundation, door frames, garage, and attic for mud tubes, damaged wood, and swarm signs.",
+        "It can be. Homes from that era have had decades of exposure to humidity and sandy, moist soil, and any original termite treatment has long since worn off. That doesn't mean your house has termites, but it does mean regular inspections matter. A technician checks the foundation, door frames, garage, and attic for mud tubes, damaged wood, and swarm signs.",
     },
     {
       question: "What should I do if I hear animals in my attic in Arlington?",
       answer:
-        "Call for an inspection before you seal anything up. Raccoons, squirrels, and opossums from Arlington's wooded areas often have young in the attic, and closing the hole too soon can trap them inside. We find out what animal it is, remove it in a humane, legal way, then repair or seal the entry points so others can't follow.",
+        "Call a local pro for an inspection before you seal anything up. Raccoons, squirrels, and opossums from Arlington's wooded areas often have young in the attic, and closing the hole too soon can trap them inside. The technician finds out what animal it is, removes it in a humane, legal way, then repairs or seals the entry points so others can't follow.",
     },
     {
-      question: "Do you treat homes near Tree Hill and Fort Caroline?",
+      question: "Can homes near Tree Hill and Fort Caroline get pest control?",
       answer:
-        "Yes, and those homes get extra care. Properties beside preserves see more wildlife, more mosquitoes, and more insects wandering in from the woods. We focus on the house and yard itself, create a protective barrier around the structure, and choose methods that suit a property bordering protected land. Your technician will explain each product and any re-entry time.",
+        "Yes, and those homes need extra care. Properties beside preserves see more wildlife, more mosquitoes, and more insects wandering in from the woods. A local pro focuses on the house and yard itself, creates a protective barrier around the structure, and chooses methods that suit a property bordering protected land. Your technician should explain each product and any re-entry time.",
     },
   ],
   nearbyAreas: ["southside", "atlantic-beach", "san-marco", "northside-oceanway"],
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-10-16",
 };

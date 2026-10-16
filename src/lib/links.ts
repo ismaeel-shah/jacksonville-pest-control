@@ -1,9 +1,7 @@
 import { getArea, getIndustry, getPost, getService } from "./content";
 import { STATIC_ROUTES } from "./routes";
 
-const LINKABLE_STATIC_PATHS = new Set<string>(
-  Object.values(STATIC_ROUTES).filter((path) => path !== STATIC_ROUTES.thankYou),
-);
+const LINKABLE_STATIC_PATHS = new Set<string>(Object.values(STATIC_ROUTES));
 
 /**
  * True if a link may be rendered. Internal links to missing or unpublished pages

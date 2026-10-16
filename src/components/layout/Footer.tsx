@@ -1,4 +1,4 @@
-import { BadgeCheck, ClipboardCheck, Clock, House, Mail, MapPin, Phone, ShieldCheck } from "lucide-react";
+import { Clock, Info, Mail, Phone } from "lucide-react";
 import { cacheLife } from "next/cache";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,17 +12,9 @@ const COMPANY_LINKS = [
   { label: "Residential", href: STATIC_ROUTES.residential },
   { label: "Commercial", href: STATIC_ROUTES.commercial },
   { label: "About Us", href: STATIC_ROUTES.about },
-  { label: "Reviews", href: STATIC_ROUTES.reviews },
   { label: "FAQ", href: STATIC_ROUTES.faq },
   { label: "Blog", href: STATIC_ROUTES.blog },
   { label: "Contact", href: STATIC_ROUTES.contact },
-];
-
-// OWNER: confirm each trust claim below
-const TRUST_BADGES = [
-  { icon: BadgeCheck, label: "Licensed & insured" },
-  { icon: House, label: "Locally owned" },
-  { icon: ClipboardCheck, label: "Free inspections" },
 ];
 
 /** Cached so pages stay static; refreshed daily so the year rolls over on its own. */
@@ -42,10 +34,7 @@ export async function Footer() {
   const logo = filled(siteConfig.logo);
   const phone = getPhone();
   const email = filled(siteConfig.email);
-  const license = filled(siteConfig.licenseNumber);
-  const { address } = siteConfig;
-  const street = address.showPublicly ? filled(address.street) : null;
-  const zip = filled(address.zip);
+  const disclaimer = previewable(siteConfig.disclaimer);
 
   const services = getPublishedServices();
   const areas = getPublishedAreas();
@@ -67,28 +56,13 @@ export async function Footer() {
             )}
           </Link>
           <p className="mt-4 max-w-xl text-white/85">
-            Local pest control for homes and businesses across Jacksonville, the Beaches, and Clay, St. Johns, and Nassau
-            counties. Every visit starts with a free inspection and an upfront quote.
-          </p>
-          <ul className="mt-6 flex flex-wrap gap-2">
-            {TRUST_BADGES.map(({ icon: Icon, label }) => (
-              <li key={label} className="flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-base font-semibold">
-                <Icon aria-hidden className="size-5 text-white" />
-                {label}
-              </li>
-            ))}
-          </ul>
-          <p className="mt-6 flex max-w-xl items-start gap-3 text-white/85">
-            <ShieldCheck aria-hidden className="mt-0.5 size-6 shrink-0 text-white" />
-            <span>
-              <span className="font-semibold text-white">Our guarantee: </span>
-              {siteConfig.guarantee}
-            </span>
+            Pest control information for homes and businesses across Jacksonville, the Beaches, and Clay, St. Johns, and
+            Nassau counties. One call connects you with an independent local pest control provider.
           </p>
         </div>
 
         <div className="self-start rounded-2xl bg-white/5 p-6 ring-1 ring-white/10 lg:col-span-5">
-          <h2 className={headingClass}>Get in touch</h2>
+          <h2 className={headingClass}>Call a local pro</h2>
           <ul className="mt-4 space-y-4">
             {phone && (
               <li>
@@ -104,14 +78,6 @@ export async function Footer() {
                   <Mail aria-hidden className="size-5 shrink-0" />
                   {email}
                 </a>
-              </li>
-            )}
-            {street && (
-              <li className="flex items-start gap-3 text-white/85">
-                <MapPin aria-hidden className="mt-1 size-5 shrink-0" />
-                <address className="not-italic">
-                  {street}, {address.city}, {address.state} {zip}
-                </address>
               </li>
             )}
             <li className="flex items-start gap-3">
@@ -171,7 +137,7 @@ export async function Footer() {
 
         <nav aria-labelledby="footer-company" className="md:col-span-2 lg:col-span-2">
           <h2 id="footer-company" className={headingClass}>
-            Company
+            More
           </h2>
           <ul className="mt-4 columns-2 gap-x-6 text-base sm:columns-3 lg:columns-1 [&>li]:mb-2 [&>li]:break-inside-avoid">
             {COMPANY_LINKS.map((link) => (
@@ -186,13 +152,22 @@ export async function Footer() {
       </div>
       </div>
 
+      {/* Pay-per-call network disclaimer: required on every page. */}
+      {disclaimer && (
+        <div className="border-t border-white/15">
+          <div className="mx-auto flex w-full max-w-7xl items-start gap-3 px-4 py-6 text-sm leading-relaxed text-white/80 sm:px-6">
+            <Info aria-hidden className="mt-0.5 size-5 shrink-0" />
+            <p className="whitespace-pre-line">{disclaimer}</p>
+          </div>
+        </div>
+      )}
+
       {/* Legal */}
       <div className="border-t border-white/15">
         <div className="mx-auto flex w-full max-w-7xl flex-col gap-3 px-4 py-6 text-sm text-white/75 sm:px-6 md:flex-row md:items-center md:justify-between">
           <p>
             © {year}
             {legalName ? ` ${legalName}.` : ""} All rights reserved.
-            {license && <> Florida pest control license #{license}.</>}
           </p>
           <ul className="flex gap-6">
             <li>

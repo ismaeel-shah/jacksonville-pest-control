@@ -2,102 +2,128 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { LegalPage } from "@/components/sections/LegalPage";
 import { siteConfig } from "@/config/site";
-import { filled, getBusinessName, getFormEmbed, getPhone, getSiteUrl } from "@/lib/config";
+import { filled, getBusinessName, getPhone, getSiteUrl } from "@/lib/config";
 import { buildMetadata } from "@/lib/metadata";
 import { STATIC_ROUTES } from "@/lib/routes";
 
 export const metadata = buildMetadata({
   title: "Privacy Policy",
   description:
-    "How we collect, use, and protect the information you share when you visit our website or request a free pest inspection in Jacksonville, FL.",
+    "How this website collects and uses information when you browse it or call the phone number on it to be connected with a local pest control provider in Jacksonville, FL.",
   path: STATIC_ROUTES.privacy,
 });
 
 // OWNER: have reviewed by a legal professional before launch
-const LAST_UPDATED = "2026-10-12";
+const LAST_UPDATED = "2026-10-16";
 
 export default function PrivacyPolicyPage() {
-  const company = getBusinessName() ?? "our company";
+  const company = getBusinessName() ?? "this website";
   const email = filled(siteConfig.email);
   const phone = getPhone();
-  const formEmbed = getFormEmbed();
 
   return (
     <>
       <Breadcrumbs items={[{ name: "Privacy Policy", href: STATIC_ROUTES.privacy }]} />
       <LegalPage title="Privacy Policy" lastUpdated={LAST_UPDATED}>
         <p>
-          This Privacy Policy explains how {company} (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) collects, uses, and
-          protects information when you visit {getSiteUrl().replace(/^https?:\/\//, "")} or contact us. We keep this simple:
-          we only collect what we need to respond to you and run our business, and we never sell your information.
+          This Privacy Policy explains how {company} (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), the operator of{" "}
+          {getSiteUrl().replace(/^https?:\/\//, "")}, collects and uses information when you visit this website or call the
+          phone number shown on it. This website is an information and referral resource. We are not a pest control
+          company. When you call, your call is connected to an independent, third-party pest control provider.
         </p>
 
-        <h2>Information we collect</h2>
-        <p>When you fill out our free inspection or quote form, we collect the information you choose to give us:</p>
-        <ul>
-          <li>Your name, phone number, and ZIP code</li>
-          <li>Your email address, if you provide it</li>
-          <li>Whether the property is residential or commercial, and your business name if you share it</li>
-          <li>The pest problem you select and any message you write</li>
-          <li>The web page you were on when you sent the form</li>
-        </ul>
-        {formEmbed && (
-          <p>
-            Our request form is provided by a third-party scheduling and customer management service. Information you enter
-            in that form is sent to that provider to deliver your request to us, and is also handled under the provider&apos;s
-            own privacy policy.
-          </p>
-        )}
+        <h2>No forms on this website</h2>
         <p>
-          When you browse our site, we also collect basic technical information automatically, such as your browser type,
-          device type, general location (city or region), the pages you visit, and how you arrived at our site.
+          This website does not have contact, request, or sign-up forms, and we do not ask you to type in your name, address,
+          or other personal details. The only ways information reaches us are the technical information collected
+          automatically while you browse, described below, and the phone calls you choose to make.
         </p>
 
-        <h2>How we use your information</h2>
-        <ul>
-          <li>To call, text, or email you about your request and schedule your inspection or service</li>
-          <li>To provide pest control services and keep records of the work we perform</li>
-          <li>To understand which pages are helpful so we can improve our website</li>
-          <li>To protect our website from spam and misuse</li>
-          <li>To meet legal, tax, and regulatory requirements</li>
-        </ul>
+        <h2>Information collected while you browse</h2>
+        <p>
+          When you browse our site, we collect basic technical information automatically, such as your browser type, device
+          type, general location (city or region), the pages you visit, and how you arrived at our site.
+        </p>
 
         <h2>Cookies and analytics</h2>
         <p>
           We use Google Analytics to understand how visitors use our site, for example which pages are visited and whether
-          people use our phone and quote buttons. Google Analytics uses cookies and similar technologies to collect this
-          information. You can block cookies in your browser settings or install the{" "}
+          people use the call buttons. Google Analytics uses cookies and similar technologies to collect this information. You
+          can block cookies in your browser settings or install the{" "}
           <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">
             Google Analytics opt-out browser add-on
           </a>
           . Our site works normally without analytics cookies.
         </p>
 
-        <h2>How we share information</h2>
-        <p>We do not sell or rent your personal information. We share it only with:</p>
+        <h2>Phone calls</h2>
+        <p>
+          When you call the phone number on this website
+          {phone && (
+            <>
+              {" "}
+              (<a href={phone.href}>{phone.display}</a>)
+            </>
+          )}
+          , your call is routed through a call-tracking service and connected to an independent, third-party pest control
+          provider that serves your area. When you call, the following information may be collected:
+        </p>
         <ul>
-          <li>Service providers that help us run our business, such as our website host, email delivery service, and analytics provider, who may use it only to provide their services to us</li>
-          <li>Authorities, when required by law or to protect our rights, our customers, or the public</li>
-          <li>A buyer or successor, if our business is sold or transferred</li>
+          <li>The phone number you are calling from</li>
+          <li>The date, time, and length of the call</li>
+          <li>Your general location, based on your phone number or area code</li>
+          <li>The web page you were on when you called, if you called from the site</li>
+        </ul>
+        <p>
+          Calls may be recorded and monitored for quality assurance, call routing, and billing purposes. By calling the number
+          on this site, you agree that your call may be recorded.
+        </p>
+        <p>
+          The provider you speak with is a separate business. Any information you give them during the call, such as your
+          name, address, or details about your property, is handled by that provider under their own privacy practices. We
+          do not control how providers use the information you share with them.
+        </p>
+
+        <h2>How we use information</h2>
+        <ul>
+          <li>To connect your call with a local pest control provider</li>
+          <li>To measure call volume, call quality, and which pages lead to calls</li>
+          <li>To understand which pages are helpful so we can improve our website</li>
+          <li>To protect our website and phone line from spam, fraud, and misuse</li>
+          <li>To meet legal, tax, and regulatory requirements</li>
+        </ul>
+
+        <h2>How we share information</h2>
+        <p>
+          We do not sell your personal information in the sense of offering lists of names or contact details for sale. We
+          share call information with call-routing partners and the providers who receive your call so they can respond to
+          your request. We may also share information with:
+        </p>
+        <ul>
+          <li>Service providers that help us run this website, such as our website host and analytics provider, who may use it only to provide their services to us</li>
+          <li>Authorities, when required by law or to protect our rights, our visitors, or the public</li>
+          <li>A buyer or successor, if this website is sold or transferred</li>
         </ul>
 
         <h2>How long we keep information</h2>
         <p>
-          We keep form submissions and customer records for as long as needed to serve you and to meet legal and
-          record-keeping requirements. When information is no longer needed, we delete it or make it anonymous.
+          We keep call records and website data only as long as needed for the purposes described above and to meet legal
+          and record-keeping requirements. When information is no longer needed, we delete it or make it anonymous. Providers
+          and call-routing partners keep their own records under their own policies.
         </p>
 
         <h2>How we protect information</h2>
         <p>
-          Our website uses encrypted connections (HTTPS), and we limit access to your information to people who need it to
-          help you. No method of sending or storing data is completely secure, but we take reasonable steps to protect what
-          you share with us.
+          Our website uses encrypted connections (HTTPS), and we limit access to call and website data to people who need it.
+          No method of sending or storing data is completely secure, but we take reasonable steps to protect the information
+          we handle.
         </p>
 
         <h2>Your choices</h2>
         <p>
-          You can ask us to tell you what personal information we have about you, correct it, or delete it. You can also ask
-          us to stop contacting you at any time. To make a request, contact us using the details below.
+          You can ask us to tell you what personal information we have about you, correct it, or delete it. For information
+          you gave directly to a pest control provider during a call, please contact that provider. To make a request to us,
+          contact us using the details below.
         </p>
 
         <h2>Children&apos;s privacy</h2>
@@ -114,25 +140,20 @@ export default function PrivacyPolicyPage() {
 
         <h2>Contact us</h2>
         <p>
-          Questions about this policy or your information? Reach us
-          {email && (
+          Questions about this policy or your information? Reach the website operator
+          {email ? (
             <>
               {" "}
               by email at <a href={`mailto:${email}`}>{email}</a>
             </>
-          )}
-          {phone && (
-            <>
-              {email ? " or" : ""} by phone at <a href={phone.href}>{phone.display}</a>
-            </>
-          )}
-          {!email && !phone && (
+          ) : (
             <>
               {" "}
               through our <Link href={STATIC_ROUTES.contact}>contact page</Link>
             </>
           )}
-          .
+          . Please note that the phone number on this site connects you to a pest control provider, not to the website
+          operator.
         </p>
       </LegalPage>
     </>

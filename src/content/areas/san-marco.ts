@@ -5,11 +5,11 @@ export const sanMarco: AreaContent = {
   published: true,
   name: "San Marco",
   region: "jacksonville",
-  hubBlurb: "1920s-era homes along the St. Johns plus the shops and restaurants of San Marco Square, so we handle both residential termites and commercial accounts.",
+  hubBlurb: "1920s-era homes along the St. Johns plus the shops and restaurants of San Marco Square, so pest control here covers both residential termites and commercial accounts.",
   seo: {
-    title: "Pest Control in San Marco, FL | Local Technicians",
+    title: "Pest Control in San Marco, FL | Call a Local Pest Pro",
     description:
-      "San Marco pest control for older homes and the shops around San Marco Square. Termites, roof rats, roaches, and mosquitoes handled. Get a free inspection.",
+      "San Marco pest control for older homes and the shops around San Marco Square. Termites, roof rats, roaches, and mosquitoes. Call to reach a local pro today.",
     primaryKeyword: "pest control San Marco FL",
     secondaryKeywords: [
       "termite inspection San Marco Jacksonville",
@@ -28,7 +28,7 @@ export const sanMarco: AreaContent = {
   },
   intro: [
     "San Marco broke ground in 1925, and lots kept selling into the 1940s. The result is a neighborhood full of homes in a mix of period styles, including Mediterranean Revival, and many are now close to a hundred years old. Nearby Miramar adds plenty of 1940s homes with original hardwood floors and plaster walls. Charming as they are, those homes rarely have the built-in pest protection newer houses get.",
-    "Older houses, a riverfront setting, and big shade trees make San Marco a place where termites and roof rats need regular attention. Just as important, San Marco Square is packed with restaurants, a historic theater, and small shops that depend on a clean, pest-free image. As a local team, we help families protect their homes and help business owners keep customers coming back.",
+    "Older houses, a riverfront setting, and big shade trees make San Marco a place where termites and roof rats need regular attention. Just as important, San Marco Square is packed with restaurants, a historic theater, and small shops that depend on a clean, pest-free image. A local pest control pro can help families protect their homes and help business owners keep customers coming back.",
   ],
   commonPests: {
     heading: "Why These Pests Show Up in San Marco",
@@ -58,9 +58,9 @@ export const sanMarco: AreaContent = {
   homes: {
     heading: "Old Homes, Riverfront Lots, and a Busy Square",
     body: [
-      "Most homes in San Marco and Miramar were built before modern termite pretreatment was standard. Original wood is often still in place, and small cracks in older foundations give termites a hidden way in. Booking a [yearly termite check](/termite-inspection) is wise, and call sooner if you notice swarmers in spring.",
-      "Riverfront and lakeside homes deal with more moisture, so we check around seawalls, docks, and low spots in the yard. Tile roofs and decorative stucco also hide small gaps where rats and wasps can enter, so we inspect those closely.",
-      "San Marco Square and the offices on the nearby Southbank need a different approach. Restaurants and shops share walls, and roaches or rodents can move between businesses. Our [service for local businesses](/commercial) sets up quiet, regular visits and keeps clear records.",
+      "Most homes in San Marco and Miramar were built before modern termite pretreatment was standard. Original wood is often still in place, and small cracks in older foundations give termites a hidden way in. Scheduling a [yearly termite check](/termite-inspection) is wise, and call sooner if you notice swarmers in spring.",
+      "Riverfront and lakeside homes deal with more moisture, so it pays to check around seawalls, docks, and low spots in the yard. Tile roofs and decorative stucco also hide small gaps where rats and wasps can enter, so those deserve a close look too.",
+      "San Marco Square and the offices on the nearby Southbank need a different approach. Restaurants and shops share walls, and roaches or rodents can move between businesses. [Pest control for local businesses](/commercial) means quiet, regular visits and clear records.",
     ],
   },
   popularServices: [
@@ -76,12 +76,12 @@ export const sanMarco: AreaContent = {
     {
       question: "My San Marco home is from the 1930s. Does it need special termite care?",
       answer:
-        "It benefits from closer attention. Homes that old were built long before modern termite pretreatment, and many still have original wood framing and floors. We inspect carefully for mud tubes, hollow wood, and swarm signs, then recommend the least disruptive treatment that will protect the home. Yearly inspections are the best way to catch problems early.",
+        "It benefits from closer attention. Homes that old were built long before modern termite pretreatment, and many still have original wood framing and floors. A technician should inspect carefully for mud tubes, hollow wood, and swarm signs, then recommend the least disruptive treatment that will protect the home. Yearly inspections help catch problems early.",
     },
     {
       question: "Will pest service at my San Marco Square shop bother customers?",
       answer:
-        "It shouldn't. Most of our work in the Square happens before doors open or after closing, and much of it takes place in back rooms, kitchens, and alleys where shoppers never go. Exterior stations are low and discreet. If a product needs dry time or a re-entry period, your technician explains it ahead of time so you can plan around it.",
+        "It shouldn't. Most commercial pest work in the Square can happen before doors open or after closing, and much of it takes place in back rooms, kitchens, and alleys where shoppers never go. Exterior stations are low and discreet. If a product needs dry time or a re-entry period, your technician should explain it ahead of time so you can plan around it.",
     },
     {
       question: "Why do I see big roaches in my San Marco home after rain?",
@@ -90,5 +90,5 @@ export const sanMarco: AreaContent = {
     },
   ],
   nearbyAreas: ["riverside-avondale", "southside", "mandarin", "arlington"],
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-10-16",
 };

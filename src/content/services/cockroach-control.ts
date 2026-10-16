@@ -11,7 +11,7 @@ export const cockroachControl: ServiceContent = {
   seo: {
     title: "Cockroach Control in Jacksonville, FL | Palmetto Bugs",
     description:
-      "Cockroach control in Jacksonville, FL for palmetto bugs and German roaches. Targeted baits, exterior treatment, and honest advice. Call for a free inspection.",
+      "Cockroach control in Jacksonville, FL for palmetto bugs and German roaches, with targeted baits and exterior treatment. Call to speak with a local pest pro.",
     primaryKeyword: "cockroach control Jacksonville FL",
     secondaryKeywords: ["palmetto bugs", "German cockroaches", "roach exterminator", "American cockroach", "roach gel bait"],
   },
@@ -25,12 +25,12 @@ export const cockroachControl: ServiceContent = {
   },
   intro: [
     "Few things make a Jacksonville homeowner jump like a big palmetto bug running across the kitchen floor at night. And if you're seeing small roaches when you flip on the lights, that's a different problem that needs a different fix.",
-    "Our cockroach control starts by figuring out which roach you have and where it's coming from. Large outdoor roaches call for a strong exterior treatment and sealing up the ways they get in. Small indoor roaches call for precise baits and growth regulators placed right where they hide. We'll also show you simple changes that make your home less inviting, so the results last after we leave.",
+    "Good cockroach control starts by figuring out which roach you have and where it's coming from. Large outdoor roaches call for a strong exterior treatment and sealing up the ways they get in. Small indoor roaches call for precise baits and growth regulators placed right where they hide. A local pest control pro can also point out simple changes that make your home less inviting, so the results last after the visit.",
   ],
   localProblem: {
     heading: "Why Roaches Are So Common in Jacksonville",
     body: [
-      "Around here, \"palmetto bug\" is the everyday name for the **American cockroach** and similar large roaches, like the smokybrown cockroach. They're big, reddish-brown, and sometimes fly. They mostly live outdoors in mulch, palm trees, leaf piles, and sewers, where our warm, humid weather lets them thrive all year.",
+      "Around here, \"palmetto bug\" is the everyday name for the **American cockroach** and similar large roaches, like the smokybrown cockroach. They're big, reddish-brown, and sometimes fly. They mostly live outdoors in mulch, palm trees, leaf piles, and sewers, where Northeast Florida's warm, humid weather lets them thrive all year.",
       "Palmetto bugs come inside when conditions change. **Summer heat and heavy rain** drive them toward cooler, drier spaces, and they slip in under doors, through plumbing gaps, and up drains. One after a storm is common. Seeing them every week means something is letting them in.",
       "**German cockroaches** are different. They're small, tan, and live entirely indoors, usually in kitchens and bathrooms. They multiply quickly, often arrive in grocery bags, boxes, or used appliances, and need focused treatment inside.",
     ],
@@ -47,13 +47,13 @@ export const cockroachControl: ServiceContent = {
     ],
   },
   process: {
-    heading: "How We Treat Cockroaches",
+    heading: "How Cockroach Treatment Works",
     steps: [
-      { title: "Inspect and identify", description: "We check kitchens, bathrooms, garages, and the exterior to learn which roach you have." },
-      { title: "Find entry points and hot spots", description: "We look for gaps around pipes and doors, damp areas, and hiding spots like mulch beds and clutter." },
+      { title: "Inspect and identify", description: "The technician checks kitchens, bathrooms, garages, and the exterior to learn which roach you have." },
+      { title: "Find entry points and hot spots", description: "The inspection looks for gaps around pipes and doors, damp areas, and hiding spots like mulch beds and clutter." },
       { title: "Targeted interior treatment", description: "Baits and growth regulators go into cracks, hinges, and voids, not across counters." },
-      { title: "Exterior treatment", description: "We treat the foundation, entry points, and outdoor hiding spots to stop palmetto bugs before they get in." },
-      { title: "Follow-up and adjust", description: "We return to check results and fine-tune treatment, which matters most with German cockroaches." }, // OWNER: confirm follow-up schedule for German cockroach jobs
+      { title: "Exterior treatment", description: "The foundation, entry points, and outdoor hiding spots are treated to stop palmetto bugs before they get in." },
+      { title: "Follow-up and adjust", description: "A return visit checks results and fine-tunes treatment, which matters most with German cockroaches." },
     ],
   },
   treatmentOptions: {
@@ -78,25 +78,17 @@ export const cockroachControl: ServiceContent = {
       {
         title: "Sealing and exclusion",
         description:
-          "Closing gaps around plumbing, under doors, and at vents gives roaches fewer ways in. We point out problem spots and can seal small ones during service.", // OWNER: confirm whether minor sealing is included in service
+          "Closing gaps around plumbing, under doors, and at vents gives roaches fewer ways in. Ask your technician to point out problem spots and whether small gaps can be sealed during the visit.",
       },
     ],
   },
   safety: {
     heading: "Is Cockroach Treatment Safe for Kids and Pets?",
     body: [
-      "Yes, when it's done with care. Indoors, we rely mostly on baits and growth regulators placed inside cracks, hinges, and wall voids, out of reach of children and pets, rather than spraying floors and counters.",
-      "Each product is approved for indoor roach control and used exactly as its label instructs. Keep kids and pets off exterior treated areas until they dry. Your technician will tell you when it's okay to use those spaces again.",
+      "Yes, when it's done with care. Indoor roach treatment relies mostly on baits and growth regulators placed inside cracks, hinges, and wall voids, out of reach of children and pets, rather than sprays across floors and counters.",
+      "Each product should be approved for indoor roach control and used exactly as its label instructs. Keep kids and pets off exterior treated areas until they dry. Your technician will tell you when it's okay to use those spaces again.",
     ],
   },
-  costFactors: [
-    { title: "Type of cockroach", description: "German cockroaches indoors usually need more detailed work than occasional palmetto bugs." },
-    { title: "Severity of the infestation", description: "A few roaches in one room is a smaller job than activity in every cabinet and bathroom." },
-    { title: "Number of visits", description: "Heavy German cockroach problems often need several visits to break the breeding cycle." },
-    { title: "Size and layout", description: "More kitchens, bathrooms, and square footage mean more areas to treat." },
-    { title: "Exterior conditions", description: "Heavy mulch, palms, woodpiles, and nearby storm drains can call for more exterior work." },
-    { title: "One-time or ongoing service", description: "A single cleanout and a recurring plan that keeps palmetto bugs outside are priced differently." },
-  ],
   prevention: {
     heading: "Tips to Keep Roaches Away",
     tips: [
@@ -110,7 +102,7 @@ export const cockroachControl: ServiceContent = {
     ],
   },
   forBusinesses: [
-    "Restaurants and commercial kitchens can't afford a German cockroach problem. We offer discreet, scheduled service around your hours, with documentation you can show a health inspector. Learn how our [restaurant and commercial pest programs](/commercial) work.",
+    "Restaurants and commercial kitchens can't take chances with German cockroaches. A local pest control pro can set up discreet, scheduled service around your hours, with documentation you can show a health inspector. Learn how [restaurant and commercial pest programs](/commercial) work.",
   ],
   faqs: [
     {
@@ -121,7 +113,7 @@ export const cockroachControl: ServiceContent = {
     {
       question: "Why do I see more roaches after treatment?",
       answer:
-        "Seeing more roaches for a short time after treatment is normal. Treatments can drive roaches out of hiding, so they're more visible for a week or two before numbers drop. Avoid store-bought sprays during this time, because they can make roaches avoid the baits. If activity hasn't slowed after a couple of weeks, call us.",
+        "Seeing more roaches for a short time after treatment is normal. Treatments can drive roaches out of hiding, so they're more visible for a week or two before numbers drop. Avoid store-bought sprays during this time, because they can make roaches avoid the baits. If activity hasn't slowed after a couple of weeks, call your technician.",
     },
     {
       question: "Does seeing a palmetto bug mean my house is dirty?",
@@ -135,5 +127,5 @@ export const cockroachControl: ServiceContent = {
     },
   ],
   relatedServices: ["general-pest-control", "moisture-control", "rodent-control"],
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-10-16",
 };

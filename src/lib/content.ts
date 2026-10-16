@@ -44,7 +44,7 @@ export const getArea = (slug: string) => findPublished(areas, slug);
 export const getAreasBySlugs = (slugs: string[]) => pickPublished(areas, slugs);
 export const getAreasByRegion = (region: AreaRegion) =>
   published(areas).filter((area) => area.region === region);
-/** Unpublished areas, for the plain-text "We also serve" list on the hub. */
+/** Unpublished areas, for the plain-text "Also covered" list on the hub. */
 export const getUnpublishedAreas = (): AreaContent[] => areas.filter((area) => !area.published);
 
 // Industries

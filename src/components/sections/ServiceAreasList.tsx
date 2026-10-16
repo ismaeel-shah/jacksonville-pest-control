@@ -40,7 +40,7 @@ export function ServiceAreasList({
       )}
       <p className="mt-8">
         <Link href={STATIC_ROUTES.serviceAreas} className="font-bold text-primary hover:underline">
-          See all the areas we serve →
+          See all service areas →
         </Link>
       </p>
     </Section>

@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 export type ButtonVariant = "cta" | "outline" | "outline-light" | "primary";
 
 const VARIANTS: Record<ButtonVariant, string> = {
-  // Orange is reserved for call/quote actions only (brief section 4).
+  // Orange is reserved for call actions only (brief section 4).
   cta: "bg-accent text-accent-foreground hover:bg-accent-hover",
   outline: "border-2 border-primary text-primary hover:bg-primary-soft",
   "outline-light": "border-2 border-white text-white hover:bg-white/10",

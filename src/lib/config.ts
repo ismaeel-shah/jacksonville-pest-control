@@ -51,30 +51,6 @@ export function getBusinessName(): string | null {
   return filled(siteConfig.businessName);
 }
 
-/** Turns protocol-relative "//host/path" (common in embed codes) into https; rejects anything not https. */
-function toHttpsUrl(value: string | null): string | null {
-  if (!value) return null;
-  const url = value.trim().startsWith("//") ? `https:${value.trim()}` : value.trim();
-  return url.startsWith("https://") ? url : null;
-}
-
-/**
- * The renter's embedded contact form, or null to use the built-in quote form.
- * Only https URLs are accepted so a typo can't load an insecure page.
- */
-export function getFormEmbed(): {
-  src: string;
-  height: number;
-  mobileHeight: number;
-  title: string;
-  scriptSrc: string | null;
-} | null {
-  const { src, height, mobileHeight, title, scriptSrc } = siteConfig.formEmbed;
-  const url = toHttpsUrl(filled(src));
-  if (!url) return null;
-  return { src: url, height, mobileHeight: mobileHeight || height, title, scriptSrc: toHttpsUrl(filled(scriptSrc)) };
-}
-
 /** Phone details for tel: links, or null until both phone fields are filled in. */
 export function getPhone(): { display: string; href: string } | null {
   const display = filled(siteConfig.phoneDisplay);

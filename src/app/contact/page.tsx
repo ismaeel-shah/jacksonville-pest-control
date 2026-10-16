@@ -1,25 +1,25 @@
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
-import { QuoteForm } from "@/components/forms/QuoteForm";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { CTASection } from "@/components/sections/CTASection";
 import { Hero } from "@/components/sections/Hero";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { MapEmbed } from "@/components/ui/MapEmbed";
+import { CallButton } from "@/components/ui/CallButton";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { siteConfig } from "@/config/site";
-import { filled, getBusinessName, getFormEmbed, getPhone } from "@/lib/config";
+import { serviceProcess } from "@/content/promises";
+import { filled, getPhone } from "@/lib/config";
 import { formatHoursRange } from "@/lib/format";
 import { buildMetadata } from "@/lib/metadata";
 import { STATIC_ROUTES } from "@/lib/routes";
 import { buildWebPageSchema } from "@/lib/schema";
 
 const DESCRIPTION =
-  "Schedule your free pest inspection in Jacksonville, FL. Call us or send the form and we'll call you back to set a time. Upfront quotes, no obligation.";
+  "Call to talk with a local pest control pro in Jacksonville, FL. Your call connects you with an independent provider who serves your neighborhood.";
 
 export const metadata = buildMetadata({
-  title: "Free Pest Inspection in Jacksonville, FL | Contact",
+  title: "Call a Local Pest Control Pro in Jacksonville, FL",
   description: DESCRIPTION,
   path: STATIC_ROUTES.contact,
 });
@@ -27,59 +27,46 @@ export const metadata = buildMetadata({
 export default function ContactPage() {
   const phone = getPhone();
   const email = filled(siteConfig.email);
-  const name = getBusinessName();
-  const { address } = siteConfig;
-  const street = address.showPublicly ? filled(address.street) : null;
-  const zip = filled(address.zip);
-  const showMap = filled(siteConfig.googleBusinessProfileUrl) && name;
 
   return (
     <>
       <Breadcrumbs items={[{ name: "Contact", href: STATIC_ROUTES.contact }]} />
       <JsonLd
-        data={buildWebPageSchema({ type: "ContactPage", name: "Contact Us", description: DESCRIPTION, path: STATIC_ROUTES.contact })}
+        data={buildWebPageSchema({ type: "ContactPage", name: "Contact", description: DESCRIPTION, path: STATIC_ROUTES.contact })}
       />
 
       <Hero
-        h1="Schedule Your Free Pest Inspection in Jacksonville"
-        subheadline={
-          getFormEmbed()
-            ? "Call us for the fastest help, or send the form and we'll call you back to set up a time that works for you."
-            : "Call us and we'll set up a time that works for you. The inspection is free, with an upfront quote before any work."
-        }
-        aside={
-          <div className="rounded-xl border border-line bg-white p-6 shadow-lg md:p-8">
-            <QuoteForm title="Request Your Free Inspection" />
-          </div>
-        }
+        h1="Talk to a Local Pest Control Pro in Jacksonville"
+        subheadline="Call the number below. Your call connects you with an independent provider who serves your area and can answer your questions."
+        aside={<CallCard />}
       />
 
       <Section id="contact-details" tone="surface" labelledBy="contact-details-heading">
-        <SectionHeading id="contact-details-heading" title="How to Reach Us" tone="surface" />
+        <SectionHeading id="contact-details-heading" title="Before You Call" tone="surface" />
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {phone && (
             <div className="rounded-xl bg-white p-6 shadow-sm">
               <Phone aria-hidden className="size-7 text-primary" />
-              <h3 className="mt-3 text-xl font-bold text-secondary">Call us</h3>
+              <h3 className="mt-3 text-xl font-bold text-secondary">Phone</h3>
               <a href={phone.href} className="mt-2 block text-3xl font-extrabold text-primary hover:underline">
                 {phone.display}
               </a>
-              <p className="mt-2 text-base text-ink-muted">The fastest way to schedule or ask a question.</p>
+              <p className="mt-2 text-base text-ink-muted">Have your ZIP code ready and a short description of the problem.</p>
             </div>
           )}
           {email && (
             <div className="rounded-xl bg-white p-6 shadow-sm">
               <Mail aria-hidden className="size-7 text-primary" />
-              <h3 className="mt-3 text-xl font-bold text-secondary">Email us</h3>
+              <h3 className="mt-3 text-xl font-bold text-secondary">Questions about this site</h3>
               <a href={`mailto:${email}`} className="mt-2 block break-all text-lg font-bold text-primary hover:underline">
                 {email}
               </a>
-              <p className="mt-2 text-base text-ink-muted">We reply to emails during business hours.</p>
+              <p className="mt-2 text-base text-ink-muted">For questions about this website. For pest problems, please call.</p>
             </div>
           )}
           <div className="rounded-xl bg-white p-6 shadow-sm">
             <Clock aria-hidden className="size-7 text-primary" />
-            <h3 className="mt-3 text-xl font-bold text-secondary">Office hours</h3>
+            <h3 className="mt-3 text-xl font-bold text-secondary">Call hours</h3>
             <dl className="mt-2 space-y-1">
               {siteConfig.hours.map((hours) => (
                 <div key={hours.days} className="flex justify-between gap-4">
@@ -91,56 +78,55 @@ export default function ContactPage() {
           </div>
           <div className="rounded-xl bg-white p-6 shadow-sm md:col-span-2 lg:col-span-3">
             <MapPin aria-hidden className="size-7 text-primary" />
-            <h3 className="mt-3 text-xl font-bold text-secondary">Where we work</h3>
-            {street && (
-              <address className="mt-2 not-italic">
-                {street}, {address.city}, {address.state} {zip}
-              </address>
-            )}
+            <h3 className="mt-3 text-xl font-bold text-secondary">Areas covered</h3>
             <p className="mt-2 text-ink-muted">
-              We come to you anywhere in Jacksonville, including the Beaches, Mandarin, Arlington, the Southside, and the
-              Northside, plus nearby communities in St. Johns, Clay, and Nassau counties.{" "}
+              Calls are connected with providers serving Jacksonville, including the Beaches, Mandarin, Arlington, the
+              Southside, and the Northside, plus nearby communities in St. Johns, Clay, and Nassau counties.{" "}
               <Link href={STATIC_ROUTES.serviceAreas} className="font-semibold text-primary underline underline-offset-2">
                 See all service areas
               </Link>
               .
             </p>
-            {showMap && (
-              <div className="mt-6">
-                <MapEmbed query={`${name}, ${address.city}, ${address.state}`} title={`Map showing ${name}`} />
-              </div>
-            )}
           </div>
         </div>
       </Section>
 
-      <ProcessSteps
-        id="after-contact"
-        title="What Happens After You Contact Us"
-        steps={[
-          {
-            title: "We call you back",
-            description:
-              "A real person from our team calls to hear about the problem and find a time for your free inspection.", // OWNER: confirm callback promise
-          },
-          {
-            title: "We inspect and explain",
-            description:
-              "Your technician inspects the property, shows you what they found, and walks you through the options.",
-          },
-          {
-            title: "You get an upfront quote",
-            description:
-              "You'll know the plan and the price before any work begins. There's no obligation and no pressure.",
-          },
-        ]}
-      />
+      <ProcessSteps id="after-calling" title="What Happens When You Call" steps={serviceProcess} />
 
       <CTASection
-        form={null}
-        title="Prefer to Talk It Through?"
-        text="Give us a call. We'll answer your questions and help you figure out the next step, even if you're not ready to book."
+        title="Have a Question About a Pest?"
+        text="Call and describe what you're seeing. A local pro can help you figure out the next step, even if you're not ready to set up a visit."
       />
     </>
+  );
+}
+
+/** Hero aside: the phone number front and center (the site has no contact form). */
+function CallCard() {
+  return (
+    <div className="rounded-xl border border-line bg-white p-6 shadow-lg md:p-8">
+      <h2 className="text-2xl font-extrabold text-secondary">Call to Get Started</h2>
+      <p className="mt-2 text-base text-ink-muted">
+        Tell the provider what pests you&apos;re seeing, where, and for how long. They can explain the options and, if you&apos;d
+        like, set up a time to visit.
+      </p>
+      <CallButton className="mt-6 w-full" />
+      {siteConfig.hours.length > 0 && (
+        <div className="mt-6 rounded-xl bg-surface p-4">
+          <p className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-secondary">
+            <Clock aria-hidden className="size-4 text-primary" />
+            Call hours
+          </p>
+          <dl className="mt-3 space-y-1.5 text-base">
+            {siteConfig.hours.map((hours) => (
+              <div key={hours.days} className="flex justify-between gap-4">
+                <dt className="font-semibold text-ink">{hours.days}</dt>
+                <dd className="text-ink-muted">{formatHoursRange(hours)}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      )}
+    </div>
   );
 }

@@ -2,13 +2,11 @@ import type { ReactNode } from "react";
 import { CallButton } from "@/components/ui/CallButton";
 import { Container } from "@/components/ui/Container";
 import { ImageSlot, willRenderImage } from "@/components/ui/ImageSlot";
-import { QuoteButton } from "@/components/ui/QuoteButton";
-import { TrustRow } from "@/components/ui/TrustRow";
 import type { ImageSlot as ImageSlotContent } from "@/content/types";
 
 /**
- * Page hero: one H1, benefit line, Call + Free Inspection buttons, trust row.
- * The right column shows `aside` (e.g. the quote form) or the hero image.
+ * Page hero: one H1, benefit line, Call button.
+ * The right column shows `aside` (e.g. a call card) or the hero image.
  */
 export function Hero({
   h1,
@@ -34,11 +32,8 @@ export function Hero({
           <p className="mt-5 text-xl text-ink-muted md:text-2xl">{subheadline}</p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <CallButton />
-            <QuoteButton cta="hero_free_inspection" />
           </div>
-          <div className="mt-8">
-            <TrustRow />
-          </div>
+          <p className="mt-4 text-base text-ink-muted">Your call connects you with an independent local pest control provider.</p>
         </div>
         {right && <div>{right}</div>}
       </Container>

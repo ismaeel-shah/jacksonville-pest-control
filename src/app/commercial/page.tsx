@@ -19,7 +19,7 @@ import { STATIC_ROUTES, industryHref } from "@/lib/routes";
 import { buildServiceSchema } from "@/lib/schema";
 
 const DESCRIPTION =
-  "Commercial pest control in Jacksonville, FL for restaurants, apartments, warehouses, and offices. Discreet scheduling and service records for inspections.";
+  "Commercial pest control in Jacksonville, FL for restaurants, apartments, warehouses, and offices. Call to talk with a local commercial pest control pro today.";
 
 export const metadata = buildMetadata({
   title: "Commercial Pest Control in Jacksonville, FL",
@@ -33,53 +33,53 @@ const INDUSTRIES = [
     slug: "restaurants",
     icon: UtensilsCrossed,
     title: "Restaurants & Food Businesses",
-    text: "Roach, rodent, and fly control for kitchens, prep areas, and dining rooms, with records ready for your health inspection.",
+    text: "Roach, rodent, and fly control for kitchens, prep areas, and dining rooms, plus the service records health inspections ask for.",
   },
   {
     slug: "property-management",
     icon: Building2,
     title: "Property Management & Apartments",
-    text: "Scheduled programs across units and common areas, unit turnover treatments, and fast response to tenant reports.",
+    text: "Scheduled programs across units and common areas, unit turnover treatments, and a plan for handling tenant reports.",
   },
   {
     slug: "warehouses",
     icon: Warehouse,
     title: "Warehouses",
-    text: "Perimeter rodent programs, stored-product pest monitoring, and loading dock protection with audit-ready documentation.",
+    text: "Perimeter rodent programs, stored-product pest monitoring, and loading dock protection, with documentation for audits.",
   },
   {
     slug: "offices",
     icon: Briefcase,
     title: "Offices",
-    text: "Quiet, after-hours service for break rooms, restrooms, and shared spaces, so your team never notices we were there.",
+    text: "After-hours service for break rooms, restrooms, and shared spaces, so pest control doesn't interrupt the workday.",
   },
 ];
 
 const COMMERCIAL_FAQS: FAQ[] = [
   {
-    question: "Can you service our business after hours?",
+    question: "Can pest control be done after business hours?",
     answer:
-      "Yes. We regularly schedule early-morning, evening, and weekend visits so treatments happen when customers and employees aren't around. Tell us your operating hours and we'll build a schedule that keeps your business running normally. For urgent problems, we'll work with you to find the least disruptive time.", // OWNER: confirm after-hours availability
+      "Often, yes. Many commercial pest control providers offer early-morning, evening, or weekend visits so treatments happen when customers and employees aren't around. When you call, mention your operating hours and ask the provider what scheduling options they have for your business.",
   },
   {
-    question: "Do you provide documentation for health inspections and audits?",
+    question: "Will I get documentation for health inspections and audits?",
     answer:
-      "Yes. After every visit you receive a service report showing what we inspected, what we found, what we applied, and where. Product labels and safety data sheets are available on request. Many restaurants, food warehouses, and property managers keep these records in a binder or digital file for inspectors and auditors.",
+      "Most commercial providers leave a service report after each visit that shows what was inspected, what was found, what was applied, and where. Product labels and safety data sheets are usually available on request. Ask the provider you speak with what records they provide, since many restaurants, food warehouses, and property managers keep these on file for inspectors and auditors.",
   },
   {
     question: "What is Integrated Pest Management (IPM)?",
     answer:
-      "IPM is a prevention-first approach. Instead of spraying on a schedule no matter what, we inspect, monitor pest activity, fix the conditions that attract pests, seal entry points, and use targeted treatments only where needed. It's the standard many food safety programs and commercial property managers expect.",
+      "IPM is a prevention-first approach. Instead of spraying on a schedule no matter what, the provider inspects, monitors pest activity, addresses the conditions that attract pests, seals entry points, and uses targeted treatments only where needed. It's the standard many food safety programs and commercial property managers expect.",
   },
   {
     question: "How often should a commercial property be serviced?",
     answer:
-      "It depends on the business. Restaurants and food handlers usually need monthly or more frequent service because of constant food and moisture. Offices and retail spaces often do well with monthly or quarterly visits. Warehouses vary with their contents and size. We'll recommend a schedule after inspecting your property.",
+      "It depends on the business. Restaurants and food handlers usually need monthly or more frequent service because of constant food and moisture. Offices and retail spaces often do well with monthly or quarterly visits. Warehouses vary with their contents and size. A provider can recommend a schedule after looking at your property.",
   },
   {
-    question: "Do you work with businesses that have several locations?",
+    question: "What if my business has several locations?",
     answer:
-      "Yes. If you manage several properties or locations around Jacksonville, we can set up one coordinated program with a single point of contact, consistent service across sites, and reports organized by location. That makes it easier to keep every property protected and every record in one place.",
+      "If you manage several properties or locations around Jacksonville, ask the provider whether they can set up one coordinated program with a single point of contact and reports organized by location. That makes it easier to keep every property on the same plan and every record in one place.",
   },
 ];
 
@@ -100,7 +100,7 @@ export default function CommercialPage() {
 
       <Hero
         h1="Commercial Pest Control in Jacksonville, FL"
-        subheadline="Discreet, documented pest control that protects your customers, your staff, and your reputation."
+        subheadline="Discreet, documented pest control that protects your customers, your staff, and your reputation. One call connects you with a local commercial pro."
         image={{ file: "technician-commercial-kitchen-inspection.webp", alt: "Technician inspecting under equipment in a commercial kitchen" }}
       />
 
@@ -108,8 +108,8 @@ export default function CommercialPage() {
         id="intro"
         title="Pest Control Built Around Your Business"
         paragraphs={[
-          "One roach on a dining room wall or a rat by the loading dock can cost you far more than a pest control visit. It can mean a failed inspection, a bad online review, or lost inventory. For businesses, pest control isn't just about getting rid of bugs. It's about protecting the reputation you've worked hard to build.",
-          "We work with restaurants, apartment communities, warehouses, offices, and retail spaces across Jacksonville. Every commercial program starts with a detailed inspection of your property and a conversation about how your business runs, so the plan fits your hours, your building, and your industry's rules.",
+          "One roach on a dining room wall or a rat by the loading dock can do real damage to a business. It can mean a failed health inspection, unhappy customers, or lost inventory. For businesses, pest control isn't just about getting rid of bugs. It's about protecting the reputation you've worked hard to build.",
+          "Local commercial pest control providers work with restaurants, apartment communities, warehouses, offices, and retail spaces across Jacksonville. A good commercial program starts with a close look at your property and a conversation about how your business runs, so the plan fits your hours, your building, and your industry's rules.",
         ]}
       />
 
@@ -118,8 +118,8 @@ export default function CommercialPage() {
         tone="surface"
         title="Discreet Scheduling That Works Around You"
         paragraphs={[
-          "Your customers should never see a pest, and they shouldn't see a pest control technician spraying next to their table either. We schedule service before opening, after closing, or on weekends so treatments happen when your space is empty.", // OWNER: confirm after-hours availability
-          "Our technicians arrive in uniform, work quietly, and respect your space and your staff's time. If an urgent problem comes up during business hours, we'll work with you on the least disruptive way to handle it.",
+          "Your customers should never see a pest, and they shouldn't see a pest control technician spraying next to their table either. Many commercial providers can schedule service before opening, after closing, or on weekends so treatments happen when your space is empty.",
+          "When you call, tell the provider your hours and any areas that need extra care, like kitchens, stockrooms, or tenant units. If an urgent problem comes up during business hours, ask about the least disruptive way to handle it.",
         ]}
       />
 
@@ -128,7 +128,7 @@ export default function CommercialPage() {
         title="Documentation for Health Inspections and Audits"
         image={{ file: "technician-service-report-tablet.webp", alt: "Technician reviewing a digital service report with a business manager" }}
         paragraphs={[
-          "Health inspectors, food safety auditors, and corporate managers all want proof that pests are under control. After every visit, you'll get a clear service report that shows what we inspected, what we found, any products applied, and our recommendations.",
+          "Health inspectors, food safety auditors, and corporate managers all want proof that pests are under control. Commercial providers typically leave a service report after each visit that shows what was inspected, what was found, any products applied, and their recommendations.",
           "Over time, those reports become a record of your pest control program. They show trends, highlight problem areas, and demonstrate to inspectors that you're taking prevention seriously.",
         ]}
         bullets={[
@@ -144,16 +144,16 @@ export default function CommercialPage() {
         tone="surface"
         title="Integrated Pest Management (IPM)"
         paragraphs={[
-          "We use Integrated Pest Management, the prevention-first approach many food safety programs and commercial property managers expect. Rather than spraying on a fixed schedule whether there's a problem or not, we inspect, monitor, and fix the conditions that let pests in.",
-          "That means looking at sanitation, storage, door seals, drains, and landscaping, along with treatment. When products are needed, we choose targeted options like baits, insect growth regulators, and crack-and-crevice treatments. The result is better control with fewer products, which is better for your staff, customers, and property.",
+          "Integrated Pest Management is the prevention-first approach many food safety programs and commercial property managers expect. Rather than spraying on a fixed schedule whether there's a problem or not, an IPM program inspects, monitors, and fixes the conditions that let pests in.",
+          "That means looking at sanitation, storage, door seals, drains, and landscaping, along with treatment. When products are needed, IPM favors targeted options like baits, insect growth regulators, and crack-and-crevice treatments. The result is better control with fewer products, which is better for your staff, customers, and property. Ask the provider you speak with how they use IPM at properties like yours.",
         ]}
       />
 
       <Section id="industries" labelledBy="industries-heading">
         <SectionHeading
           id="industries-heading"
-          title="Industries We Serve"
-          intro="Every industry has different pests, risks, and rules. Our programs are tailored to each one."
+          title="Industries Covered"
+          intro="Every industry has different pests, risks, and rules, so commercial programs are tailored to each one."
         />
         <ul className="grid gap-5 md:grid-cols-2">
           {INDUSTRIES.map(({ slug, icon: Icon, title, text }) => (
@@ -174,19 +174,19 @@ export default function CommercialPage() {
           ))}
         </ul>
         <p className="mt-8 max-w-3xl text-ink-muted">
-          <InlineProse text="We also serve retail stores, medical and dental offices, churches, schools, and HOA common areas. If you have a commercial property, [ask us about a custom program](/contact)." />
+          <InlineProse text="Commercial pest control also covers retail stores, medical and dental offices, churches, schools, and HOA common areas. If you have a commercial property, [call to talk with a local pro about a custom program](/contact)." />
         </p>
       </Section>
 
       <ProcessSteps
         id="commercial-process"
         tone="surface"
-        title="How We Set Up Your Commercial Program"
+        title="How a Commercial Program Is Set Up"
         steps={[
-          { title: "Site inspection", description: "We inspect your property, review any past pest issues, and learn how your business operates." },
-          { title: "Written plan", description: "You get a clear plan with service frequency, treatment methods, and what we'll monitor." },
-          { title: "Scheduled service", description: "We service on a schedule that fits your hours and document every visit." },
-          { title: "Ongoing review", description: "We track activity over time and adjust the plan so problems stay solved." },
+          { title: "Site inspection", description: "The provider inspects your property, asks about past pest issues, and learns how your business operates." },
+          { title: "Written plan", description: "You get a clear plan with service frequency, treatment methods, and what will be monitored." },
+          { title: "Scheduled service", description: "Service happens on a schedule that fits your hours, with every visit documented." },
+          { title: "Ongoing adjustments", description: "Activity is tracked over time and the plan is adjusted as conditions change." },
         ]}
       />
 
@@ -200,9 +200,8 @@ export default function CommercialPage() {
       <FAQSection title="Commercial Pest Control FAQ" faqs={COMMERCIAL_FAQS} />
 
       <CTASection
-        title="Request a Commercial Pest Control Quote"
-        text="Tell us about your business and we'll schedule a free site inspection. You'll get a written plan and an upfront quote with no obligation."
-        defaultPropertyType="commercial"
+        title="Talk With a Local Commercial Pest Control Pro"
+        text="One call connects you with a local provider who handles commercial properties. Describe your business, your hours, and the pests you're seeing, and ask about setting up a program."
       />
     </>
   );

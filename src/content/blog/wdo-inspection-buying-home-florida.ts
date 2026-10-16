@@ -8,11 +8,11 @@ export const wdoInspectionBuyingHomeFlorida: BlogPost = {
     "Buying a home in Florida? Here's what a WDO inspection covers, who usually orders it, how to read the report, and what to do if termites turn up.",
   category: "Termites",
   datePublished: "2026-10-12",
-  dateModified: "2026-10-12",
+  dateModified: "2026-10-16",
   seo: {
     title: "WDO Inspection in Florida: What Home Buyers Should Know",
     description:
-      "Buying a home in Florida? Learn what a WDO inspection covers, how to read the report, and what to do if termites are found before closing. Schedule yours today.",
+      "Buying a home in Florida? Learn what a WDO inspection covers, how to read the report, and what to do if termites are found before closing. Call a local pro.",
     primaryKeyword: "WDO inspection Florida",
     secondaryKeywords: ["wood-destroying organism inspection", "termite inspection when buying a house", "WDO report", "termite inspection for home buyers"],
   },
@@ -22,15 +22,15 @@ export const wdoInspectionBuyingHomeFlorida: BlogPost = {
   },
   intro: [
     "You've found the house, your offer was accepted, and now your agent is handing you a list of inspections to schedule. One of them is a WDO inspection. If you're new to buying in Florida, you may be wondering what that is and whether you really need it.",
-    "In most cases, the answer is yes. Termites and other wood-destroying organisms are common in our warm, humid climate, and the damage they cause often hides behind walls and under floors. Here's what a WDO inspection is, what the report tells you, and how it fits into your purchase.",
+    "In most cases, the answer is yes. Termites and other wood-destroying organisms are common in Florida's warm, humid climate, and the damage they cause often hides behind walls and under floors. Here's what a WDO inspection is, what the report tells you, and how it fits into your purchase.",
   ],
   sections: [
     {
       id: "what-is-a-wdo-inspection",
       heading: "What Is a WDO Inspection?",
       body: [
-        "WDO stands for **wood-destroying organism**. During a WDO inspection, a licensed inspector looks over the home for these pests and any damage they have caused. In Florida, licensed inspectors record their findings on an official state form from the Florida Department of Agriculture and Consumer Services.",
-        "Because everyone uses the same form, the report reads the same way no matter which licensed company does the inspection. That makes it easy for your agent, lender, and the seller to understand what was found.",
+        "WDO stands for **wood-destroying organism**. During a WDO inspection, an inspector from a pest control company that performs WDO inspections looks over the home for these pests and any damage they have caused. In Florida, inspectors record their findings on an official state form, the Wood-Destroying Organisms Inspection Report (FDACS-13645), from the Florida Department of Agriculture and Consumer Services.",
+        "Because everyone uses the same form, the report reads the same way no matter which pest control company does the inspection. That makes it easy for your agent, lender, and the seller to understand what was found.",
       ],
       subsections: [
         {
@@ -49,7 +49,7 @@ export const wdoInspectionBuyingHomeFlorida: BlogPost = {
       id: "do-you-need-one",
       heading: "Who Orders It, and Is It Required?",
       body: [
-        "The buyer usually orders and pays for the WDO inspection during the inspection period in the purchase contract. That timing matters. If something turns up, you still have room to ask questions, negotiate, or walk away under the terms of your contract.",
+        "The buyer usually orders the WDO inspection during the inspection period in the purchase contract. That timing matters. If something turns up, you still have room to ask questions, negotiate, or walk away under the terms of your contract.",
         "Many lenders require a WDO report before closing, depending on the type of loan. Even if your lender doesn't, it's a smart step. A cash buyer has just as much at stake if a hidden termite problem is waiting behind the drywall.",
         "Your real estate agent can tell you what your contract and loan call for. If you're not sure, ask early so the inspection doesn't get squeezed in at the last minute.",
       ],
@@ -62,7 +62,7 @@ export const wdoInspectionBuyingHomeFlorida: BlogPost = {
       ],
       bullets: [
         "**General home inspection:** looks at the roof, plumbing, electrical, HVAC, appliances, and overall condition of the house. A home inspector may point out possible pest damage, but that isn't the focus.",
-        "**WDO inspection:** done by a licensed pest control inspector who focuses only on wood-destroying organisms and records the results on the state WDO form.",
+        "**WDO inspection:** done by a pest control inspector who focuses only on wood-destroying organisms and records the results on the state WDO form.",
         "**Why you want both:** a home inspector might note soft wood near a window. The WDO inspector can tell you whether that's termites, rot, or beetles, and whether it's active.",
       ],
     },
@@ -72,7 +72,7 @@ export const wdoInspectionBuyingHomeFlorida: BlogPost = {
       body: [
         "A WDO inspection covers the visible and accessible areas of the home. The inspector checks the exterior, the foundation, the garage, the interior rooms, plus any attic or crawl space they can get into without risk.",
         "The inspection is non-invasive, so nothing gets opened up, lifted, or taken apart. Areas blocked by stored boxes, finished walls, thick insulation, or dense landscaping may not be fully visible. The report lists these areas so you know what couldn't be checked.",
-        "That means a WDO report is a snapshot of what could be seen on inspection day, not a guarantee that the home is free of every pest. Clearing access to the attic hatch, garage walls, and under sinks before the visit helps the inspector see as much as possible.",
+        "That means a WDO report is a snapshot of what could be seen on inspection day, not proof that the home has no pests anywhere. Clearing access to the attic hatch, garage walls, and under sinks before the visit helps the inspector see as much as possible.",
       ],
     },
     {
@@ -109,7 +109,7 @@ export const wdoInspectionBuyingHomeFlorida: BlogPost = {
         {
           heading: "Signs of previous treatment",
           body: [
-            "Drill holes in the slab or garage floor, bait stations around the house, or a treatment sticker in the garage or electrical panel can show the home was treated before. Ask the seller for treatment records and any warranty paperwork, and find out if the warranty can transfer to you.",
+            "Drill holes in the slab or garage floor, bait stations around the house, or a treatment sticker in the garage or electrical panel can show the home was treated before. Ask the seller for treatment records and any termite protection plan paperwork, and find out if the plan can transfer to you.",
           ],
         },
       ],
@@ -122,8 +122,8 @@ export const wdoInspectionBuyingHomeFlorida: BlogPost = {
       ],
       bullets: [
         "**Talk to your agent first.** They'll know what your contract allows and how to approach the seller.",
-        "**Get a treatment plan and estimate.** A licensed company can recommend the right treatment for the type of termite found.",
-        "**Negotiate.** Buyers often ask the seller to pay for treatment, make repairs, or offer a credit at closing.",
+        "**Get a treatment plan.** A pest control company can recommend the right treatment for the type of termite found.",
+        "**Negotiate.** Buyers often ask the seller to handle treatment or make repairs before closing.",
         "**Check the damage.** If wood looks weakened, have a qualified contractor assess repairs before you close.",
         "**Plan for protection.** Ask about an ongoing termite plan so the problem doesn't come back after you move in.",
       ],
@@ -132,10 +132,10 @@ export const wdoInspectionBuyingHomeFlorida: BlogPost = {
       id: "scheduling",
       heading: "Scheduling Your WDO Inspection",
       body: [
-        "Book your inspection as soon as your contract is signed, since inspection periods go by quickly. Let us know your closing date when you call so we can plan around it.",
-        // OWNER: confirm inspection length and report turnaround time before launch.
-        "Most inspections take about an hour or two, depending on the size of the home and whether there's a crawl space. In most cases, you'll have the written report within a business day, and your inspector will go over the main findings before leaving.",
-        "We provide [WDO and termite inspections for home buyers](/termite-inspection) throughout Northeast Florida, and we're happy to send the report to your agent and lender with your permission. If treatment is needed, our [termite control](/termite-control) team can explain your options. You can also see the [neighborhoods and towns we cover](/service-areas) before you call.",
+        "Book your inspection as soon as your contract is signed, since inspection periods go by quickly. Mention your closing date when you call so the visit can be planned around it.",
+        // OWNER: confirm typical inspection length before launch.
+        "Most inspections take about an hour or two, depending on the size of the home and whether there's a crawl space. Ask when the written report will be ready, and ask the inspector to go over the main findings before leaving.",
+        "Call to be connected with a local pest control pro who performs [WDO and termite inspections for home buyers](/termite-inspection) in Northeast Florida. With your permission, the report can usually be sent to your agent and lender. If treatment is needed, the provider can explain your [termite control](/termite-control) options. You can also see the [neighborhoods and towns in the service area](/service-areas) before you call.",
       ],
     },
   ],

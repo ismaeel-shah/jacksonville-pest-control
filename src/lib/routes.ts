@@ -6,18 +6,13 @@ export const STATIC_ROUTES = {
   about: "/about",
   contact: "/contact",
   serviceAreas: "/service-areas",
-  reviews: "/reviews",
   faq: "/faq",
   blog: "/blog",
   residential: "/residential",
   commercial: "/commercial",
   privacy: "/privacy-policy",
   terms: "/terms-of-service",
-  thankYou: "/thank-you",
 } as const;
-
-/** id of the quote form wrapper; every "Free Quote" button scrolls to it. Keep one per page. */
-export const QUOTE_FORM_ID = "quote-form";
 
 export const serviceHref = (slug: string) => `/${slug}`;
 export const areaHref = (slug: string) => `/service-areas/${slug}`;

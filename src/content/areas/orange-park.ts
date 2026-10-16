@@ -9,13 +9,13 @@ export const orangePark: AreaContent = {
   seo: {
     title: "Pest Control in Orange Park, FL | Move-In Inspections",
     description:
-      "Pest control in Orange Park, FL for new arrivals and longtime residents. Move-in inspections, WDO reports, termite and mosquito service. Call for a free quote.",
+      "Pest control in Orange Park, FL for new arrivals and longtime residents. Move-in inspections, WDO reports, termite and mosquito service. Call a local pro today.",
     primaryKeyword: "pest control Orange Park FL",
     secondaryKeywords: ["WDO inspection Orange Park", "exterminator Orange Park", "mosquito control Doctors Lake", "32073 pest control"],
   },
   hero: {
     h1: "Pest Control in Orange Park, FL",
-    subheadline: "Whether you just got orders to NAS Jacksonville or you've lived by Doctors Lake for years, we'll help you start clean and stay that way.",
+    subheadline: "Whether you just got orders to NAS Jacksonville or you've lived by Doctors Lake for years, one call connects you with a local pro who can help you start clean and stay that way.",
     image: {
       file: "orange-park-fl-home-near-doctors-lake.webp",
       alt: "Single-story Orange Park home with a screened porch and a view toward Doctors Lake",
@@ -24,14 +24,14 @@ export const orangePark: AreaContent = {
   intro: [
     "Pest control in Orange Park, FL often starts with a moving truck. NAS Jacksonville sits only a few miles north of town, so a lot of families arrive, settle in for a tour, and then sell or rent out their homes when new orders come. Every one of those moves is a chance for pests to ride in, or for a problem the last owner ignored to show up.",
     "Water is the other big factor. Orange Park sits right on the St. Johns River, and Doctors Lake curves along its south side. That means humid air, damp soil, and plenty of mosquitoes from spring through fall.",
-    "We work all over the area, from older streets near River Road to the newer homes out toward Oakleaf. If you're buying, selling, or simply settling in, we can tell you what's living in your home and make a plan that fits how long you'll be there.",
+    "Local pest control pros work all over the area, from older streets near River Road to the newer homes out toward Oakleaf. If you're buying, selling, or simply settling in, call to speak with one who can tell you what's living in your home and make a plan that fits how long you'll be there.",
   ],
   commonPests: {
-    heading: "Pests Orange Park Homeowners Call Us About",
+    heading: "Pests Orange Park Homeowners Deal With Most",
     pests: [
       {
         name: "German cockroaches",
-        why: "These small roaches hitch rides in moving boxes, used appliances, and furniture. With so many households coming and going, we often find them in homes and rentals right after a move.",
+        why: "These small roaches hitch rides in moving boxes, used appliances, and furniture. With so many households coming and going, they often turn up in homes and rentals right after a move.",
       },
       {
         name: "Mosquitoes",
@@ -52,7 +52,7 @@ export const orangePark: AreaContent = {
     body: [
       "Orange Park has two very different kinds of neighborhoods. Near the river and close to town you'll find older homes, including the River Road Historic District and mid-century streets like Bellair and Meadowbrook that grew up around the base. Older homes tend to have more gaps around doors, plumbing, and rooflines, plus wood that has seen years of Florida humidity.",
       "Farther west, places like Oakleaf Plantation are mostly newer construction with HOA lawns and retention ponds. Those homes are tighter, but fire ants and mosquitoes move in fast around new landscaping and standing water.",
-      "Because so many Orange Park homes change hands, we do a lot of [WDO inspections](/termite-inspection) for buyers, sellers, and agents. If you're renting out your home when you PCS, a regular service plan helps keep it pest-free between tenants.",
+      "Because so many Orange Park homes change hands, [WDO inspections](/termite-inspection) for buyers, sellers, and agents are a common need here. If you're renting out your home when you PCS, a regular service plan helps keep it pest-free between tenants.",
     ],
   },
   popularServices: [
@@ -71,16 +71,16 @@ export const orangePark: AreaContent = {
         "Yes, it's a smart first step. A move-in inspection shows you whether the last occupants left behind roaches, ants, or signs of termites before your furniture fills the rooms. It's also much easier to treat an empty house. If you're renting, check your lease first, since some landlords handle pest service and some leave it to the tenant.",
     },
     {
-      question: "Do you do WDO inspections for Orange Park home sales?",
+      question: "Can I get a WDO inspection for an Orange Park home sale?",
       answer:
-        "Yes. We inspect for termites and other wood-destroying organisms and provide the report lenders and buyers ask for. Many Orange Park sales move on tight timelines because of new orders, so let us know your closing date when you call. We'll do our best to schedule the inspection quickly.", // OWNER: confirm WDO turnaround times you can offer
+        "Yes. A WDO inspection checks for termites and other wood-destroying organisms and produces the report lenders and buyers ask for. Many Orange Park sales move on tight timelines because of new orders, so mention your closing date when you call and ask about scheduling. Setting it up early in the sale helps make sure the report is ready before closing.",
     },
     {
       question: "Why are mosquitoes so bad near Doctors Lake?",
       answer:
-        "Calm, shallow edges along the lake and the river, plus thick shade from waterfront trees, give mosquitoes ideal places to breed and rest. Rain makes it worse by filling low spots in yards. We treat the shrubs and shady areas where adults hide and look for standing water you can dump, while keeping products away from the water's edge.",
+        "Calm, shallow edges along the lake and the river, plus thick shade from waterfront trees, give mosquitoes ideal places to breed and rest. Rain makes it worse by filling low spots in yards. A technician can treat the shrubs and shady areas where adults hide and point out standing water you can dump, while keeping products away from the water's edge.",
     },
   ],
   nearbyAreas: ["fleming-island", "middleburg", "westside", "mandarin"],
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-10-16",
 };

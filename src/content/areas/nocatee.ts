@@ -7,9 +7,9 @@ export const nocatee: AreaContent = {
   region: "st-johns-county",
   hubBlurb: "Newer homes, young families, and lots of dogs next to preserves and ponds, so fire ants, fleas, ticks, and mosquitoes lead the list.",
   seo: {
-    title: "Pest Control in Nocatee, FL | New Home Protection",
+    title: "Pest Control in Nocatee, FL | Call a Local Pest Pro",
     description:
-      "Pest control in Nocatee, FL with kid- and pet-conscious options. We treat fire ants, mosquitoes, fleas and termites in newer homes. Call for a free inspection.",
+      "Pest control in Nocatee, FL with kid- and pet-conscious options for fire ants, mosquitoes, fleas and termites in newer homes. Call to reach a local pro today.",
     primaryKeyword: "pest control Nocatee FL",
     secondaryKeywords: ["Nocatee exterminator", "mosquito control Nocatee", "pet friendly pest control Ponte Vedra", "32081 pest control"],
   },
@@ -23,7 +23,7 @@ export const nocatee: AreaContent = {
   },
   intro: [
     "Nocatee is one of the largest master-planned communities in Northeast Florida, with dozens of villages spread across more than 13,000 acres in northern St. Johns County. Construction started in the mid-2000s, so most homes are fairly new, and many of the people living in them are families with young kids and dogs.",
-    "Newer homes don't mean no pests. Nocatee was built on former pine woods and wetlands, and much of that land is still nearby in the Nocatee Preserve and the greenway along the Intracoastal Waterway. Wildlife, ticks, and mosquitoes live right at the edge of many backyards. Fresh sod and open common areas are quick to grow fire ant mounds. We offer treatment options chosen with kids and pets in mind, and we always explain how long to keep everyone off treated areas.",
+    "Newer homes don't mean no pests. Nocatee was built on former pine woods and wetlands, and much of that land is still nearby in the Nocatee Preserve and the greenway along the Intracoastal Waterway. Wildlife, ticks, and mosquitoes live right at the edge of many backyards. Fresh sod and open common areas are quick to grow fire ant mounds. A local pest control pro can offer treatment options chosen with kids and pets in mind and explain how long to keep everyone off treated areas.",
   ],
   commonPests: {
     heading: "Common Pests in Nocatee Neighborhoods",
@@ -50,8 +50,8 @@ export const nocatee: AreaContent = {
     heading: "New Homes, HOA Rules, and Busy Families",
     body: [
       "Most Nocatee homes were built from the mid-2000s on, with newer phases still going up. Tight construction means fewer cracks and gaps for pests, but pests still find ways in around plumbing, garage doors, and pool cages. A first-year check helps catch these weak spots early.",
-      "HOA rules set the standards for landscaping and exterior work, and we work within them. Many villages have fenced yards, shared walls in townhomes, or homes backing up to conservation land, and each needs a slightly different plan.",
-      "With kids and pets in the yard, how we treat matters as much as what we treat. We use targeted baits, spot treatments, and products chosen for the situation. Ask about our [eco-friendly pest control](/eco-friendly-pest-control) options if you want a lighter approach.",
+      "HOA rules set the standards for landscaping and exterior work, and a local pest control pro can plan treatment within them. Many villages have fenced yards, shared walls in townhomes, or homes backing up to conservation land, and each needs a slightly different plan.",
+      "With kids and pets in the yard, how pests are treated matters as much as what gets treated. Targeted baits, spot treatments, and products chosen for the situation are common choices. Ask about [eco-friendly pest control](/eco-friendly-pest-control) options if you want a lighter approach.",
     ],
   },
   popularServices: [
@@ -68,19 +68,19 @@ export const nocatee: AreaContent = {
     {
       question: "Is pest control safe for my kids and dog in Nocatee?",
       answer:
-        "We take extra care in homes with kids and pets. Every product is applied according to its label, and we tell you how long to keep children and pets away from treated areas, usually until sprays dry. We favor baits and targeted treatments over broad spraying. Let us know about pets when you book so we can plan around them.",
+        "It can be, when it's done with care. Every product should be applied according to its label, and your technician should tell you how long to keep children and pets away from treated areas, usually until sprays dry. Baits and targeted treatments are often a better fit than broad spraying. Mention your pets when you call so the provider can plan around them.",
     },
     {
       question: "My home is only a few years old. Does it need termite protection?",
       answer:
-        "Yes. Your home likely had a soil treatment or other termite protection during construction, but that coverage can wear off or expire. Termites already live in the soil around Nocatee. Check your closing paperwork to see what was done and when it ends. We can review it with you and set up protection that picks up where the builder's left off.",
+        "Yes. Your home likely had a soil treatment or other termite protection during construction, but that coverage can wear off or expire. Termites already live in the soil around Nocatee. Check your closing paperwork to see what was done and when it ends. A local pest control pro can review it with you and set up protection that picks up where the builder's left off.",
     },
     {
       question: "Why are mosquitoes so bad in my backyard?",
       answer:
-        "If your yard backs up to a pond, the preserve, or wooded conservation land, mosquitoes have breeding water and shade right next door. Also check for water in toys, planters, and gutters after rain. Our treatments target the shrubs and shady spots where adult mosquitoes rest, which cuts down bites in the areas you use most.",
+        "If your yard backs up to a pond, the preserve, or wooded conservation land, mosquitoes have breeding water and shade right next door. Also check for water in toys, planters, and gutters after rain. Treatments that target the shrubs and shady spots where adult mosquitoes rest cut down bites in the areas you use most.",
     },
   ],
   nearbyAreas: ["ponte-vedra-beach", "st-johns", "jacksonville-beach", "mandarin"],
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-10-16",
 };

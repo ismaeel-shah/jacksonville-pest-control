@@ -37,15 +37,17 @@ export const metadata: Metadata = {
     template: businessName ? `%s | ${businessName}` : "%s",
   },
   description:
-    "Licensed, local pest control in Jacksonville, FL. Termites, rodents, mosquitoes, roaches and more. Call today for a free inspection and an upfront quote.",
+    "Pest problem in Jacksonville, FL? Termites, rodents, mosquitoes, roaches and more. One call connects you with a local pest control pro who serves your area.",
   verification: { google: filled(siteConfig.googleSiteVerification) ?? undefined },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en-US" className={`${bodyFont.variable} ${headingFont.variable} h-full antialiased`}>
-      {/* Bottom padding keeps content clear of the fixed mobile call bar. */}
-      <body className="flex min-h-full flex-col pb-[calc(4.5rem+env(safe-area-inset-bottom))] md:pb-0">
+      {/* Bottom padding keeps content clear of the fixed mobile call bar (shown once the phone number is set). */}
+      <body
+        className={`flex min-h-full flex-col ${getPhone() ? "pb-[calc(4.5rem+env(safe-area-inset-bottom))] md:pb-0" : ""}`}
+      >
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-3 focus:font-semibold focus:text-primary focus:shadow-lg"

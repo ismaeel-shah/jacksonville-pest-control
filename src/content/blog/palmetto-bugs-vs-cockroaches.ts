@@ -8,7 +8,7 @@ export const palmettoBugsVsCockroaches: BlogPost = {
     "Is a palmetto bug just a fancy name for a roach? Here's what Floridians mean by the term, how it compares to the small German cockroach, and when to worry.",
   category: "Cockroaches",
   datePublished: "2026-10-12",
-  dateModified: "2026-10-12",
+  dateModified: "2026-10-16",
   seo: {
     title: "Palmetto Bugs vs. Cockroaches: How to Tell Them Apart",
     description:
@@ -22,7 +22,7 @@ export const palmettoBugsVsCockroaches: BlogPost = {
   },
   intro: [
     "You flip on the bathroom light late at night and a big reddish-brown bug darts behind the toilet. A neighbor tells you not to worry, it's just a palmetto bug. But is that really different from a cockroach, and should you be worried after all?",
-    "Here in Jacksonville we hear this question all the time. The short answer is that a palmetto bug is a cockroach. The longer answer matters more, because the type of roach you see tells you a lot about whether you have a passing visitor or a problem living in your home.",
+    "In Jacksonville, this question comes up all the time. The short answer is that a palmetto bug is a cockroach. The longer answer matters more, because the type of roach you see tells you a lot about whether you have a passing visitor or a problem living in your home.",
   ],
   sections: [
     {
@@ -64,7 +64,7 @@ export const palmettoBugsVsCockroaches: BlogPost = {
         {
           heading: "Heat, drought, and cold snaps",
           body: [
-            "Long dry spells send them looking for water, which is why they turn up near sinks, tubs, and AC drip lines. On the rare cold nights we get in Northeast Florida, they also move toward the warmth of a house.",
+            "Long dry spells send them looking for water, which is why they turn up near sinks, tubs, and AC drip lines. On the rare cold nights in Northeast Florida, they also move toward the warmth of a house.",
           ],
         },
         {
@@ -89,7 +89,7 @@ export const palmettoBugsVsCockroaches: BlogPost = {
       body: [
         "Seeing the occasional palmetto bug, especially after a storm or during a hot spell, is a normal part of Florida living. It usually means one wandered in, not that roaches are nesting in your walls. Still, if you see them every week, something is drawing them in or letting them through.",
         "Small tan roaches are another story. Spotting even a few German cockroaches, especially in the daytime, often means there are many more hidden in cabinet hinges, behind the fridge, or under the sink. These problems rarely go away on their own and usually need a careful, targeted treatment plan.",
-        "If you can't tell which type you have, catch one in a jar or snap a clear photo. It helps a technician figure out the right fix quickly. Our [cockroach control service](/cockroach-control) starts with exactly that step, because big outdoor roaches and small indoor roaches call for very different plans.",
+        "If you can't tell which type you have, catch one in a jar or snap a clear photo. It helps a technician figure out the right fix quickly. Professional [cockroach control](/cockroach-control) starts with exactly that step, because big outdoor roaches and small indoor roaches call for very different plans.",
       ],
     },
     {
@@ -112,8 +112,8 @@ export const palmettoBugsVsCockroaches: BlogPost = {
       id: "when-to-call",
       heading: "When to Call a Pro",
       body: [
-        "Call for help if you're seeing palmetto bugs often, if you've spotted any German cockroaches at all, or if you notice droppings that look like pepper or coffee grounds in drawers and cabinets. A trained technician can find where the roaches are hiding and how they're getting in, then treat those spots instead of spraying your whole home.",
-        "For many families, a regular [general pest control plan](/general-pest-control) is enough to keep big outdoor roaches at the edge of the yard. We help homeowners across Jacksonville and [nearby communities in our service area](/service-areas), and we're always glad to look at a photo or a roach in a jar and tell you what you're dealing with.",
+        "Call for help if you're seeing palmetto bugs often, if you've spotted any German cockroaches at all, or if you notice droppings that look like pepper or coffee grounds in drawers and cabinets. A technician can find where the roaches are hiding and how they're getting in, then treat those spots instead of spraying your whole home.",
+        "For many families, a regular [general pest control plan](/general-pest-control) is enough to keep big outdoor roaches at the edge of the yard. Local pest control pros serve homeowners across Jacksonville and [nearby communities](/service-areas), and a photo or a roach in a jar helps a technician tell you what you're dealing with. Call to be connected with a local pro.",
       ],
     },
   ],

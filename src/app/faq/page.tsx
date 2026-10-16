@@ -1,4 +1,4 @@
-import { CalendarClock, CircleHelp, House, type LucideIcon, ReceiptText, ShieldCheck } from "lucide-react";
+import { CalendarClock, CircleHelp, House, type LucideIcon, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { CTASection } from "@/components/sections/CTASection";
@@ -16,7 +16,7 @@ import { buildFaqSchema } from "@/lib/schema";
 export const metadata = buildMetadata({
   title: "Pest Control FAQ | Jacksonville, FL Answers",
   description:
-    "Answers to common pest control questions in Jacksonville, FL: termites, safety for kids and pets, scheduling, and cost. Call us for a free inspection.",
+    "Answers to common pest control questions in Jacksonville, FL: termites, safety for kids and pets, and scheduling. Call to talk with a local pest control pro.",
   path: STATIC_ROUTES.faq,
 });
 
@@ -26,7 +26,6 @@ const GROUP_ICONS: Record<string, LucideIcon> = {
   termites: House,
   safety: ShieldCheck,
   scheduling: CalendarClock,
-  cost: ReceiptText,
 };
 
 const questionCount = (count: number) => `${count} ${count === 1 ? "question" : "questions"}`;
@@ -45,12 +44,11 @@ export default function FAQPage() {
             <p className="mb-3 text-sm font-bold uppercase tracking-wider text-primary">FAQ</p>
             <h1 className="text-4xl font-extrabold text-secondary md:text-5xl">Pest Control Questions, Answered</h1>
             <p className="mt-5 text-xl text-ink-muted">
-              Straight answers to the {allFaqs.length} questions Jacksonville homeowners ask us most. Don&apos;t see yours?
-              Call us or{" "}
+              Straight answers to the {allFaqs.length} questions Jacksonville homeowners ask most. Don&apos;t see yours?{" "}
               <Link href={STATIC_ROUTES.contact} className="font-semibold text-primary underline underline-offset-2">
-                send us a message
+                Call to talk with a local pest control pro
               </Link>
-              . We&apos;re happy to help, even if you&apos;re not ready to book.
+              , even if you&apos;re not ready to set up a visit.
             </p>
           </div>
 
@@ -84,7 +82,7 @@ export default function FAQPage() {
                 <div className="rounded-2xl border border-line bg-white p-6 shadow-sm">
                   <TableOfContents title="Topics" items={faqGroups.map((group) => ({ id: group.id, heading: group.title }))} />
                 </div>
-                <SidebarCta title="Still have a question?" text="Talk to a real person, or book a free inspection and ask us in person." cta="faq_sidebar_free_inspection" />
+                <SidebarCta title="Still have a question?" text="Call to talk with a local pest control pro about your situation." />
               </div>
             </aside>
 
@@ -115,7 +113,7 @@ export default function FAQPage() {
         </Container>
       </section>
 
-      <CTASection title="Still Have Questions?" text="Call us and talk to a real person, or request your free inspection and we'll answer everything in person." />
+      <CTASection title="Still Have Questions?" text="Call to talk with a local pest control pro who can answer questions about your home or business." />
     </>
   );
 }

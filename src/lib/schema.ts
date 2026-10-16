@@ -5,7 +5,6 @@
 import { siteConfig } from "@/config/site";
 import type { AreaContent, BlogPost, FAQ } from "@/content/types";
 import { filled, getBusinessName, getSiteUrl } from "./config";
-import { expandDays, isClosed } from "./format";
 import { proseToPlainText } from "./prose";
 
 type JsonValue = string | number | boolean | null | undefined | JsonObject | JsonValue[];
@@ -39,48 +38,28 @@ const placeOf = (name: string): JsonObject => ({
   name: `${name}, FL`,
 });
 
-/** Sitewide PestControl (LocalBusiness subtype). No priceRange, ever (brief section 10). */
+/**
+ * Sitewide Organization node. This is a referral site, not a pest control business, so it is
+ * not marked up as PestControl/LocalBusiness: no address, hours, ratings, or priceRange.
+ */
 export function buildBusinessSchema(publishedAreas: Pick<AreaContent, "name">[]): JsonObject | null {
   const name = getBusinessName();
   if (!name) return null;
 
-  const { address, geo, social } = siteConfig;
-  const lat = filled(geo.lat);
-  const lng = filled(geo.lng);
   const logo = filled(siteConfig.logo);
-  const phone = filled(siteConfig.phoneHref);
 
   return (
     compact({
       "@context": "https://schema.org",
-      "@type": "PestControl",
+      "@type": "Organization",
       "@id": BUSINESS_ID(),
       name,
       legalName: filled(siteConfig.legalName),
       url: getSiteUrl(),
-      telephone: phone,
       email: filled(siteConfig.email),
       logo: logo ? absoluteUrl(logo) : undefined,
-      image: logo ? absoluteUrl(logo) : undefined,
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: address.showPublicly ? filled(address.street) : undefined,
-        addressLocality: address.city,
-        addressRegion: address.state,
-        postalCode: filled(address.zip),
-        addressCountry: "US",
-      },
-      geo: lat && lng ? { "@type": "GeoCoordinates", latitude: Number(lat), longitude: Number(lng) } : undefined,
-      openingHoursSpecification: siteConfig.hours
-        .filter((hours) => !isClosed(hours))
-        .map((hours) => ({
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: expandDays(hours.days),
-          opens: hours.open,
-          closes: hours.close,
-        })),
       areaServed: [placeOf("Jacksonville"), ...publishedAreas.map((area) => placeOf(area.name))],
-      sameAs: [filled(siteConfig.googleBusinessProfileUrl), ...Object.values(social).map(filled)],
+      sameAs: Object.values(siteConfig.social).map(filled),
     }) ?? null
   );
 }
@@ -129,7 +108,7 @@ export function buildFaqSchema(faqs: FAQ[]): JsonObject | null {
   };
 }
 
-/** Service pages (areaServed = Jacksonville + areas) and area pages (areaServed = that place). */
+/** Service pages (areaServed = Jacksonville + areas) and area pages (areaServed = that place). No provider: the site does not perform the service. */
 export function buildServiceSchema(input: {
   serviceType: string;
   description: string;
@@ -143,13 +122,11 @@ export function buildServiceSchema(input: {
     name: input.serviceType,
     description: input.description,
     url: absoluteUrl(input.path),
-    provider: getBusinessName() ? businessRef() : undefined,
     areaServed: input.areaNames.map(placeOf),
   })!;
 }
 
 export function buildBlogPostingSchema(post: BlogPost, path: string, imageUrl?: string): JsonObject {
-  const reviewer = filled(siteConfig.contentReviewer.name);
   return compact({
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -160,11 +137,7 @@ export function buildBlogPostingSchema(post: BlogPost, path: string, imageUrl?: 
     url: absoluteUrl(path),
     mainEntityOfPage: absoluteUrl(path),
     image: imageUrl ? absoluteUrl(imageUrl) : undefined,
-    author: reviewer
-      ? { "@type": "Person", name: reviewer, jobTitle: siteConfig.contentReviewer.role }
-      : getBusinessName()
-        ? businessRef()
-        : undefined,
+    author: getBusinessName() ? businessRef() : undefined,
     publisher: getBusinessName() ? businessRef() : undefined,
   })!;
 }

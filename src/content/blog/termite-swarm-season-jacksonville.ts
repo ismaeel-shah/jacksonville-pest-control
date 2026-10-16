@@ -8,11 +8,11 @@ export const termiteSwarmSeasonJacksonville: BlogPost = {
     "Winged termites showing up around your windows? Here's when each type of termite swarms in Northeast Florida, how to tell them from flying ants, and what to do next.",
   category: "Termites",
   datePublished: "2026-10-12",
-  dateModified: "2026-10-12",
+  dateModified: "2026-10-16",
   seo: {
     title: "Termite Swarm Season in Jacksonville: When & What to Do",
     description:
-      "Learn when termites swarm in Jacksonville, how to tell swarmers from flying ants, and what to do if you find them inside. Free termite inspections.",
+      "Learn when termites swarm in Jacksonville, how to tell swarmers from flying ants, and what to do if you find them inside. Call a local pro for an inspection.",
     primaryKeyword: "termite swarm season Jacksonville",
     secondaryKeywords: ["termite swarmers", "flying termites vs flying ants", "Formosan termite swarm", "subterranean termites Florida"],
   },
@@ -22,7 +22,7 @@ export const termiteSwarmSeasonJacksonville: BlogPost = {
   },
   intro: [
     "One warm spring afternoon, you notice dozens of small winged insects crawling on a windowsill. By evening, most of them are gone, and all that's left is a little pile of wings. If that sounds familiar, you've probably seen a termite swarm.",
-    "Swarms are one of the most common reasons Jacksonville homeowners call us each year. The good news is that a swarm is a warning, not a disaster. Here's what's happening, when to expect it, and what to do if it happens in your home.",
+    "Swarms are one of the most common reasons Jacksonville homeowners call for termite help each year. The good news is that a swarm is a warning, not a disaster. Here's what's happening, when to expect it, and what to do if it happens in your home.",
   ],
   sections: [
     {
@@ -77,7 +77,7 @@ export const termiteSwarmSeasonJacksonville: BlogPost = {
       id: "what-to-do",
       heading: "What to Do If Termites Swarm Inside Your Home",
       body: [
-        "First, don't panic. A swarm doesn't mean your house is about to fall down. Termites work slowly, so you have time to make a good decision. Here's what we recommend:",
+        "First, don't panic. A swarm doesn't mean your house is about to fall down. Termites work slowly, so you have time to make a good decision. Here's what to do:",
       ],
       bullets: [
         "Collect a few swarmers or wings in a zip-top bag or on clear tape so a technician can identify them.",
@@ -91,9 +91,9 @@ export const termiteSwarmSeasonJacksonville: BlogPost = {
       id: "inspection",
       heading: "What Happens During a Termite Inspection After a Swarm",
       body: [
-        "When you call us after a swarm, your technician starts with the spot where you found the swarmers and works outward. They'll look along baseboards, door and window frames, bathroom walls, and the garage, then head outside to check the foundation, slab edges, and any wood that touches the soil.",
+        "When a technician inspects after a swarm, they start with the spot where you found the swarmers and work outward. They'll look along baseboards, door and window frames, bathroom walls, and the garage, then head outside to check the foundation, slab edges, and any wood that touches the soil.",
         "They're looking for mud tubes, damaged or hollow-sounding wood, moisture problems, and gaps where termites can get in. If you saved a few swarmers or wings, they'll identify the species, because subterranean, Formosan, and drywood termites each need a different plan.",
-        "Before leaving, they'll explain what they found in plain language and, if treatment is needed, walk you through the options with an upfront quote. We do this for homes all over Jacksonville and [the surrounding communities we serve](/service-areas), and the inspection itself is free.",
+        "Before leaving, they'll explain what they found in plain language and, if treatment is needed, walk you through the options. Local pest control pros inspect homes all over Jacksonville and [the surrounding communities](/service-areas), and you can call to be connected with one.",
       ],
     },
     {
@@ -101,7 +101,7 @@ export const termiteSwarmSeasonJacksonville: BlogPost = {
       heading: "What If the Swarm Is Outside?",
       body: [
         "Seeing swarmers in the yard, on a fence, or around a tree stump is less alarming. It tells you there's a colony in the area, which is common in Jacksonville. Still, it's a good reminder to check that your home's protection is up to date.",
-        "If your home hasn't had a termite inspection in the past year, or if your treatment or warranty has lapsed, now is a good time to get one scheduled.",
+        "If your home hasn't had a termite inspection in the past year, or if it's been a while since your last termite treatment, now is a good time to get one scheduled.",
       ],
     },
     {

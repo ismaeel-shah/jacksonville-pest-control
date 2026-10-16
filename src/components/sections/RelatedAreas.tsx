@@ -5,7 +5,7 @@ import type { AreaContent } from "@/content/types";
 import { STATIC_ROUTES, areaHref } from "@/lib/routes";
 
 /**
- * "Areas we serve" on service pages, "Nearby areas" on area pages.
+ * "Service areas" on service pages, "Nearby areas" on area pages.
  * Each area can carry its own short line; pass only published areas.
  */
 export function RelatedAreas({

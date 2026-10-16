@@ -11,7 +11,7 @@ export const lawnPestControl: ServiceContent = {
   seo: {
     title: "Lawn Pest Control in Jacksonville, FL | Chinch Bugs",
     description:
-      "Lawn pest control in Jacksonville, FL for chinch bugs, sod webworms, mole crickets, and fire ants. Protect your St. Augustine grass. Get a free inspection.",
+      "Lawn pest control in Jacksonville, FL for chinch bugs, sod webworms, mole crickets, and fire ants in St. Augustine grass. Call to speak with a local pro.",
     primaryKeyword: "lawn pest control Jacksonville FL",
     secondaryKeywords: ["chinch bugs St. Augustine grass", "sod webworms", "mole crickets", "lawn grubs", "fire ants in lawn"],
   },
@@ -24,14 +24,14 @@ export const lawnPestControl: ServiceContent = {
     },
   },
   intro: [
-    "A yellow patch by the driveway that keeps growing, even though the sprinklers run on schedule, is one of the most common calls we get in summer. In Jacksonville, that kind of damage is often caused by insects feeding on the grass, not a lack of water.",
-    "Our lawn pest control finds the insect behind the damage and treats it directly. We look for chinch bugs, sod webworms, mole crickets, grubs, and fire ants, then apply a targeted treatment to the areas that need it. Our focus is pests, not fertilizing or weed control, so you get a technician who knows how lawn insects behave in Northeast Florida.", // OWNER: confirm fertilization and weed control are not offered
+    "A yellow patch by the driveway that keeps growing, even though the sprinklers run on schedule, is one of the most common lawn complaints in a Jacksonville summer. That kind of damage is often caused by insects feeding on the grass, not a lack of water.",
+    "Lawn pest control finds the insect behind the damage and treats it directly. A local pest control pro looks for chinch bugs, sod webworms, mole crickets, grubs, and fire ants, then applies a targeted treatment to the areas that need it. The focus is pests, not fertilizing or weed control, so the work comes down to knowing how lawn insects behave in Northeast Florida.",
   ],
   localProblem: {
     heading: "Why Lawn Pests Hit Jacksonville Yards So Hard",
     body: [
-      "**St. Augustine grass** covers most lawns in Jacksonville. It handles our heat and humidity well, but it's also the favorite food of the southern chinch bug, the most damaging lawn insect in the area.",
-      "Our long, warm growing season gives lawn pests many months to feed and breed. Chinch bugs build up fast in hot, dry spots along sidewalks and driveways. Sod webworm caterpillars chew grass blades at night, and mole crickets tunnel through our loose, sandy soil, cutting roots as they go.",
+      "**St. Augustine grass** covers most lawns in Jacksonville. It handles the area's heat and humidity well, but it's also the favorite food of the southern chinch bug, the most damaging lawn insect in the area.",
+      "Northeast Florida's long, warm growing season gives lawn pests many months to feed and breed. Chinch bugs build up fast in hot, dry spots along sidewalks and driveways. Sod webworm caterpillars chew grass blades at night, and mole crickets tunnel through the region's loose, sandy soil, cutting roots as they go.",
       "Because damage often looks like drought or fungus, many homeowners water more and wait. By the time the real cause is found, a small patch can become a large dead area.",
     ],
   },
@@ -48,18 +48,18 @@ export const lawnPestControl: ServiceContent = {
     ],
   },
   process: {
-    heading: "Our Lawn Pest Treatment Process",
+    heading: "How Lawn Pest Treatment Works",
     steps: [
-      { title: "Walk the lawn", description: "We check damaged areas and the edges where healthy grass meets dying grass, where insects are easiest to find." },
-      { title: "Confirm the cause", description: "We identify the pest, or tell you if the problem looks like fungus, watering, or mowing instead." },
-      { title: "Treat the affected areas", description: "We apply a product labeled for that pest and for your grass type, focusing on where the insects are active." },
-      { title: "Give you care tips", description: "We explain how to water and mow after treatment to help the lawn recover." },
+      { title: "Walk the lawn", description: "The technician checks damaged areas and the edges where healthy grass meets dying grass, where insects are easiest to find." },
+      { title: "Confirm the cause", description: "The technician identifies the pest, or tells you if the problem looks like fungus, watering, or mowing instead." },
+      { title: "Treat the affected areas", description: "A product labeled for that pest and for your grass type is applied, focusing on where the insects are active." },
+      { title: "Give you care tips", description: "You learn how to water and mow after treatment to help the lawn recover." },
       { title: "Follow up through the season", description: "Return visits catch new activity, since many lawn pests come back in waves." },
     ],
   },
   treatmentOptions: {
     heading: "Lawn Pest Treatment Options",
-    intro: ["We match the treatment to the pest and how far it has spread, so we don't treat more lawn than needed."],
+    intro: ["The treatment should match the pest and how far it has spread, so no more lawn is treated than needed."],
     options: [
       {
         title: "Spot treatments",
@@ -75,7 +75,7 @@ export const lawnPestControl: ServiceContent = {
       },
       {
         title: "Seasonal lawn pest programs",
-        description: "Scheduled visits timed to when each pest is most active, with treatment only where we find activity.", // OWNER: confirm seasonal program and visit schedule
+        description: "Scheduled visits timed to when each pest is most active, with treatment only where activity is found.",
       },
     ],
   },
@@ -83,17 +83,9 @@ export const lawnPestControl: ServiceContent = {
     heading: "Is Lawn Pest Treatment Safe for Kids and Pets?",
     body: [
       "It can be, when products are used exactly as the label directs. Keep children and pets off treated grass until liquid applications dry, or until granular products have been watered in. Your technician will tell you how long to wait.",
-      "Tell us about vegetable gardens, ponds, wells, or pets that dig, so we can plan around them.",
+      "Tell your technician about vegetable gardens, ponds, wells, or pets that dig, so the treatment can be planned around them.",
     ],
   },
-  costFactors: [
-    { title: "Lawn size", description: "Larger lawns take more product and time to treat." },
-    { title: "Which pest you have", description: "Chinch bugs, grubs, and mole crickets each need different products and timing." },
-    { title: "How far the damage has spread", description: "A few patches can be spot-treated, while widespread activity calls for a full treatment." },
-    { title: "One visit or a seasonal plan", description: "A single treatment differs from a program with return visits through the warm months." },
-    { title: "Adding fire ant control", description: "Treating fire ants across the yard is extra work beyond insects in the grass." },
-    { title: "Yard layout and access", description: "Fenced areas, slopes, and heavy landscaping can affect the time needed." },
-  ],
   prevention: {
     heading: "How to Help Prevent Lawn Pests",
     tips: [
@@ -106,18 +98,18 @@ export const lawnPestControl: ServiceContent = {
     ],
   },
   forBusinesses: [
-    "We also treat common areas for HOAs, apartment communities, and office parks, where fire ants near walkways and dead turf by entrances are hard to ignore. Learn more about our [commercial services](/commercial).",
+    "HOAs, apartment communities, and office parks can also have common areas treated, since fire ants near walkways and dead turf by entrances are hard to ignore. Learn more about [commercial services](/commercial).",
   ],
   faqs: [
     {
       question: "How can I tell chinch bug damage from a dry lawn?",
       answer:
-        "Chinch bug damage usually starts in the hottest, sunniest spots and keeps spreading even after you water. Drought stress tends to green up after a good soaking. To check, part the grass where green meets yellow and look near the soil for tiny black insects with white wings. We can confirm it during a free inspection.",
+        "Chinch bug damage usually starts in the hottest, sunniest spots and keeps spreading even after you water. Drought stress tends to green up after a good soaking. To check, part the grass where green meets yellow and look near the soil for tiny black insects with white wings. A technician can confirm it during an inspection.",
     },
     {
-      question: "Do you fertilize or treat weeds too?",
+      question: "Does lawn pest control include fertilizing or weed control?",
       answer:
-        "No, our focus is lawn pests. We treat the insects that damage turf, like chinch bugs, sod webworms, mole crickets, grubs, and fire ants. Feeding the grass and controlling weeds is usually handled by a lawn-care company. If we see a problem that isn't caused by insects, such as fungus or watering issues, we'll tell you.", // OWNER: confirm fertilization and weed control are not offered
+        "Usually not. Lawn pest control focuses on the insects that damage turf, like chinch bugs, sod webworms, mole crickets, grubs, and fire ants. Feeding the grass and controlling weeds is usually handled by a lawn-care company. If the technician sees a problem that isn't caused by insects, such as fungus or watering issues, they should tell you.",
     },
     {
       question: "When is the best time to treat lawn pests in Jacksonville?",
@@ -127,9 +119,9 @@ export const lawnPestControl: ServiceContent = {
     {
       question: "Will my grass grow back after insect damage?",
       answer:
-        "Often, yes. St. Augustine spreads by runners, so lightly damaged areas usually fill back in once the insects are controlled and the lawn gets steady water. Patches that are completely dead, with no green runners left, won't recover on their own and may need new sod or plugs. We'll point out which areas are likely to bounce back.",
+        "Often, yes. St. Augustine spreads by runners, so lightly damaged areas usually fill back in once the insects are controlled and the lawn gets steady water. Patches that are completely dead, with no green runners left, won't recover on their own and may need new sod or plugs. Your technician can point out which areas are likely to bounce back.",
     },
   ],
   relatedServices: ["ant-control", "mosquito-control", "wildlife-removal"],
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-10-16",
 };

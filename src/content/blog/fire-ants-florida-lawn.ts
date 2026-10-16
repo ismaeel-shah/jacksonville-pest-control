@@ -8,7 +8,7 @@ export const fireAntsFloridaLawn: BlogPost = {
     "Fire ant mounds popping up after every rain? Learn why quick fixes just move them, how baits and mound treatments work, and how to time treatment for real results.",
   category: "Ants & Lawn Pests",
   datePublished: "2026-10-12",
-  dateModified: "2026-10-12",
+  dateModified: "2026-10-16",
   seo: {
     title: "Get Rid of Fire Ants in Your Florida Lawn: What Works",
     description:
@@ -21,7 +21,7 @@ export const fireAntsFloridaLawn: BlogPost = {
     alt: "Fresh fire ant mound of loose sandy soil in a St. Augustine grass lawn",
   },
   intro: [
-    "It happens almost every time we get a good soaking rain. The next morning, there are fresh mounds of fluffy dirt in the front yard, along the sidewalk, and right next to the kids' swing set. Walk through one by accident and you'll know about it fast.",
+    "It happens almost every time Jacksonville gets a good soaking rain. The next morning, there are fresh mounds of fluffy dirt in the front yard, along the sidewalk, and right next to the kids' swing set. Walk through one by accident and you'll know about it fast.",
     "Fire ants are one of the most common outdoor pests in Jacksonville, and they can be stubborn. The good news is that you can get them under control with the right method and good timing. Here's what works, what doesn't, and why.",
   ],
   sections: [
@@ -29,7 +29,7 @@ export const fireAntsFloridaLawn: BlogPost = {
       id: "know-your-fire-ants",
       heading: "Meet the Red Imported Fire Ant",
       body: [
-        "The fire ants in Florida lawns are almost always **red imported fire ants**. They came to the Southeast from South America many years ago and now thrive in our warm weather and sandy soil. The workers are small, reddish brown, and come in mixed sizes in the same mound.",
+        "The fire ants in Florida lawns are almost always **red imported fire ants**. They came to the Southeast from South America decades ago and now thrive in Northeast Florida's warm weather and sandy soil. The workers are small, reddish brown, and come in mixed sizes in the same mound.",
         "Each colony has a queen, or sometimes several, living deep underground. The mound you see is only the top of a large network of tunnels. That's important, because anything that doesn't reach the queen won't stop the colony.",
       ],
       subsections: [
@@ -68,7 +68,7 @@ export const fireAntsFloridaLawn: BlogPost = {
       id: "treatment-options",
       heading: "Fire Ant Treatments That Actually Work",
       body: [
-        "Effective fire ant control focuses on the colony. There are two main tools, and many homeowners get the best results by using both.",
+        "Effective fire ant control focuses on the colony. There are two main tools, and many homeowners get the most reliable results by using both.",
       ],
       subsections: [
         {
@@ -104,7 +104,7 @@ export const fireAntsFloridaLawn: BlogPost = {
       id: "lawns-pets-kids",
       heading: "St. Augustine Lawns, Pets, and Kids",
       body: [
-        "Most Jacksonville yards are covered in **St. Augustine grass**, and fire ants are happy to nest in it, especially in sunny areas and along driveways. Bait sits on top of the thatch where ants can find it, so there's no need to water it in. Fire ants aren't the only insects that damage these lawns, so if you also see brown or dying patches, it may be worth a look from our [lawn pest control team](/lawn-pest-control).",
+        "Most Jacksonville yards are covered in **St. Augustine grass**, and fire ants are happy to nest in it, especially in sunny areas and along driveways. Bait sits on top of the thatch where ants can find it, so there's no need to water it in. Fire ants aren't the only insects that damage these lawns, so if you also see brown or dying patches, it may be worth having a pro look into [lawn pest control](/lawn-pest-control).",
         "If you have children or pets, keep them inside or off the lawn while you spread products and for as long as the label says. Store bags and containers where little hands and curious dogs can't reach them. Teach kids what a mound looks like so they know to walk around it.",
       ],
     },
@@ -113,7 +113,7 @@ export const fireAntsFloridaLawn: BlogPost = {
       heading: "When to Call a Pro",
       body: [
         "If mounds keep coming back, if your yard is large, or if someone in your home is allergic to stings, professional help can save you a lot of trouble. A technician can spot colonies early, choose the right product for your lawn, and set up a schedule that keeps new colonies from settling in.",
-        "Our [fire ant and ant control service](/ant-control) treats the yard as a whole, from the front walk to the back fence. We work with homeowners all over the area, including families with big irrigated lawns in [Ponte Vedra Beach](/service-areas/ponte-vedra-beach), where fire ants can spread fast. If you're tired of dodging mounds, [contact us](/contact) for a free inspection.",
+        "Professional [fire ant and ant control](/ant-control) treats the yard as a whole, from the front walk to the back fence. That matters across the area, especially for families with big irrigated lawns in [Ponte Vedra Beach](/service-areas/ponte-vedra-beach), where fire ants can spread fast. If you're tired of dodging mounds, [call to be connected](/contact) with a local pest control pro.",
       ],
     },
   ],

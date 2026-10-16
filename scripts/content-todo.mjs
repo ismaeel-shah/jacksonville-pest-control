@@ -74,13 +74,13 @@ These affect what the site claims publicly. Each must be confirmed, corrected, o
 
 ${blockers.length ? groupByFile(blockers) : "_None._"}
 
-## 2. Business details still missing in \`src/config/site.ts\`
+## 2. Site details still missing in \`src/config/site.ts\`
 
-Anything still a placeholder is hidden on the live site, so the matching phone buttons, license badges, schema fields, and links won't appear until it's filled in.
+Anything still a placeholder is hidden on the live site, so the matching phone buttons, footer disclaimer, schema fields, and links won't appear until it's filled in.
 
 ${placeholders.length ? placeholders.map((p) => `- [ ] \`${p}\``).join("\n") : "_All filled in._"}
 
-Also review: \`hours\`, \`guarantee\` wording, \`googleRating\` (real data only), \`memberships\` (real only), and \`social\` links.
+Also review: \`hours\` (when calls are answered) and \`social\` links. The site follows Ringba pay-per-call rules: no contact forms, no prices or cost content, no reviews or ratings, no "our team" or licensed/insured claims, and the disclaimer in every footer.
 
 ## 3. Claims and details to confirm
 
@@ -98,9 +98,8 @@ ${missingPhotos.map(([name, info]) => `| \`${name}\` | ${info.alt} | ${info.file
 
 ## 5. Ongoing
 
-- [ ] Add real customer reviews to \`src/content/reviews.ts\` (first name + last initial, area, service, date). Never invent reviews.
 - [ ] Have the Privacy Policy and Terms of Service reviewed by a legal professional.
-- [ ] Set the production environment variables listed in \`.env.example\` and send a test lead.
+- [ ] Set the Ringba tracking number and disclaimer in \`src/config/site.ts\`, then place a test call.
 `;
 
 writeFileSync(path.join(root, "CONTENT-TODO.md"), md);

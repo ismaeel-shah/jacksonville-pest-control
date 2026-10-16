@@ -1,7 +1,7 @@
 import { Section, SectionHeading, type SectionTone } from "@/components/ui/Section";
 import type { TitledItem } from "@/content/types";
 
-/** Numbered steps, e.g. Free Inspection → Custom Treatment → Follow-Up & Prevention. */
+/** Numbered steps, e.g. Call → Inspection and Plan → Treatment and Prevention. */
 export function ProcessSteps({
   title,
   intro,

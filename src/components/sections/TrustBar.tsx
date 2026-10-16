@@ -1,39 +1,20 @@
-import { BadgeCheck, CalendarCheck, PawPrint, ShieldCheck } from "lucide-react";
+import { Building2, MapPin, PawPrint, Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
-import { siteConfig } from "@/config/site";
-import { filled } from "@/lib/config";
 
-/**
- * Column classes by item count, so the bar always fills its width evenly
- * (the years item is hidden until `yearsInBusiness` is set). Full class names
- * are written out so Tailwind can find them.
- */
-const COLUMNS: Record<number, string> = {
-  2: "md:grid-cols-2",
-  3: "md:grid-cols-3",
-  4: "sm:grid-cols-2 lg:grid-cols-4",
-};
+const ITEMS = [
+  { icon: Phone, title: "One Call", text: "Connects you with an independent local pest control provider" },
+  { icon: MapPin, title: "Local Coverage", text: "Jacksonville, the Beaches, and nearby counties" },
+  { icon: Building2, title: "Homes & Businesses", text: "Residential and commercial pest problems" },
+  { icon: PawPrint, title: "Pet & Family Questions", text: "Ask the provider about lower-impact treatment options" },
+];
 
-/** Navy strip of trust facts. Items backed by config are hidden until the real value is set. */
+/** Navy strip of facts about how the service works. No license, rating, or guarantee claims (network rules). */
 export function TrustBar() {
-  const license = filled(siteConfig.licenseNumber);
-  const years = filled(siteConfig.yearsInBusiness);
-
-  const items = [
-    license
-      ? { icon: BadgeCheck, title: "Licensed in Florida", text: `FDACS license #${license}` }
-      : { icon: BadgeCheck, title: "Licensed & Insured", text: "Licensed by the state of Florida" },
-    years ? { icon: CalendarCheck, title: `${years}+ Years`, text: "Serving Northeast Florida" } : null,
-    { icon: ShieldCheck, title: "Re-Treatment Guarantee", text: siteConfig.guarantee },
-    // OWNER: confirm pet- and family-friendly treatment options are offered
-    { icon: PawPrint, title: "Pet & Family Friendly", text: "Lower-impact options available on request" },
-  ].filter((item) => item !== null);
-
   return (
-    <section aria-label="Why homeowners trust us" className="bg-secondary py-10 text-white md:py-12">
+    <section aria-label="How this service works" className="bg-secondary py-10 text-white md:py-12">
       <Container>
-        <ul className={`grid gap-8 lg:gap-10 ${COLUMNS[items.length] ?? "md:grid-cols-3"}`}>
-          {items.map(({ icon: Icon, title, text }) => (
+        <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
+          {ITEMS.map(({ icon: Icon, title, text }) => (
             <li key={title} className="flex items-start gap-4">
               <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-white/10">
                 <Icon aria-hidden className="size-6 text-white" />

@@ -5,11 +5,11 @@ export const southside: AreaContent = {
   published: true,
   name: "Southside",
   region: "jacksonville",
-  hubBlurb: "Apartments, offices, and busy retail corridors from Beach Boulevard to the Town Center, where roaches, bed bugs, and rats keep us busy.",
+  hubBlurb: "Apartments, offices, and busy retail corridors from Beach Boulevard to the Town Center, where roaches, bed bugs, and rats keep local pest pros busy.",
   seo: {
     title: "Pest Control in Southside, FL | Homes & Businesses",
     description:
-      "Southside Jacksonville pest control for apartments, homes, and businesses. Local pros handle roaches, bed bugs, rodents, and more. Call for a free inspection.",
+      "Southside Jacksonville pest control for apartments, homes, and businesses. Roaches, bed bugs, rodents, and more. Call to talk with a local pest control pro.",
     primaryKeyword: "pest control Southside FL",
     secondaryKeywords: [
       "apartment pest control Southside Jacksonville",
@@ -27,16 +27,16 @@ export const southside: AreaContent = {
     },
   },
   intro: [
-    "Jacksonville's Southside packs a lot into a few ZIP codes. In one afternoon we might treat a ranch house in Englewood, a third-floor apartment near the St. Johns Town Center, and a restaurant kitchen on Beach Boulevard. Each one needs its own plan, and that variety is what pest control on the Southside is all about.",
-    "Dense living is the big factor here. When dozens of families share walls, plumbing lines, and trash areas, German cockroaches and bed bugs can travel from unit to unit. At the same time, Pottsburg Creek and the ponds tucked behind office parks give mosquitoes and fire ants plenty of room to grow. Whether you rent, own, or manage a building, we shape every treatment around how your property is actually lived in and used.",
+    "Jacksonville's Southside packs a lot into a few ZIP codes. In one afternoon, a local technician might treat a ranch house in Englewood, a third-floor apartment near the St. Johns Town Center, and a restaurant kitchen on Beach Boulevard. Each one needs its own plan, and that variety is what pest control on the Southside is all about.",
+    "Dense living is the big factor here. When dozens of families share walls, plumbing lines, and trash areas, German cockroaches and bed bugs can travel from unit to unit. At the same time, Pottsburg Creek and the ponds tucked behind office parks give mosquitoes and fire ants plenty of room to grow. Whether you rent, own, or manage a building, every treatment should be shaped around how your property is actually lived in and used.",
   ],
   commonPests: {
-    heading: "Pests Southside Residents Call Us About",
+    heading: "Pests Southside Residents Run Into Most",
     intro: ["Some of these are apartment problems, some are yard problems, and a few turn up just about everywhere."],
     pests: [
       {
         name: "German cockroaches",
-        why: "These small roaches live indoors and spread through shared plumbing walls and trash rooms in the Southside's many apartment and condo buildings. Treating one unit alone rarely solves it, so we work with neighbors and managers when we can.",
+        why: "These small roaches live indoors and spread through shared plumbing walls and trash rooms in the Southside's many apartment and condo buildings. Treating one unit alone rarely solves it, so working with neighbors and managers helps.",
       },
       {
         name: "Bed bugs",
@@ -59,9 +59,9 @@ export const southside: AreaContent = {
   homes: {
     heading: "Southside Homes, Apartments, and Businesses",
     body: [
-      "Older neighborhoods like Englewood, first laid out in the 1920s, filled in over the years with modest ranch houses and mid-century apartments. Homes from that era often have gaps around pipes, worn door sweeps, and aging wood trim, so we pay close attention to sealing and to termite signs along the foundation.",
-      "Newer apartment communities cover much of the land near the Town Center and along Southside Boulevard. In these buildings, one unit's problem can quickly become the whole building's problem. We help property managers set up regular service, unit-turn inspections, and simple prep sheets for tenants.",
-      "The Southside is also one of Jacksonville's big office and retail areas. Restaurants, medical offices around Southpoint, and shopping centers all need quiet, scheduled service that doesn't disrupt customers. That is where our [business pest control programs](/commercial) come in.",
+      "Older neighborhoods like Englewood, first laid out in the 1920s, filled in over the years with modest ranch houses and mid-century apartments. Homes from that era often have gaps around pipes, worn door sweeps, and aging wood trim, so sealing and termite signs along the foundation deserve close attention.",
+      "Newer apartment communities cover much of the land near the Town Center and along Southside Boulevard. In these buildings, one unit's problem can quickly become the whole building's problem. A local provider can help property managers set up regular service, unit-turn inspections, and simple prep sheets for tenants.",
+      "The Southside is also one of Jacksonville's big office and retail areas. Restaurants, medical offices around Southpoint, and shopping centers all need quiet, scheduled service that doesn't disrupt customers. That is where [business pest control programs](/commercial) come in.",
     ],
   },
   popularServices: [
@@ -75,14 +75,14 @@ export const southside: AreaContent = {
   zipCodes: ["32216", "32246", "32256"],
   faqs: [
     {
-      question: "Can you treat just my apartment if my neighbors have roaches?",
+      question: "Can just my apartment be treated if my neighbors have roaches?",
       answer:
-        "Yes, we can treat your unit on its own, but results last longer when the building is treated together. German cockroaches move through wall voids and plumbing lines, so a single treated apartment can get re-infested. On the Southside we often coordinate with property managers so neighboring units are checked at the same time, and we'll show you what to do between visits.",
+        "Yes, your unit can be treated on its own, but results last longer when the building is treated together. German cockroaches move through wall voids and plumbing lines, so a single treated apartment can get re-infested. On the Southside, technicians often coordinate with property managers so neighboring units are checked at the same time, and they can show you what to do between visits.",
     },
     {
-      question: "Do you service offices and restaurants on the Southside?",
+      question: "Is pest control available for offices and restaurants on the Southside?",
       answer:
-        "Yes. Many of our Southside clients are businesses along Beach Boulevard, Philips Highway, and the Town Center area. We schedule visits around your hours, focus on kitchens, break rooms, loading areas, and dumpster pads, and keep written service records you can share with inspectors or building owners. Every plan starts with a walkthrough of your space.",
+        "Yes. Businesses along Beach Boulevard, Philips Highway, and the Town Center area are a big part of pest work on the Southside. Visits can be scheduled around your hours, with focus on kitchens, break rooms, loading areas, and dumpster pads, plus written service records you can share with inspectors or building owners. Every plan should start with a walkthrough of your space.",
     },
     {
       question: "Why are mosquitoes worse near Pottsburg Creek?",
@@ -91,5 +91,5 @@ export const southside: AreaContent = {
     },
   ],
   nearbyAreas: ["baymeadows-deerwood", "arlington", "san-marco", "jacksonville-beach"],
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-10-16",
 };

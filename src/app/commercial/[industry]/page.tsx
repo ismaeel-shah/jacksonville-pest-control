@@ -83,12 +83,11 @@ export default async function IndustryPage({ params }: PageProps<"/commercial/[i
 
       <FAQSection title={`${industry.name} Pest Control FAQ`} faqs={industry.faqs} tone="surface" />
 
-      <RelatedServices title="Services We Provide for Your Business" services={getServicesBySlugs(industry.relatedServices)} />
+      <RelatedServices title="Related Services for Your Business" services={getServicesBySlugs(industry.relatedServices)} />
 
       <CTASection
-        title="Request a Free Commercial Inspection"
-        text="Tell us about your business and we'll schedule a site inspection at a time that works around your hours. You'll get a written plan and an upfront quote."
-        defaultPropertyType="commercial"
+        title="Talk to a Local Commercial Pest Control Pro"
+        text="Call to describe your business and the pest problem. A local provider can explain how a commercial program works and set up a site visit around your hours."
       />
     </>
   );

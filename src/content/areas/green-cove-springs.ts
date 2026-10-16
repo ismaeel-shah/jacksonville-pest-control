@@ -9,13 +9,13 @@ export const greenCoveSprings: AreaContent = {
   seo: {
     title: "Pest Control in Green Cove Springs, FL | Local Pros",
     description:
-      "Green Cove Springs pest control for historic homes and new builds. Termite inspections, pre-construction treatment, and mosquito service. Call for a free quote.",
+      "Green Cove Springs pest control for historic homes and new builds. Termite inspections, pre-construction treatment, and mosquitoes. Call to reach a local pro.",
     primaryKeyword: "pest control Green Cove Springs FL",
     secondaryKeywords: ["termite inspection Green Cove Springs", "exterminator Green Cove Springs", "Clay County termite treatment", "32043 pest control"],
   },
   hero: {
     h1: "Pest Control in Green Cove Springs, FL",
-    subheadline: "From century-old homes near Spring Park to brand-new streets west of town, we protect Green Cove Springs properties on the St. Johns River.",
+    subheadline: "From century-old homes near Spring Park to brand-new streets west of town, call to reach a local pro who protects Green Cove Springs properties on the St. Johns River.",
     image: {
       file: "green-cove-springs-fl-historic-wood-home.webp",
       alt: "Historic two-story wood-frame home with a front porch on a shady street in Green Cove Springs",
@@ -23,11 +23,11 @@ export const greenCoveSprings: AreaContent = {
   },
   intro: [
     "Green Cove Springs is the county seat of Clay County and one of the oldest towns in the area. Its namesake spring rises near the west bank of the St. Johns River, flows through the city pool at Spring Park, and runs on into the river. It's a lovely spot, and a reminder of how much water shapes life here.",
-    "Today the city is a mix of old and new. Near downtown and the historic courthouse, you'll find wood-frame homes that have stood for generations. A few miles out, new subdivisions are filling in land that was woods and pasture not long ago. Pest control in Green Cove Springs, FL has to handle both. Older homes need careful termite work, and new homes need a solid start. We know the difference and treat each one the right way.",
+    "Today the city is a mix of old and new. Near downtown and the historic courthouse, you'll find wood-frame homes that have stood for generations. A few miles out, new subdivisions are filling in land that was woods and pasture not long ago. Pest control in Green Cove Springs, FL has to handle both. Older homes need careful termite work, and new homes need a solid start. One call connects you with a local pest control pro who can treat each kind of home the right way.",
   ],
   commonPests: {
     heading: "Common Pests in Green Cove Springs",
-    intro: ["Age of the home and closeness to the river decide most of what we find here."],
+    intro: ["Age of the home and closeness to the river decide most of the pest problems here."],
     pests: [
       {
         name: "Subterranean termites",
@@ -50,8 +50,8 @@ export const greenCoveSprings: AreaContent = {
   homes: {
     heading: "Old Homes, New Homes, and What Each Needs",
     body: [
-      "The Green Cove Springs Historic District and the blocks around it have many older wood homes, some raised on piers with crawl spaces. Those crawl spaces can trap moisture, and moisture invites termites, carpenter ants, and wood rot. We inspect under the house, around porch supports, and up in the attic, and we choose treatments that respect older materials.",
-      "New construction tells a different story. As the First Coast Expressway extends past the west and south sides of town, neighborhoods like Rolling Hills and Cross Creek keep growing. The best time to protect a new home from termites is before the slab is poured. Builders can call us for [pre-construction termite treatment](/pre-construction-termite-treatment), and new owners can set up ongoing protection once they move in.",
+      "The Green Cove Springs Historic District and the blocks around it have many older wood homes, some raised on piers with crawl spaces. Those crawl spaces can trap moisture, and moisture invites termites, carpenter ants, and wood rot. A thorough inspection covers the space under the house, the porch supports, and the attic, and the right treatments respect older materials.",
+      "New construction tells a different story. As the First Coast Expressway extends past the west and south sides of town, neighborhoods like Rolling Hills and Cross Creek keep growing. The ideal time to protect a new home from termites is before the slab is poured. Builders can call to arrange [pre-construction termite treatment](/pre-construction-termite-treatment) with a local pro, and new owners can set up ongoing protection once they move in.",
     ],
   },
   popularServices: [
@@ -65,14 +65,14 @@ export const greenCoveSprings: AreaContent = {
   zipCodes: ["32043"],
   faqs: [
     {
-      question: "How do you treat termites in a historic Green Cove Springs home?",
+      question: "How are termites treated in a historic Green Cove Springs home?",
       answer:
-        "We start with a careful inspection to find out which type of termite you have, because subterranean and drywood termites need different treatments. For older homes, we choose methods that protect original wood and finishes as much as possible. Sometimes that means a targeted treatment instead of a whole-house approach. We'll explain the options and trade-offs before any work starts.",
+        "Treatment starts with a careful inspection to find out which type of termite you have, because subterranean and drywood termites need different treatments. For older homes, a technician should choose methods that protect original wood and finishes as much as possible. Sometimes that means a targeted treatment instead of a whole-house approach. Ask your technician to explain the options and trade-offs before any work starts.",
     },
     {
       question: "My new home in Green Cove Springs was pre-treated. Do I still need termite protection?",
       answer:
-        "Usually, yes, in time. A pre-construction treatment protects the soil around your foundation when the home is built, but it wears down over the years. Check your closing papers for any builder termite warranty and its end date. Before it runs out, we can inspect the home and set up ongoing protection so there's no gap.",
+        "Usually, yes, in time. A pre-construction treatment protects the soil around your foundation when the home is built, but it wears down over the years. Check your closing papers for the builder's termite coverage and its end date. Before it runs out, a local pro can inspect the home and set up ongoing protection so there's no gap.",
     },
     {
       question: "Why do I get so many mosquitoes near the river?",
@@ -81,5 +81,5 @@ export const greenCoveSprings: AreaContent = {
     },
   ],
   nearbyAreas: ["fleming-island", "middleburg", "orange-park", "st-johns"],
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-10-16",
 };

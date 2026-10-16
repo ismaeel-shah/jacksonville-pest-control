@@ -7,15 +7,15 @@ export const neptuneBeach: AreaContent = {
   region: "beaches",
   hubBlurb: "A small, walkable beach town where homes sit close together and Town Center shops share alleys, so ants, rodents, and moisture pests travel easily.",
   seo: {
-    title: "Pest Control in Neptune Beach, FL | Homes & Shops",
+    title: "Pest Control in Neptune Beach, FL | Homes & Businesses",
     description:
-      "Neptune Beach, FL pest control for bungalows, duplexes and Town Center businesses. We stop ants, rodents, silverfish and termites. Call today for a free quote.",
+      "Neptune Beach, FL pest control for bungalows, duplexes and Town Center businesses. Ants, rodents, silverfish and termites. Call to speak with a local pest pro.",
     primaryKeyword: "pest control Neptune Beach FL",
     secondaryKeywords: ["exterminator Neptune Beach", "Beaches Town Center pest control", "ant control Neptune Beach", "32266 pest control"],
   },
   hero: {
     h1: "Pest Control in Neptune Beach, FL",
-    subheadline: "Friendly, local pest service for close-knit Neptune Beach streets and the shops and restaurants of Beaches Town Center.",
+    subheadline: "Call to reach a local pest control pro for close-knit Neptune Beach streets and the shops and restaurants of Beaches Town Center.",
     image: {
       file: "neptune-beach-bungalow-tree-lined-street.webp",
       alt: "Single-story bungalow with a front porch on a tree-lined street a few blocks from the ocean in Neptune Beach",
@@ -23,7 +23,7 @@ export const neptuneBeach: AreaContent = {
   },
   intro: [
     "Neptune Beach is the smallest of the Jacksonville Beaches towns, and you can walk or bike almost anywhere in it. The town even got its name from a little train stop called Neptune back in the 1920s. Today it's a neighborhood of porches, bikes, and short walks to the sand.",
-    "Small lots have a downside when it comes to pests. With houses just a few feet apart, ant colonies and rodents move from one yard to the next. The ocean air keeps humidity high most of the year, so bathrooms, crawl spaces, and attics stay damp enough for silverfish and roaches. At the north end of town, Beaches Town Center packs restaurants and shops into a few busy blocks along the border with Atlantic Beach. We treat homes and businesses here with that close-quarters reality in mind.",
+    "Small lots have a downside when it comes to pests. With houses just a few feet apart, ant colonies and rodents move from one yard to the next. The ocean air keeps humidity high most of the year, so bathrooms, crawl spaces, and attics stay damp enough for silverfish and roaches. At the north end of town, Beaches Town Center packs restaurants and shops into a few busy blocks along the border with Atlantic Beach. Good pest control for homes and businesses here has to work with that close-quarters reality.",
   ],
   commonPests: {
     heading: "Pests That Move Between Neptune Beach Homes",
@@ -53,9 +53,9 @@ export const neptuneBeach: AreaContent = {
   homes: {
     heading: "Neptune Beach Homes and Close Neighbors",
     body: [
-      "Much of Neptune Beach is single-story bungalows and ranch homes on small lots, mixed with duplexes and newer two-story rebuilds. In a duplex, pests in one half usually reach the other, so treating both sides at the same time gives the best results.",
-      "Moisture is the main thing we watch in older homes here. Leaky AC drain lines, poor attic airflow, and damp crawl spaces draw silverfish, roaches, and termites. Our [moisture control](/moisture-control) service can help dry those areas out so treatments last longer.",
-      "Town Center businesses face a different challenge. Shops and restaurants share walls, alleys, and trash areas, and one neighbor's problem soon becomes yours. Our [commercial pest control](/commercial) plans keep regular, written records and can be timed before opening or after closing.",
+      "Much of Neptune Beach is single-story bungalows and ranch homes on small lots, mixed with duplexes and newer two-story rebuilds. In a duplex, pests in one half usually reach the other, so treating both sides at the same time gives better results.",
+      "Moisture is the main thing to watch in older homes here. Leaky AC drain lines, poor attic airflow, and damp crawl spaces draw silverfish, roaches, and termites. [Moisture control](/moisture-control) can help dry those areas out so treatments last longer.",
+      "Town Center businesses face a different challenge. Shops and restaurants share walls, alleys, and trash areas, and one neighbor's problem soon becomes yours. [Commercial pest control](/commercial) plans typically include regular, written records and can be timed before opening or after closing.",
     ],
   },
   popularServices: [
@@ -71,19 +71,19 @@ export const neptuneBeach: AreaContent = {
     {
       question: "My neighbor has ants. Will treating just my house help?",
       answer:
-        "It helps, but results are better when nearby yards are treated too. On small Neptune Beach lots, ant colonies often stretch across property lines. We treat your foundation, yard edges, and entry points to create a barrier. If several neighbors sign up around the same time, we can coordinate visits so colonies have fewer places to move.",
+        "It helps, but results are better when nearby yards are treated too. On small Neptune Beach lots, ant colonies often stretch across property lines. A technician treats your foundation, yard edges, and entry points to create a barrier. If several neighbors schedule service around the same time, visits can be coordinated so colonies have fewer places to move.",
     },
     {
-      question: "Do you service restaurants and shops at Beaches Town Center?",
+      question: "Can restaurants and shops at Beaches Town Center get pest service?",
       answer:
-        "Yes. We work with restaurants, shops, and offices and schedule visits before opening or after closing so customers are not disturbed. Service includes inspection, targeted treatment, and written reports you can show a health inspector. We also look at shared alleys and trash areas, since many pest problems start there.",
+        "Yes. Local pest control pros work with restaurants, shops, and offices and can schedule visits before opening or after closing so customers are not disturbed. Service usually includes inspection, targeted treatment, and written reports you can show a health inspector. A good technician also looks at shared alleys and trash areas, since many pest problems start there.",
     },
     {
       question: "Why do I keep finding silverfish in my bathroom and closets?",
       answer:
-        "Silverfish need damp places, and the ocean air in Neptune Beach keeps humidity high most of the year. Bathrooms without good exhaust fans and closets on outside walls are common hiding spots. Running a dehumidifier, fixing leaks, and sealing gaps help a lot. If they keep coming back, we can treat the areas where they hide and breed.",
+        "Silverfish need damp places, and the ocean air in Neptune Beach keeps humidity high most of the year. Bathrooms without good exhaust fans and closets on outside walls are common hiding spots. Running a dehumidifier, fixing leaks, and sealing gaps help a lot. If they keep coming back, a local pro can treat the areas where they hide and breed.",
     },
   ],
   nearbyAreas: ["atlantic-beach", "jacksonville-beach", "ponte-vedra-beach"],
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-10-16",
 };

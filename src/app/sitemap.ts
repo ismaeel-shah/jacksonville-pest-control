@@ -4,7 +4,7 @@ import { getPublishedAreas, getPublishedIndustries, getPublishedPosts, getPublis
 import { STATIC_ROUTES, areaHref, blogPostHref, industryHref, serviceHref } from "@/lib/routes";
 
 /** Update when the copy on a core page (home, about, FAQ, etc.) changes. */
-const CORE_PAGES_UPDATED = "2026-10-12";
+const CORE_PAGES_UPDATED = "2026-10-16";
 
 type Entry = MetadataRoute.Sitemap[number];
 
@@ -24,7 +24,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry(STATIC_ROUTES.contact, CORE_PAGES_UPDATED, 0.8),
     entry(STATIC_ROUTES.serviceAreas, CORE_PAGES_UPDATED, 0.8),
     entry(STATIC_ROUTES.about, CORE_PAGES_UPDATED, 0.6),
-    entry(STATIC_ROUTES.reviews, CORE_PAGES_UPDATED, 0.6),
     entry(STATIC_ROUTES.faq, CORE_PAGES_UPDATED, 0.6),
     entry(STATIC_ROUTES.blog, CORE_PAGES_UPDATED, 0.5),
     ...getPublishedServices().map((s) => entry(serviceHref(s.slug), s.lastUpdated, 0.9)),

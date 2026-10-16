@@ -49,7 +49,7 @@ import { waspBeeRemoval } from "./services/wasp-bee-removal";
 import { wildlifeRemoval } from "./services/wildlife-removal";
 import type { AreaContent, BlogPost, IndustryContent, ServiceContent } from "./types";
 
-/** Order here is the order used in menus, the footer, and the quote form. */
+/** Order here is the order used in menus and the footer. */
 export const services: ServiceContent[] = [
   generalPestControl,
   termiteControl,

@@ -1,8 +1,7 @@
-import { BadgeCheck, Building2, CalendarCheck } from "lucide-react";
+import { Building2, CalendarCheck } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
-import { CostFactors } from "@/components/sections/CostFactors";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { Hero } from "@/components/sections/Hero";
@@ -10,16 +9,12 @@ import { PestSigns } from "@/components/sections/PestSigns";
 import { PreventionTips } from "@/components/sections/PreventionTips";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { RelatedServices } from "@/components/sections/RelatedServices";
-import { ReviewsSection } from "@/components/sections/ReviewsSection";
 import { ServiceAreasList } from "@/components/sections/ServiceAreasList";
 import { TextSection } from "@/components/sections/TextSection";
 import { TreatmentOptions } from "@/components/sections/TreatmentOptions";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Container } from "@/components/ui/Container";
 import { Prose } from "@/components/ui/Prose";
-import { siteConfig } from "@/config/site";
-import { reviews } from "@/content/reviews";
-import { previewable } from "@/lib/config";
 import { getPublishedAreas, getPublishedIndustries, getPublishedServices, getService, getServicesBySlugs } from "@/lib/content";
 import { formatDate } from "@/lib/format";
 import { buildMetadata } from "@/lib/metadata";
@@ -49,9 +44,7 @@ export default async function ServicePage({ params }: PageProps<"/[service]">) {
   const path = serviceHref(service.slug);
   const areas = getPublishedAreas();
   const related = getServicesBySlugs(service.relatedServices);
-  const serviceReviews = reviews.filter((review) => review.service === service.slug);
   const industries = getPublishedIndustries().filter((industry) => industry.relatedServices.includes(service.slug));
-  const reviewer = previewable(siteConfig.contentReviewer.name);
   const category = service.audience.includes("residential")
     ? { label: "residential pest control services", href: STATIC_ROUTES.residential }
     : { label: "commercial pest control services", href: STATIC_ROUTES.commercial };
@@ -73,27 +66,13 @@ export default async function ServicePage({ params }: PageProps<"/[service]">) {
       <section aria-label="Overview" className="py-12 md:py-16">
         <Container className="max-w-3xl">
           <Prose paragraphs={service.intro} className="text-xl" />
-          <div className="mt-8 flex items-start gap-3 rounded-lg border border-line bg-surface p-4">
+          <div className="mt-8 flex items-center gap-3 rounded-lg border border-line bg-surface p-4">
             <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary-soft text-primary">
-              {reviewer ? <BadgeCheck aria-hidden className="size-5" /> : <CalendarCheck aria-hidden className="size-5" />}
+              <CalendarCheck aria-hidden className="size-5" />
             </span>
-            <div className="flex min-w-0 flex-1 flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
-              {reviewer && (
-                <p className="leading-snug">
-                  <span className="block text-sm text-ink-muted">Reviewed by</span>
-                  <span className="block font-semibold text-ink">{reviewer}</span>
-                  <span className="block text-sm text-ink-muted">{siteConfig.contentReviewer.role}</span>
-                </p>
-              )}
-              <p
-                className={`flex items-center gap-1.5 text-sm text-ink-muted ${reviewer ? "border-t border-line pt-2 sm:border-0 sm:pt-0" : ""}`}
-              >
-                {reviewer && <CalendarCheck aria-hidden className="size-4 shrink-0" />}
-                <span>
-                  Updated <time dateTime={service.lastUpdated}>{formatDate(service.lastUpdated)}</time>
-                </span>
-              </p>
-            </div>
+            <p className="text-sm text-ink-muted">
+              Updated <time dateTime={service.lastUpdated}>{formatDate(service.lastUpdated)}</time>
+            </p>
           </div>
         </Container>
       </section>
@@ -112,9 +91,7 @@ export default async function ServicePage({ params }: PageProps<"/[service]">) {
 
       <TextSection id="safety" tone="surface" title={service.safety.heading} paragraphs={service.safety.body} />
 
-      <CostFactors serviceName={service.name} factors={service.costFactors} tone="white" />
-
-      <PreventionTips title={service.prevention.heading} tips={service.prevention.tips} />
+      <PreventionTips title={service.prevention.heading} tips={service.prevention.tips} tone="white" />
 
       {service.forBusinesses && (
         <section aria-labelledby="for-businesses-heading" className="py-12 md:py-14">
@@ -128,7 +105,7 @@ export default async function ServicePage({ params }: PageProps<"/[service]">) {
                 <Prose paragraphs={service.forBusinesses} className="mt-3 text-ink-muted" />
                 {industries.length > 0 && (
                   <p className="mt-4 text-base">
-                    <span className="font-semibold text-ink">Industries we serve: </span>
+                    <span className="font-semibold text-ink">Industries covered: </span>
                     {industries.map((industry, i) => (
                       <span key={industry.slug}>
                         {i > 0 && ", "}
@@ -148,14 +125,12 @@ export default async function ServicePage({ params }: PageProps<"/[service]">) {
         </section>
       )}
 
-      <ReviewsSection title={`What Customers Say About Our ${service.name}`} reviews={serviceReviews} hideWhenEmpty />
-
       <FAQSection title={`${service.name} FAQ`} faqs={service.faqs} tone="surface" />
 
       <RelatedServices services={related} />
       <p className="-mt-8 pb-12 text-center">
         <Link href={category.href} className="font-bold text-primary hover:underline">
-          See all our {category.label} →
+          See all {category.label} →
         </Link>
       </p>
 
@@ -163,7 +138,7 @@ export default async function ServicePage({ params }: PageProps<"/[service]">) {
         id="related-areas"
         tone="surface"
         title={`${service.name} Across Northeast Florida`}
-        intro={`We provide ${service.name.toLowerCase()} in Jacksonville and these nearby communities.`}
+        intro={`Call to reach a local pro for ${service.name.toLowerCase()} in Jacksonville and these nearby communities.`}
         areas={areas}
       />
 

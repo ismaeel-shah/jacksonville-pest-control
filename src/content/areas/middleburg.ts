@@ -7,15 +7,15 @@ export const middleburg: AreaContent = {
   region: "clay-county",
   hubBlurb: "Acreage, pine woods, and Black Creek bring ticks, fire ants, and wildlife right up to the porch in semi-rural Middleburg.",
   seo: {
-    title: "Pest Control in Middleburg, FL | Rural & Acreage",
+    title: "Pest Control in Middleburg, FL | Rural Homes & Acreage",
     description:
-      "Middleburg, FL pest control for wooded lots and acreage. Help with ticks, fire ants, wildlife, and rodents in homes, sheds, and barns. Call for a free quote.",
+      "Middleburg, FL pest control for wooded lots and acreage. Ticks, fire ants, wildlife, and rodents in homes, sheds, and barns. Call to speak with a local pro.",
     primaryKeyword: "pest control Middleburg FL",
     secondaryKeywords: ["tick control Middleburg", "fire ants Middleburg FL", "wildlife removal Clay County", "32068 pest control"],
   },
   hero: {
     h1: "Pest Control in Middleburg, FL",
-    subheadline: "Yard, home, and outbuilding protection for Middleburg properties set among pine woods and the forks of Black Creek.",
+    subheadline: "Call to reach a local pro for yard, home, and outbuilding pest protection on Middleburg properties set among pine woods and the forks of Black Creek.",
     image: {
       file: "middleburg-fl-home-on-wooded-acreage.webp",
       alt: "Middleburg home on a large wooded lot with a metal shed and tall pine trees",
@@ -23,8 +23,8 @@ export const middleburg: AreaContent = {
   },
   intro: [
     "Middleburg still feels like the country, and that's why a lot of people live here. You get room to breathe, tall pines, and the north and south forks of Black Creek winding through the area. Jennings State Forest is close by, too.",
-    "The trade-off is that you share your land with a lot of wildlife and insects. When your yard backs up to woods instead of another fence, ticks, fire ants, raccoons, and rodents don't have far to travel. Pest control in Middleburg, FL works best when it covers the whole property, not just the inside of the house.",
-    "We treat homes, detached garages, sheds, and barns. Whether you have a newer house off Blanding Boulevard or a few acres down a dirt road, we'll walk your land with you and point out what's drawing pests in.",
+    "The trade-off is that you share your land with a lot of wildlife and insects. When your yard backs up to woods instead of another fence, ticks, fire ants, raccoons, and rodents don't have far to travel. Pest control in Middleburg, FL is most effective when it covers the whole property, not just the inside of the house.",
+    "Local pest control pros here treat homes, detached garages, sheds, and barns. Whether you have a newer house off Blanding Boulevard or a few acres down a dirt road, call to reach a pro who can walk your land with you and point out what's drawing pests in.",
   ],
   commonPests: {
     heading: "What Middleburg Properties Deal With",
@@ -51,8 +51,8 @@ export const middleburg: AreaContent = {
     heading: "Middleburg Homes, Land, and Pest Control",
     body: [
       "Housing in Middleburg covers a wide range. Some older homes sit near the historic district by the creek. Established subdivisions like Breckenridge date back to the 1990s, and newer builder communities keep going up along the main roads. Then there are manufactured homes and site-built houses on acreage, many with wells, septic systems, and several outbuildings.",
-      "More land means more places for pests to hide. We pay close attention to skirting on manufactured homes, gaps under barn doors, and the edges where your lawn meets the woods. A strong perimeter barrier, plus [flea and tick treatment](/flea-tick-control) along the tree line, does more for a rural property than spraying inside alone.",
-      "Homes along Black Creek have one more concern. When the creek rises after big storms, soggy ground and debris push rodents, ants, and other pests toward drier spots, including your house. We recommend a check after any serious flood.",
+      "More land means more places for pests to hide. A careful technician pays close attention to skirting on manufactured homes, gaps under barn doors, and the edges where your lawn meets the woods. A strong perimeter barrier, plus [flea and tick treatment](/flea-tick-control) along the tree line, does more for a rural property than spraying inside alone.",
+      "Homes along Black Creek have one more concern. When the creek rises after big storms, soggy ground and debris push rodents, ants, and other pests toward drier spots, including your house. A pest check after any serious flood is a smart idea.",
     ],
   },
   popularServices: [
@@ -66,21 +66,21 @@ export const middleburg: AreaContent = {
   zipCodes: ["32068"],
   faqs: [
     {
-      question: "Can you treat my whole Middleburg property, not just the house?",
+      question: "Can my whole Middleburg property be treated, not just the house?",
       answer:
-        "Yes. On larger lots we treat the home's perimeter and also target the areas pests use to get close, like tree lines, fence rows, sheds, and barns. Coverage depends on your acreage and what you need protected, so we walk the property first. Then we explain exactly which areas we'll treat and why.",
+        "Yes. On larger lots a technician can treat the home's perimeter and also target the areas pests use to get close, like tree lines, fence rows, sheds, and barns. Coverage depends on your acreage and what you need protected, so the property should be walked first. Your technician should then explain which areas will be treated and why.",
     },
     {
       question: "How do I keep ticks out of my yard in Middleburg?",
       answer:
-        "Start by keeping grass short and creating a clear buffer between your lawn and the woods. Ticks wait on tall grass and brush for a host to brush past. We can treat that border zone and shady spots where ticks rest. Keep your pets on a vet-recommended tick preventive too, since treatment works best alongside it.",
+        "Start by keeping grass short and creating a clear buffer between your lawn and the woods. Ticks wait on tall grass and brush for a host to brush past. A local pest control pro can treat that border zone and shady spots where ticks rest. Keep your pets on a vet-recommended tick preventive too, since treatment works better alongside it.",
     },
     {
-      question: "Do you handle snakes on rural Middleburg lots?",
+      question: "What can be done about snakes on rural Middleburg lots?",
       answer:
-        "We can help make your property less inviting to snakes. Most snakes show up because there are rodents to eat and clutter to hide in. Controlling rats and mice, clearing brush and woodpiles near the house, and sealing gaps under porches all help. Florida wildlife rules protect some species, so please don't try to handle a snake yourself.", // OWNER: confirm whether you offer snake removal
+        "The most practical step is making your property less inviting to snakes. Most snakes show up because there are rodents to eat and clutter to hide in. Controlling rats and mice, clearing brush and woodpiles near the house, and sealing gaps under porches all help. Florida wildlife rules protect some species, so please don't try to handle a snake yourself.",
     },
   ],
   nearbyAreas: ["orange-park", "fleming-island", "green-cove-springs", "westside"],
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-10-16",
 };

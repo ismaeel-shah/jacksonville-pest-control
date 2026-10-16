@@ -12,7 +12,7 @@ import { AREA_REGIONS, STATIC_ROUTES, areaHref } from "@/lib/routes";
 import { buildWebPageSchema } from "@/lib/schema";
 
 const DESCRIPTION =
-  "See the Jacksonville neighborhoods, beach towns, and St. Johns, Clay, and Nassau County communities where we provide pest control. Free inspections.";
+  "See the Jacksonville neighborhoods, beach towns, and St. Johns, Clay, and Nassau County communities where you can reach a local pest control pro by phone.";
 
 export const metadata = buildMetadata({
   title: "Pest Control Service Areas Around Jacksonville, FL",
@@ -55,13 +55,13 @@ export default function ServiceAreasPage() {
         <Container className="max-w-3xl">
           <h1 className="text-4xl font-extrabold text-secondary md:text-5xl">Pest Control Service Areas Around Jacksonville</h1>
           <p className="mt-5 text-xl text-ink-muted">
-            We provide pest control across Duval County and the communities around it, from the Beaches to Clay County and
+            Calls are connected with pest control providers across Duval County and the communities around it, from the Beaches to Clay County and
             up to Amelia Island. Pick your area below to learn about the pests that are most common there and the services
             your neighbors ask for most.
           </p>
           <p className="mt-4 text-ink-muted">
-            Don&apos;t see your neighborhood? We likely still cover it. Call us with your ZIP code and we&apos;ll let you know
-            right away.
+            Don&apos;t see your neighborhood? Call and share your ZIP code to find out whether a local provider serves
+            your address.
           </p>
           <div className="mt-8">
             <CallButton />
@@ -98,13 +98,13 @@ export default function ServiceAreasPage() {
       {alsoServe.length > 0 && (
         <Section id="also-serve" tone="surface" labelledBy="also-serve-heading">
           <h2 id="also-serve-heading" className="text-2xl font-extrabold text-secondary">
-            We Also Serve
+            Also Covered
           </h2>
           <p className="mt-3 text-ink-muted">{alsoServe.map((area) => area.name).join(", ")}.</p>
         </Section>
       )}
 
-      <CTASection title="Not Sure If We Cover Your Area?" text="Call us or send your ZIP code in the form. If we serve your neighborhood, we'll set up your free inspection." />
+      <CTASection title="Not Sure If Your Area Is Covered?" text="Call and share your ZIP code. If a local provider serves your neighborhood, you can talk through the problem right away." />
     </>
   );
 }

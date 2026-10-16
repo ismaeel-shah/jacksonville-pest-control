@@ -1,4 +1,4 @@
-import { CalendarDays, ChevronDown, Clock, ListOrdered, UserRound } from "lucide-react";
+import { CalendarDays, ChevronDown, Clock, ListOrdered } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BlogCard } from "@/components/blog/BlogCard";
@@ -9,12 +9,9 @@ import { CallButton } from "@/components/ui/CallButton";
 import { Container } from "@/components/ui/Container";
 import { ImageSlot, willRenderImage } from "@/components/ui/ImageSlot";
 import { InlineProse, Prose } from "@/components/ui/Prose";
-import { QuoteButton } from "@/components/ui/QuoteButton";
 import { SidebarCta } from "@/components/ui/SidebarCta";
 import { TableOfContents } from "@/components/ui/TableOfContents";
-import { siteConfig } from "@/config/site";
 import type { ContentSection } from "@/content/types";
-import { getBusinessName, previewable } from "@/lib/config";
 import { getPost, getPostsBySlugs, getPublishedPosts, getReadingMinutes, getServicesBySlugs } from "@/lib/content";
 import { formatDate } from "@/lib/format";
 import { buildMetadata } from "@/lib/metadata";
@@ -45,8 +42,6 @@ export default async function BlogPostPage({ params }: PageProps<"/blog/[slug]">
   if (!post) notFound();
 
   const path = blogPostHref(post.slug);
-  const reviewer = previewable(siteConfig.contentReviewer.name);
-  const businessName = getBusinessName();
   const services = getServicesBySlugs(post.relatedServices);
   const related = getPostsBySlugs(post.relatedPosts);
   const showToc = post.sections.length >= TOC_MIN_SECTIONS;
@@ -78,23 +73,7 @@ export default async function BlogPostPage({ params }: PageProps<"/blog/[slug]">
             <p className="mt-5 text-xl text-ink-muted">{post.excerpt}</p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
-              {(reviewer || businessName) && (
-                // OWNER: replace contentReviewer in src/config/site.ts with the real licensed technician
-                <div className="flex items-center gap-3">
-                  <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-primary text-white">
-                    <UserRound aria-hidden className="size-5" />
-                  </span>
-                  <p className="leading-snug">
-                    <span className="block font-bold text-secondary">
-                      {reviewer ? `Reviewed by ${reviewer}` : `The ${businessName} team`}
-                    </span>
-                    <span className="block text-sm text-ink-muted">
-                      {reviewer ? siteConfig.contentReviewer.role : "Licensed pest control professionals"}
-                    </span>
-                  </p>
-                </div>
-              )}
-              <p className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-ink-muted sm:border-l sm:border-line sm:pl-6">
+              <p className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-ink-muted">
                 <span className="flex items-center gap-1.5">
                   <CalendarDays aria-hidden className="size-4" />
                   <time dateTime={post.datePublished}>{formatDate(post.datePublished)}</time>
@@ -172,7 +151,7 @@ export default async function BlogPostPage({ params }: PageProps<"/blog/[slug]">
                     Need Help With This?
                   </h2>
                   <p className="mt-2 text-ink-muted">
-                    Our technicians handle this every day in Jacksonville homes. Start with a free inspection and an upfront quote.
+                    Local pest control pros deal with this every day in Jacksonville homes. Call to talk with one about your situation.
                   </p>
                   <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
                     {services.map((service) => (
@@ -185,7 +164,6 @@ export default async function BlogPostPage({ params }: PageProps<"/blog/[slug]">
                   </ul>
                   <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                     <CallButton />
-                    <QuoteButton cta="blog_free_inspection" />
                   </div>
                 </aside>
               )}
@@ -197,7 +175,7 @@ export default async function BlogPostPage({ params }: PageProps<"/blog/[slug]">
                   <div className="rounded-2xl border border-line bg-white p-6 shadow-sm">
                     <TableOfContents items={tocItems} />
                   </div>
-                  <SidebarCta title={`Dealing with ${post.category.toLowerCase()}?`} cta="blog_sidebar_free_inspection" />
+                  <SidebarCta title={`Dealing with ${post.category.toLowerCase()}?`} />
                 </div>
               </aside>
             )}
