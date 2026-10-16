@@ -105,6 +105,7 @@ export default function CommercialPage() {
       />
 
       <TextSection
+        afterHero
         id="intro"
         title="Pest Control Built Around Your Business"
         paragraphs={[

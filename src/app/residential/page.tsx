@@ -99,6 +99,7 @@ export default function ResidentialPage() {
       />
 
       <TextSection
+        afterHero
         id="intro"
         title="Keep Your Home Comfortable, Safe, and Pest-Free"
         paragraphs={[

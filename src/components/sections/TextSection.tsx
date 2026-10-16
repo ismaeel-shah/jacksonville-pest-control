@@ -16,6 +16,7 @@ export function TextSection({
   children,
   tone = "white",
   id,
+  afterHero,
 }: {
   title: string;
   paragraphs: ProseContent;
@@ -24,12 +25,13 @@ export function TextSection({
   children?: ReactNode;
   tone?: SectionTone;
   id: string;
+  afterHero?: boolean;
 }) {
   const showImage = image && willRenderImage(image);
   const dark = tone === "navy";
 
   return (
-    <Section id={id} tone={tone} labelledBy={`${id}-heading`}>
+    <Section id={id} tone={tone} labelledBy={`${id}-heading`} afterHero={afterHero}>
       <div className={showImage ? "grid items-start gap-10 lg:grid-cols-2" : "max-w-3xl"}>
         <div>
           <SectionHeading id={`${id}-heading`} title={title} tone={tone} />

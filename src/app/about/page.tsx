@@ -37,6 +37,7 @@ export default function AboutPage() {
       />
 
       <TextSection
+        afterHero
         id="why-this-site"
         title="Why This Site Exists"
         paragraphs={[

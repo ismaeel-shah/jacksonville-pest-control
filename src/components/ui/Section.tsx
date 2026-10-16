@@ -15,6 +15,7 @@ export function Section({
   id,
   className = "",
   labelledBy,
+  afterHero = false,
 }: {
   children: ReactNode;
   tone?: SectionTone;
@@ -22,9 +23,12 @@ export function Section({
   className?: string;
   /** id of the section's heading, for aria-labelledby. */
   labelledBy?: string;
+  /** Directly below a hero that fades to white: skip the top padding so it doesn't stack with the hero's. */
+  afterHero?: boolean;
 }) {
+  const padding = afterHero ? "pb-14 md:pb-20" : "py-14 md:py-20";
   return (
-    <section id={id} aria-labelledby={labelledBy} className={`py-14 md:py-20 ${TONES[tone]} ${className}`}>
+    <section id={id} aria-labelledby={labelledBy} className={`${padding} ${TONES[tone]} ${className}`}>
       <Container>{children}</Container>
     </section>
   );
