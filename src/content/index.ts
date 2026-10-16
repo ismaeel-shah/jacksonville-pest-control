@@ -45,7 +45,7 @@ import { preConstructionTermiteTreatment } from "./services/pre-construction-ter
 import { rodentControl } from "./services/rodent-control";
 import { termiteControl } from "./services/termite-control";
 import { termiteInspection } from "./services/termite-inspection";
-import { waspBeeRemoval } from "./services/wasp-bee-removal";
+import { waspRemoval } from "./services/wasp-removal";
 import { wildlifeRemoval } from "./services/wildlife-removal";
 import type { AreaContent, BlogPost, IndustryContent, ServiceContent } from "./types";
 
@@ -61,7 +61,7 @@ export const services: ServiceContent[] = [
   cockroachControl,
   antControl,
   fleaTickControl,
-  waspBeeRemoval,
+  waspRemoval,
   wildlifeRemoval,
   lawnPestControl,
   moistureControl,

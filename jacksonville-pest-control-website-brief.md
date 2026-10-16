@@ -231,7 +231,7 @@ Plus `/thank-you` (noindex, not counted) and a custom 404 page.
 | 19 | Cockroach & Palmetto Bug Control | `/cockroach-control` |
 | 20 | Ant Control (incl. Fire Ants) | `/ant-control` |
 | 21 | Flea & Tick Control | `/flea-tick-control` |
-| 22 | Wasp, Bee & Hornet Removal | `/wasp-bee-removal` |
+| 22 | Wasp, Hornet & Yellow Jacket Removal | `/wasp-removal` |
 | 23 | Wildlife Removal | `/wildlife-removal` |
 | 24 | Lawn Pest Control | `/lawn-pest-control` |
 | 25 | Moisture Control / Crawl Space | `/moisture-control` |
@@ -364,7 +364,7 @@ Use these as the starting angle for each page. Expand with accurate, general pes
 | Cockroach & Palmetto Bug Control | Explain "palmetto bug" = local name for American cockroach (and similar large roaches); difference vs. German cockroaches (kitchen infestations); why they come inside in heat/rain; gel baits, growth regulators, exterior treatment; sanitation tips. |
 | Ant Control | Fire ants in Florida lawns (painful stings, mounds after rain), ghost ants, carpenter ants, Argentine/sugar ants; why spraying visible ants doesn't work (colony); baits and targeted treatments; yard vs. indoor. |
 | Flea & Tick Control | Pet households; year-round warmth; treat home + yard + coordinate with vet treatment of pets; preparation steps; follow-up. |
-| Wasp, Bee & Hornet Removal | Paper wasps, yellowjackets (ground nests), mud daubers; safety warning against DIY on large nests; honeybees: relocation via local beekeeper preferred where possible (mark `// OWNER: confirm`). |
+| Wasp, Hornet & Yellow Jacket Removal | Paper wasps, hornets, yellow jackets (ground nests), mud daubers; safety warning against DIY on large nests. No bee removal content: Ringba buyers don't cover bee calls. |
 | Wildlife Removal | Raccoons, squirrels, armadillos (dig up yards), opossums, snakes; humane trapping/removal and exclusion; follow Florida wildlife rules (state generally; do not cite specific regulations unless verified); attic damage and cleanup. Mark entire service `// OWNER: confirm offered`. |
 | Lawn Pest Control | St. Augustine grass is the dominant lawn in Jacksonville; chinch bugs (yellow/brown patches in hot dry spots), sod webworms, mole crickets, grubs, fire ants; difference from fertilization services; seasonal timing. |
 | Moisture Control / Crawl Space | High humidity attracts termites, roaches, silverfish; crawl space moisture, vapor barriers, ventilation, fixing leaks; connection to termite risk. Mark `// OWNER: confirm offered`. |

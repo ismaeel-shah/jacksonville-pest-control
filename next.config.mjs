@@ -16,6 +16,12 @@ const nextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  redirects() {
+    return [
+      // Renamed when the page dropped bee removal (Ringba buyers don't cover bee calls).
+      { source: "/wasp-bee-removal", destination: "/wasp-removal", permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;

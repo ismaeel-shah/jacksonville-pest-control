@@ -55,7 +55,7 @@ export const siteConfig: SiteConfig = {
   social: { facebook: "", instagram: "", nextdoor: "" },
   // Footer disclaimer on every page (Ringba rule). If Ringba supplies its own wording, replace this with it exactly.
   disclaimer:
-    "This website is a referral service that connects callers with independent, third-party pest control providers. We are not a pest control company and do not perform any services. We do not endorse or guarantee any provider or their work, and we are not responsible for services provided by third parties. Availability and results may vary. Please verify a provider's credentials before hiring. Calls may be recorded for quality and training purposes.",
+    "This website is a free service that helps homeowners connect with independent, third-party local pest control providers. We are not a pest control company and do not perform any services. We do not endorse or guarantee any provider or their work, and we are not responsible for services provided by third parties. Availability and results may vary. Before hiring, please verify that the provider holds the license and insurance required for your job. Any people shown in photos or videos on this site are actors or models, not the providers. Calls may be recorded for quality and training purposes.",
   logo: "/images/pest-control-services-jacksonville-logo.svg", // path under /public
   siteUrl: "https://pestcontrolservicesjacksonville.com",
   // ga4Id: "[GA4_ID]",
