@@ -42,8 +42,8 @@ export const siteConfig: SiteConfig = {
   businessName: "Pest Control Services Jacksonville",
   legalName: "PestControlServicesJacksonville",
   tagline: "Connect With Local Pest Control Pros in Jacksonville, FL",
-  phoneDisplay: "(000) 000-0000", // Ringba tracking number, e.g. (904) 555-0123
-  phoneHref: "+10000000000", // same number in E.164, e.g. +19045550123
+  phoneDisplay: "(904) 869-0348", // Ringba tracking number, e.g. (904) 555-0123
+  phoneHref: "+19048690348", // same number in E.164, e.g. +19045550123
   // email: "[EMAIL]",
   address: { city: "Jacksonville", state: "FL" },
   // OWNER: set to the hours calls are answered (from the Ringba campaign)
